@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: TSO500_Dashboard
+    env: python
+    buildCommand: ""
+    startCommand: shiny run --reload app.py --port $PORT
+    envVars:
+      - key: PORT
+        value: 8000
