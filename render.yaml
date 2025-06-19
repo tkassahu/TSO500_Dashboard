@@ -1,8 +1,8 @@
+# render.yaml
 services:
   - type: web
     name: TSO500_Dashboard
     env: python
-    buildCommand: ""
-    startCommand: shiny run --host 0.0.0.0 --port $PORT app:app
+    buildCommand: ""  
+    startCommand: "shiny run --host 0.0.0.0 --port $PORT app:app"
     plan: free
-
