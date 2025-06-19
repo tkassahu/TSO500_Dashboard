@@ -3,6 +3,8 @@ services:
     name: TSO500_Dashboard
     env: python
     buildCommand: ""
-    startCommand: shiny run --host 0.0.0.0 --port $PORT app.py
+    startCommand: shiny run --host 0.0.0.0 --port $PORT app:app
+
+
     plan: free
 
