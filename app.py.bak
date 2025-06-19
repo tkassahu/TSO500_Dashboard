@@ -1,0 +1,122 @@
+app_ui = ui.page_fluid(
+    # ────────────────────────────────────────────────
+    # custom CSS for “cards” and headings
+    ui.tags.style("""
+    .card {
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      padding: 12px;
+      margin-bottom: 16px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+      background: #fff;
+    }
+    .card-title {
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+    """),
+    # ────────────────────────────────────────────────
+    ui.h1("TSO500 Synthetic Variant Explorer", style="margin-bottom:20px"),
+    # ... rest of your UI ...
+)
+
+    # immediately under your h1(...)
+ui.layout_columns(
+      ui.column(4,
+        ui.tags.div(class_="card",
+          ui.tags.div("Total Variants", class_="card-title"),
+          ui.output_text("total_count")
+        )
+      ),
+      ui.column(4,
+        ui.tags.div(class_="card",
+          ui.tags.div("MSI-High Samples", class_="card-title"),
+          ui.output_text("msi_high_count")
+        )
+      ),
+      ui.column(4,
+        ui.tags.div(class_="card",
+          ui.tags.div("Mean TMB Score", class_="card-title"),
+          ui.output_text("mean_tmb")
+        )
+      )
+    ),
+
+
+
+from shiny import App, ui, render, reactive
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# 1) Load synthetic data
+df = pd.read_csv("TSO500_Synthetic_Final.csv")
+
+# 2) Dropdown choices
+genes = ["All"] + sorted(df["gene"].dropna().unique())
+assessments = ["All"] + sorted(df["assessment"].dropna().unique())
+
+# 3) UI
+app_ui = ui.page_fluid(
+    ui.h2("TSO500 Synthetic Variant Explorer"),
+
+    # Filters
+    ui.input_select("selected_gene", "Select Gene:", choices=genes, selected="All"),
+    ui.input_select("selected_assessment", "Select Assessment:", choices=assessments, selected="All"),
+    ui.hr(),
+
+    # Matplotlib outputs
+    ui.output_plot("pie_plot"),
+    ui.output_plot("bar_plot"),
+    ui.output_plot("hist_plot"),
+)
+
+# 4) Server logic
+def server(input, output, session):
+
+    @reactive.Calc
+    def filtered_data():
+        d = df.copy()
+        if input.selected_gene() != "All":
+            d = d[d["gene"] == input.selected_gene()]
+        if input.selected_assessment() != "All":
+            d = d[d["assessment"] == input.selected_assessment()]
+        return d
+
+    @output
+    @render.plot
+    def pie_plot():
+        data = filtered_data()
+        counts = data["assessment"].value_counts()
+        fig, ax = plt.subplots(figsize=(5,5))
+        ax.pie(counts, labels=counts.index, autopct="%.1f%%", startangle=90)
+        ax.set_title("Assessment Distribution")
+        return fig
+
+    @output
+    @render.plot
+    def bar_plot():
+        data = filtered_data()
+        counts = data["gene"].value_counts()
+        fig, ax = plt.subplots(figsize=(6,4))
+        counts.plot.bar(ax=ax)
+        ax.set_xlabel("Gene")
+        ax.set_ylabel("Count")
+        ax.set_title("Mutation Count by Gene")
+        plt.xticks(rotation=45, ha="right")
+        plt.tight_layout()
+        return fig
+
+    @output
+    @render.plot
+    def hist_plot():
+        data = filtered_data()
+        fig, ax = plt.subplots(figsize=(6,4))
+        ax.hist(data["allelefraction"].dropna(), bins=20, edgecolor="black")
+        ax.set_xlabel("Allele Fraction")
+        ax.set_ylabel("Frequency")
+        ax.set_title("Allele Fraction Distribution")
+        return fig
+
+# 5) Launch the app
+app = App(app_ui, server)
