@@ -1,0 +1,51 @@
+MRN,variant_id,assessment,actionability,gene,chromosome,cytoband,position,region,exonnumber,genomic_change,reference,alternate,allelefraction,genotype,copynumber,function,transcript,transcriptchange,struct_change,translationimpact,protein_change,dbsnp,mrn
+95822412,chr3:g.75093639C>G,Uncertain Significance,2C,EGFR,20,p13.3,59326160,3'UTR,Exon 3,g.5793722A>T,T,T,0.309,Heterozygous,3.0,Silent,NM_004333,c.215C>G,Deletion,Loss-of-function,p.Arg175His,unknown,1269748
+24942603,chr21:g.84016315C>G,Likely Benign,,TP53,7,p12.1,47397338,3'UTR,Exon 15,g.5558623C>G,A,G,0.711,Heterozygous,3.0,Missense,NM_033360,c.2573T>G,Inversion,Gain-of-function,p.Arg175His,unknown,8964102
+13356886,chr19:g.26808537G>A,Likely Pathogenic,3,BRCA1,X,q21.31,98783662,Promoter,Exon 14,g.6363836G>A,T,G,0.135,Homozygous,1.0,Missense,NM_033360,c.215C>G,Deletion,,p.Arg175His,unknown,8661995
+46913810,chr3:g.7150444G>A,Likely Pathogenic,2C,EGFR,11,q32.1,43101056,5'UTR,,g.2351868A>T,G,G,0.055,Homozygous,1.0,Splice,NM_004333,c.2573T>G,Inversion,Unknown,p.Gly12Asp,rs11540652,8810647
+42868828,chr8:g.39840994A>T,Uncertain Significance,3,BRCA1,7,q13.2,59571795,3'UTR,Exon 19,g.3530518A>T,A,G,0.064,Heterozygous,2.0,Nonsense,NM_007294,c.2573T>G,Inversion,,p.Arg175His,rs34549764,2743681
+39958838,chr8:g.14556182C>G,Likely Benign,2C,BRCA1,22,q32.1,82363974,,Exon 7,g.7426265G>A,A,G,0.299,Hemizygous,1.0,Nonsense,NM_007294,c.2573T>G,Deletion,Gain-of-function,p.Val600Glu,unknown,4291686
+28728463,chr9:g.61855700G>A,Uncertain Significance,2D,KRAS,21,p13.3,69642041,Exon,Exon 13,g.3563646G>A,G,A,0.945,Heterozygous,3.0,Frameshift,NM_033360,c.34G>T,Inversion,Loss-of-function,p.Gly12Asp,unknown,2743681
+23756669,chr12:g.22831063C>G,Likely Benign,3,BRAF,9,p13.3,16521714,Promoter,Exon 16,g.4589533A>T,C,T,0.641,Hemizygous,1.0,Splice,NM_007294,c.68_69delAG,Fusion,Gain-of-function,p.Arg175His,rs11540652,3207308
+83197857,chr12:g.29119557G>A,Likely Benign,2C,BRCA1,17,p13.3,52700055,Promoter,Exon 13,g.7960328C>G,C,A,0.755,Heterozygous,2.0,Missense,NM_033360,c.68_69delAG,Fusion,Gain-of-function,p.Arg175His,rs34549764,9001638
+21668732,chr9:g.95196727G>A,Pathogenic,1A,KRAS,16,p13.3,78388337,Intron,Exon 8,g.6551268G>A,T,T,0.112,Homozygous,,Splice,NM_000546,c.34G>T,Deletion,Unknown,p.Gly12Asp,unknown,4454179
+89254563,chr21:g.10583482G>A,Likely Pathogenic,3,TP53,9,q13.2,26511941,5'UTR,Exon 5,g.8816912C>G,A,C,0.022,Hemizygous,,Silent,NM_004333,c.68_69delAG,,,p.Arg175His,unknown,7890336
+66629388,chr21:g.23969840G>A,Likely Pathogenic,,BRCA1,2,p12.1,35188276,,,g.2044645A>T,T,C,0.291,Homozygous,3.0,Missense,NM_033360,c.68_69delAG,Fusion,Gain-of-function,p.Val600Glu,rs34549764,2372484
+14265799,chr8:g.22931511C>G,Pathogenic,1A,BRAF,3,p13.3,6957459,3'UTR,Exon 1,g.8048838C>G,A,T,0.484,Heterozygous,2.0,Nonsense,NM_033360,c.68_69delAG,Deletion,Gain-of-function,p.Val600Glu,rs121913529,6488314
+13999315,chr13:g.37231783G>A,Uncertain Significance,1A,ALK,21,q21.31,96131550,3'UTR,Exon 4,g.1327691G>A,G,C,0.347,Hemizygous,,Missense,NM_033360,c.215C>G,Inversion,Loss-of-function,p.Arg175His,rs121913529,4590742
+22575562,chr18:g.30476249G>A,Pathogenic,,PIK3CA,14,q13.2,59526649,Splice Site,Exon 14,g.7381734C>G,A,C,0.966,Hemizygous,,Silent,NM_007294,c.34G>T,Fusion,Loss-of-function,p.Val600Glu,unknown,4291686
+39345092,chr11:g.8507864A>T,Likely Pathogenic,1A,KRAS,9,p13.3,1226999,Promoter,Exon 8,g.1098919C>G,A,C,0.26,Hemizygous,1.0,Missense,NM_033360,c.68_69delAG,Deletion,,p.Gly12Asp,rs28934578,8090505
+41227216,chr2:g.43339391C>G,Likely Pathogenic,1A,ALK,2,q21.31,70782527,5'UTR,Exon 6,g.6009888C>G,G,A,0.863,Homozygous,,Nonsense,NM_000546,c.34G>T,Deletion,,p.Arg175His,rs34549764,9001638
+77827638,chr9:g.9883684A>T,Pathogenic,2C,KRAS,1,p13.3,73269803,5'UTR,Exon 17,g.8030010G>A,C,A,0.123,Heterozygous,3.0,Silent,NM_007294,c.68_69delAG,,Unknown,p.Gly12Asp,rs34549764,752162
+90801586,chr19:g.97356822C>G,Pathogenic,2C,PIK3CA,11,p12.1,93188405,5'UTR,Exon 15,g.4700025C>G,G,G,0.075,Homozygous,,Frameshift,NM_004333,c.68_69delAG,Inversion,,p.Val600Glu,rs28934578,6220647
+13561597,chr7:g.88971488C>G,Pathogenic,3,BRAF,MT,q13.2,97560259,Splice Site,Exon 2,g.4681284C>G,A,T,0.497,Hemizygous,3.0,Splice,NM_000546,c.34G>T,Inversion,Loss-of-function,p.Arg175His,rs34549764,6774399
+85329037,chr13:g.87282117C>G,Likely Pathogenic,3,EGFR,5,p12.1,99923524,Intron,Exon 18,g.8312114C>G,G,C,0.581,Homozygous,3.0,Frameshift,NM_033360,c.2573T>G,Inversion,,p.Gly12Asp,rs11540652,2467057
+36687537,chr5:g.36551614A>T,Pathogenic,3,PIK3CA,21,q13.2,91010234,3'UTR,Exon 8,g.1486955C>G,A,T,0.69,Hemizygous,1.0,Silent,NM_000546,c.34G>T,Deletion,Gain-of-function,p.Val600Glu,rs34549764,4291686
+97226012,chr8:g.76345555G>A,Pathogenic,2C,NRAS,9,p13.3,27445607,5'UTR,Exon 4,g.6639317G>A,C,G,0.16,Homozygous,2.0,Silent,NM_033360,c.2573T>G,Deletion,,p.Arg175His,rs34549764,6220647
+83140807,chr9:g.79461803C>G,Uncertain Significance,3,ALK,6,p13.3,49884978,,Exon 15,g.7783308G>A,C,G,0.813,Heterozygous,3.0,Silent,NM_000546,c.215C>G,Inversion,,p.Thr790Met,rs34549764,5109170
+66306997,chr19:g.54606628C>G,Pathogenic,1A,BRCA1,Y,q13.2,58887757,,Exon 5,g.3768991C>G,A,C,0.95,Homozygous,,Nonsense,NM_007294,c.34G>T,Deletion,Unknown,p.Val600Glu,rs121913529,2958070
+39587039,chr8:g.19566572G>A,Likely Pathogenic,2C,TP53,15,q21.31,10391725,Splice Site,Exon 15,g.3141239G>A,C,G,0.094,Homozygous,,Silent,NM_033360,c.2573T>G,,Gain-of-function,p.Val600Glu,rs11540652,4103565
+70291817,chr16:g.13201654A>T,Uncertain Significance,3,NRAS,18,q21.31,90152472,Intron,Exon 17,g.9961107A>T,G,C,0.256,Homozygous,3.0,Splice,NM_007294,c.68_69delAG,Deletion,Unknown,p.Thr790Met,rs34549764,2347291
+89089901,chr4:g.21514014G>A,Likely Benign,1A,BRCA1,X,p13.3,45318698,Splice Site,Exon 18,g.7610562G>A,C,G,0.562,Homozygous,,Nonsense,NM_000546,c.215C>G,Deletion,Loss-of-function,p.Thr790Met,rs11540652,1269748
+47338124,chr6:g.92332642C>G,Likely Pathogenic,3,BRCA1,14,p13.3,84638503,Exon,Exon 20,g.1454696A>T,T,G,0.422,Heterozygous,1.0,Silent,NM_033360,c.34G>T,Fusion,,p.Gly12Asp,rs11540652,8810647
+10872248,chr20:g.9526544C>G,Likely Pathogenic,2D,KRAS,18,p12.1,43133044,Promoter,Exon 11,g.8190929A>T,C,C,0.6,Hemizygous,,Nonsense,NM_004333,c.2573T>G,,,p.Val600Glu,rs11540652,2958070
+31429110,chr13:g.80978790C>G,Likely Benign,3,PIK3CA,1,p13.3,90038359,3'UTR,Exon 15,g.8746014A>T,T,G,0.622,Hemizygous,1.0,Splice,NM_004333,c.2573T>G,Fusion,Loss-of-function,p.Thr790Met,rs28934578,1269748
+66722344,chr17:g.34744231G>A,Likely Pathogenic,2D,EGFR,4,q13.2,17726926,Splice Site,Exon 20,g.1843636C>G,G,G,0.778,Hemizygous,3.0,Splice,NM_033360,c.34G>T,Inversion,Unknown,p.Arg175His,rs34549764,4103565
+55667651,chr1:g.92306093G>A,Likely Benign,3,ALK,3,q21.31,97603781,Splice Site,Exon 17,g.7360307C>G,C,G,0.387,Heterozygous,3.0,Nonsense,NM_000546,c.2573T>G,Inversion,Gain-of-function,p.Val600Glu,rs121913529,2743681
+47295260,chr4:g.92497616G>A,Likely Benign,,BRCA1,X,q21.31,41308572,3'UTR,Exon 14,g.4551070C>G,C,T,0.909,Heterozygous,3.0,Missense,NM_004333,c.34G>T,,Unknown,p.Gly12Asp,rs121913529,2970718
+30868105,chr9:g.87028436C>G,Likely Pathogenic,3,KRAS,5,p12.1,69064830,Promoter,Exon 18,g.6483562C>G,C,A,0.304,Homozygous,1.0,Frameshift,NM_033360,c.2573T>G,Deletion,Unknown,p.Thr790Met,rs121913529,6484547
+38898923,chr4:g.40392920C>G,Pathogenic,2C,ALK,18,q21.31,42511484,Exon,Exon 15,g.7360682C>G,G,T,0.593,Heterozygous,,Silent,NM_004333,c.68_69delAG,Fusion,Gain-of-function,p.Val600Glu,rs121913529,6774399
+55176955,chr6:g.61897765A>T,Pathogenic,2C,PIK3CA,2,q21.31,90508850,,Exon 6,g.8072684C>G,G,G,0.435,Hemizygous,1.0,Frameshift,NM_033360,c.34G>T,,,p.Val600Glu,rs34549764,4429558
+23718431,chr9:g.68187530A>T,Likely Benign,2D,EGFR,12,q32.1,55813568,,Exon 16,g.2374158C>G,T,A,0.573,Heterozygous,,Splice,NM_000546,c.34G>T,Fusion,Unknown,p.Thr790Met,rs121913529,1449831
+22448136,chr17:g.15282218G>A,Uncertain Significance,2C,NRAS,19,q13.2,44779528,Intron,Exon 15,g.1325197G>A,A,T,0.07,Hemizygous,,Frameshift,NM_000546,c.215C>G,Deletion,Loss-of-function,p.Thr790Met,rs11540652,1343576
+60992979,chr10:g.86758349G>A,Likely Benign,1A,PIK3CA,18,q32.1,55009265,Splice Site,Exon 9,g.1873851C>G,G,T,0.961,Heterozygous,1.0,Missense,NM_007294,c.68_69delAG,Fusion,Gain-of-function,p.Thr790Met,rs28934578,4429558
+22981052,chr20:g.27697396A>T,Likely Benign,,TP53,5,q21.31,94577729,Promoter,Exon 8,g.4761823G>A,C,T,0.108,Heterozygous,2.0,Frameshift,NM_004333,c.34G>T,,,p.Val600Glu,unknown,5115385
+58181396,chr12:g.22682744G>A,Likely Benign,,PIK3CA,14,p12.1,40682169,Intron,,g.2151225G>A,T,C,0.765,Hemizygous,3.0,Frameshift,NM_007294,c.2573T>G,Deletion,Gain-of-function,p.Thr790Met,rs121913529,9001638
+56164955,chr17:g.1076758G>A,Pathogenic,1A,BRCA1,5,p12.1,75411983,,Exon 9,g.1675419A>T,C,G,0.629,Hemizygous,,Splice,NM_000546,c.2573T>G,Deletion,Loss-of-function,p.Thr790Met,unknown,1071443
+91030736,chr11:g.66579548A>T,Pathogenic,2D,EGFR,2,q21.31,18084279,Intron,Exon 17,g.5148725A>T,C,G,0.272,Heterozygous,,Splice,NM_033360,c.2573T>G,,Gain-of-function,p.Val600Glu,unknown,4293533
+45503389,chr4:g.49718453C>G,Pathogenic,1A,PIK3CA,10,p13.3,26748341,Intron,Exon 16,g.1341919G>A,G,A,0.09,Heterozygous,1.0,Silent,NM_000546,c.215C>G,Deletion,Gain-of-function,p.Val600Glu,unknown,3895332
+15831819,chr8:g.8774584A>T,Likely Benign,1A,BRCA1,12,q32.1,57431351,Exon,,g.3556551A>T,A,T,0.247,Homozygous,2.0,Nonsense,NM_000546,c.34G>T,Fusion,Unknown,p.Gly12Asp,rs11540652,6635254
+71662963,chr19:g.11570592A>T,Uncertain Significance,,BRCA1,2,q21.31,90245317,Exon,Exon 8,g.3117636C>G,C,G,0.556,Hemizygous,3.0,Silent,NM_033360,c.2573T>G,Inversion,Loss-of-function,p.Arg175His,rs121913529,8272896
+81971316,chr16:g.10289546G>A,Pathogenic,3,EGFR,12,p12.1,51888017,Intron,Exon 9,g.2919136G>A,G,T,0.165,Homozygous,2.0,Splice,NM_007294,c.215C>G,,Loss-of-function,p.Val600Glu,rs34549764,3717014
+26753883,chr5:g.18232410G>A,Likely Pathogenic,,PIK3CA,7,p12.1,91908075,5'UTR,Exon 15,g.4656838C>G,T,G,0.414,Heterozygous,3.0,Silent,NM_004333,c.215C>G,Fusion,Loss-of-function,p.Arg175His,rs11540652,1179953
+60806024,chr16:g.74793389A>T,Likely Pathogenic,,PIK3CA,22,q32.1,24357554,3'UTR,Exon 3,g.5299055C>G,C,T,0.692,Hemizygous,,Frameshift,NM_000546,c.34G>T,Deletion,Gain-of-function,p.Gly12Asp,rs34549764,4462264
