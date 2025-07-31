@@ -1,0 +1,918 @@
+from shiny import App, Inputs, Outputs, Session, render, ui, reactive
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
+from neo4j import GraphDatabase
+import os
+from datetime import datetime
+import matplotlib.patches as patches
+from matplotlib.patches import Rectangle
+import warnings
+warnings.filterwarnings('ignore')
+
+# ═══════════════════════════════════════════════════════════════
+# CONFIGURATION & DATABASE CONNECTION
+# ═══════════════════════════════════════════════════════════════
+
+# Neo4j/Memgraph connection
+NEO4J_URI = os.getenv("NEO4J_URI", "bolt://localhost:7687")
+NEO4J_USER = os.getenv("NEO4J_USER", "")
+NEO4J_PASSWORD = os.getenv("NEO4J_PASSWORD", "")
+
+driver = GraphDatabase.driver(NEO4J_URI, auth=(NEO4J_USER, NEO4J_PASSWORD))
+
+# ═══════════════════════════════════════════════════════════════
+# DATA LOADING
+# ═══════════════════════════════════════════════════════════════
+
+def load_data():
+    """Load all CSV files"""
+    try:
+        demographics_df = pd.read_csv('clean_demographics.csv')
+        variants_df = pd.read_csv('variants_with_50_demo_mrn_200pts.csv')
+        
+        # Try different filenames for variants
+        if not os.path.exists('variants_with_50_demo_mrn_200pts.csv'):
+            if os.path.exists('TSO500_Synthetic_Final.csv'):
+                variants_df = pd.read_csv('TSO500_Synthetic_Final.csv')
+            else:
+                variants_df = pd.read_csv('variants_with_50_demo_mrn.csv')
+        
+        protocols_df = pd.read_csv('protocols.csv')
+        subjects_df = pd.read_csv('clinical_trial_subjects.csv')
+        interventions_df = pd.read_csv('interventions.csv')
+        adverse_events_df = pd.read_csv('adverse_events.csv')
+        
+        # Merge variants with demographics
+        merged_df = pd.merge(variants_df, demographics_df, on='mrn', how='left')
+        
+        return {
+            'demographics': demographics_df,
+            'variants': variants_df,
+            'merged': merged_df,
+            'protocols': protocols_df,
+            'subjects': subjects_df,
+            'interventions': interventions_df,
+            'adverse_events': adverse_events_df
+        }
+    except Exception as e:
+        print(f"Error loading data: {e}")
+        return None
+
+# Load data
+data = load_data()
+
+# ═══════════════════════════════════════════════════════════════
+# HELPER FUNCTIONS
+# ═══════════════════════════════════════════════════════════════
+
+def summary_card(title, value, icon="📊"):
+    """Create a summary card with title and value"""
+    return ui.div(
+        ui.div(
+            ui.span(icon, style="font-size: 1.5rem; margin-right: 8px;"),
+            ui.h4(title, style="margin: 0; font-weight: 500;"),
+            style="display: flex; align-items: center; margin-bottom: 8px;"
+        ),
+        ui.h2(str(value), style="margin: 0; color: #2c3e50;"),
+        class_="summary-card",
+        style="""
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            border-left: 4px solid #3498db;
+        """
+    )
+
+def plot_card(title, plot_func):
+    """Create a card containing a plot"""
+    return ui.div(
+        ui.h4(title, style="margin: 0 0 15px 0; color: #2c3e50;"),
+        plot_func,
+        class_="plot-card",
+        style="""
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            height: 100%;
+        """
+    )
+
+def run_cypher_query(query, parameters=None):
+    """Execute a Cypher query and return results"""
+    with driver.session() as session:
+        result = session.run(query, parameters or {})
+        return [record.data() for record in result]
+
+# ═══════════════════════════════════════════════════════════════
+# UI DEFINITION
+# ═══════════════════════════════════════════════════════════════
+
+app_ui = ui.page_fluid(
+    # Custom CSS
+    ui.tags.head(
+        ui.tags.style("""
+            body { 
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+                background-color: #f5f7fa;
+            }
+            .nav-link { 
+                font-weight: 500; 
+                padding: 12px 24px !important;
+            }
+            .nav-link.active {
+                background-color: #3498db !important;
+                color: white !important;
+            }
+            .filter-section {
+                background: white;
+                padding: 20px;
+                border-radius: 8px;
+                margin-bottom: 20px;
+                box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            }
+            .filter-section h4 {
+                margin-top: 0;
+                margin-bottom: 15px;
+                color: #2c3e50;
+                border-bottom: 2px solid #ecf0f1;
+                padding-bottom: 10px;
+            }
+        """)
+    ),
+    
+    # Header
+    ui.div(
+        ui.h1("Clinical Data and Molecular Profiling Dashboard", 
+              style="margin: 0; color: white; font-weight: 300;"),
+        style="""
+            background: linear-gradient(135deg, #3498db, #2c3e50);
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        """
+    ),
+    
+    # Main content with tabs
+    ui.div(
+        ui.navset_tab(
+            # ═══════════════════════════════════════════════════════════════
+            # DEMOGRAPHICS TAB
+            # ═══════════════════════════════════════════════════════════════
+            ui.nav_panel(
+                "Demographics",
+                ui.layout_sidebar(
+                    ui.sidebar(
+                        ui.div(
+                            ui.h4("Demographics Filters"),
+                            ui.input_checkbox_group(
+                                "demo_sex_filter",
+                                "Sex:",
+                                choices={"male": "Male", "female": "Female"},
+                                selected=["male", "female"]
+                            ),
+                            ui.input_slider(
+                                "demo_age_filter",
+                                "Age Range:",
+                                min=18,
+                                max=85,
+                                value=[18, 85],
+                                step=1
+                            ),
+                            class_="filter-section"
+                        ),
+                        width=300
+                    ),
+                    ui.row(
+                        ui.column(6, ui.output_plot("age_distribution")),
+                        ui.column(6, ui.output_plot("sex_distribution"))
+                    ),
+                    ui.row(
+                        ui.column(12, 
+                            ui.h4("Patient Summary", style="margin-top: 20px;"),
+                            ui.output_ui("demographics_summary")
+                        )
+                    )
+                )
+            ),
+            
+            # ═══════════════════════════════════════════════════════════════
+            # GENOMICS TAB
+            # ═══════════════════════════════════════════════════════════════
+            ui.nav_panel(
+                "Genomics",
+                ui.layout_sidebar(
+                    ui.sidebar(
+                        ui.div(
+                            ui.h4("Genomics Filters"),
+                            ui.input_selectize(
+                                "gene_filter",
+                                "Filter by Gene:",
+                                choices=["All"] + sorted(data['variants']['gene'].unique().tolist()),
+                                selected="All",
+                                multiple=False
+                            ),
+                            ui.input_checkbox_group(
+                                "assessment_filter",
+                                "Clinical Assessment:",
+                                choices={
+                                    "Pathogenic": "Pathogenic",
+                                    "Likely Pathogenic": "Likely Pathogenic",
+                                    "VUS": "VUS",
+                                    "Likely Benign": "Likely Benign",
+                                    "Benign": "Benign"
+                                },
+                                selected=["Pathogenic", "Likely Pathogenic", "VUS", "Likely Benign", "Benign"]
+                            ),
+                            class_="filter-section"
+                        ),
+                        width=300
+                    ),
+                    # Summary cards
+                    ui.row(
+                        ui.column(3, ui.output_ui("total_variants_card")),
+                        ui.column(3, ui.output_ui("unique_genes_card")),
+                        ui.column(3, ui.output_ui("pathogenic_count_card")),
+                        ui.column(3, ui.output_ui("actionable_count_card"))
+                    ),
+                    # Plots in 2x2 grid
+                    ui.row(
+                        ui.column(6, plot_card("Clinical Assessment Distribution", ui.output_plot("assessment_pie"))),
+                        ui.column(6, plot_card("Top 10 Mutated Genes", ui.output_plot("gene_bar"))),
+                        style="margin-top: 20px;"
+                    ),
+                    ui.row(
+                        ui.column(6, plot_card("Allele Fraction Distribution", ui.output_plot("allele_fraction_hist"))),
+                        ui.column(6, plot_card("Mutation Landscape", ui.output_plot("oncoprint"))),
+                        style="margin-top: 20px;"
+                    )
+                )
+            ),
+            
+            # ═══════════════════════════════════════════════════════════════
+            # CLINICAL TRIAL PARTICIPATION TAB
+            # ═══════════════════════════════════════════════════════════════
+            ui.nav_panel(
+                "Clinical Trial Participation",
+                ui.layout_sidebar(
+                    ui.sidebar(
+                        ui.div(
+                            ui.h4("Clinical Trial Filters"),
+                            ui.input_selectize(
+                                "protocol_filter",
+                                "Protocol:",
+                                choices=["All"] + sorted(data['protocols']['protocol_id'].unique().tolist()),
+                                selected="All",
+                                multiple=False
+                            ),
+                            ui.input_selectize(
+                                "intervention_filter",
+                                "Intervention Type:",
+                                choices=["All"] + sorted(data['interventions']['intervention_category'].unique().tolist()),
+                                selected="All",
+                                multiple=False
+                            ),
+                            ui.input_checkbox_group(
+                                "adverse_event_filter",
+                                "Adverse Event Grade:",
+                                choices={
+                                    "1": "Grade 1",
+                                    "2": "Grade 2", 
+                                    "3": "Grade 3",
+                                    "4": "Grade 4",
+                                    "5": "Grade 5"
+                                },
+                                selected=["1", "2", "3", "4", "5"]
+                            ),
+                            class_="filter-section"
+                        ),
+                        width=300
+                    ),
+                    # Summary cards
+                    ui.row(
+                        ui.column(3, ui.output_ui("total_protocols_card")),
+                        ui.column(3, ui.output_ui("enrolled_patients_card")),
+                        ui.column(3, ui.output_ui("total_interventions_card")),
+                        ui.column(3, ui.output_ui("serious_ae_card"))
+                    ),
+                    # Clinical trial visualizations
+                    ui.row(
+                        ui.column(6, plot_card("Protocol Enrollment", ui.output_plot("protocol_enrollment"))),
+                        ui.column(6, plot_card("Intervention Distribution", ui.output_plot("intervention_dist"))),
+                        style="margin-top: 20px;"
+                    ),
+                    ui.row(
+                        ui.column(6, plot_card("Adverse Events by Grade", ui.output_plot("ae_grade_dist"))),
+                        ui.column(6, plot_card("Adverse Events by System", ui.output_plot("ae_system_dist"))),
+                        style="margin-top: 20px;"
+                    )
+                )
+            ),
+            
+            # ═══════════════════════════════════════════════════════════════
+            # OUTCOMES TAB
+            # ═══════════════════════════════════════════════════════════════
+            ui.nav_panel(
+                "Outcomes",
+                ui.layout_sidebar(
+                    ui.sidebar(
+                        ui.div(
+                            ui.h4("Outcomes Analysis"),
+                            ui.p("Survival analysis based on intervention types and patient characteristics."),
+                            ui.input_selectize(
+                                "survival_stratify",
+                                "Stratify by:",
+                                choices={
+                                    "intervention": "Intervention Type",
+                                    "protocol": "Protocol",
+                                    "gene": "Gene Mutation",
+                                    "sex": "Sex"
+                                },
+                                selected="intervention"
+                            ),
+                            class_="filter-section"
+                        ),
+                        width=300
+                    ),
+                    ui.row(
+                        ui.column(12, plot_card("Kaplan-Meier Survival Analysis", ui.output_plot("survival_curve")))
+                    ),
+                    ui.row(
+                        ui.column(12, 
+                            ui.h4("Outcomes Summary", style="margin-top: 20px;"),
+                            ui.output_ui("outcomes_summary")
+                        )
+                    )
+                )
+            )
+        ),
+        style="padding: 0 30px 30px 30px;"
+    )
+)
+
+# ═══════════════════════════════════════════════════════════════
+# SERVER LOGIC
+# ═══════════════════════════════════════════════════════════════
+
+def server(input: Inputs, output: Outputs, session: Session):
+    
+    # ═══════════════════════════════════════════════════════════════
+    # REACTIVE DATA FILTERING
+    # ═══════════════════════════════════════════════════════════════
+    
+    @reactive.Calc
+    def filtered_data():
+        """Apply all active filters using Memgraph queries"""
+        
+        # Build Cypher query with filters
+        cypher_clauses = []
+        parameters = {}
+        
+        # Demographics filters (from Demographics tab)
+        if len(input.demo_sex_filter()) < 2:
+            cypher_clauses.append("p.sex IN $sex_list")
+            parameters['sex_list'] = list(input.demo_sex_filter())
+            
+        age_range = input.demo_age_filter()
+        cypher_clauses.append("p.age >= $min_age AND p.age <= $max_age")
+        parameters['min_age'] = age_range[0]
+        parameters['max_age'] = age_range[1]
+        
+        # Build base query to get valid MRNs
+        where_clause = " AND ".join(cypher_clauses) if cypher_clauses else "1=1"
+        
+        # Multi-hop query example based on active filters
+        base_query = f"""
+        MATCH (p:Patient)
+        WHERE {where_clause}
+        """
+        
+        # Add genomics filters if on Genomics tab
+        if input.gene_filter() != "All":
+            base_query += """
+            MATCH (p)-[:HAS_VARIANT]->(v:Variant)
+            WHERE v.gene = $gene
+            """
+            parameters['gene'] = input.gene_filter()
+            
+        # Add clinical trial filters if specified
+        if input.protocol_filter() != "All":
+            base_query += """
+            MATCH (p)-[:ENROLLED_AS]->(cts:ClinicalTrialSubject)-[:IN_PROTOCOL]->(pr:Protocol)
+            WHERE pr.protocol_id = $protocol
+            """
+            parameters['protocol'] = input.protocol_filter()
+            
+        if input.intervention_filter() != "All":
+            base_query += """
+            MATCH (p)-[:ENROLLED_AS]->(cts:ClinicalTrialSubject)-[:RECEIVED_INTERVENTION]->(i:Intervention)
+            WHERE i.intervention_category = $intervention
+            """
+            parameters['intervention'] = input.intervention_filter()
+        
+        # Complete query
+        base_query += """
+        RETURN DISTINCT p.mrn as mrn
+        """
+        
+        # Execute query
+        try:
+            results = run_cypher_query(base_query, parameters)
+            valid_mrns = [r['mrn'] for r in results]
+            
+            # Filter dataframes
+            filtered_merged = data['merged'][data['merged']['mrn'].isin(valid_mrns)]
+            
+            # Apply additional pandas filters
+            if len(input.assessment_filter()) < 5:
+                filtered_merged = filtered_merged[filtered_merged['assessment'].isin(input.assessment_filter())]
+                
+            return filtered_merged
+            
+        except Exception as e:
+            print(f"Query error: {e}")
+            # Fallback to pandas filtering
+            return data['merged']
+    
+    # ═══════════════════════════════════════════════════════════════
+    # DEMOGRAPHICS TAB OUTPUTS
+    # ═══════════════════════════════════════════════════════════════
+    
+    @output
+    @render.plot
+    def age_distribution():
+        fig, ax = plt.subplots(figsize=(8, 6))
+        df = filtered_data()
+        
+        # Get unique patients for demographics
+        unique_patients = df.drop_duplicates('mrn')
+        
+        ax.hist(unique_patients['age'], bins=20, color='#3498db', alpha=0.7, edgecolor='black')
+        ax.set_xlabel('Age', fontsize=12)
+        ax.set_ylabel('Number of Patients', fontsize=12)
+        ax.set_title('Age Distribution', fontsize=14, fontweight='bold')
+        ax.grid(True, alpha=0.3)
+        
+        plt.tight_layout()
+        return fig
+    
+    @output
+    @render.plot
+    def sex_distribution():
+        fig, ax = plt.subplots(figsize=(8, 6))
+        df = filtered_data()
+        
+        unique_patients = df.drop_duplicates('mrn')
+        sex_counts = unique_patients['sex'].value_counts()
+        
+        colors = ['#3498db', '#e74c3c']
+        ax.bar(sex_counts.index, sex_counts.values, color=colors, alpha=0.7, edgecolor='black')
+        ax.set_xlabel('Sex', fontsize=12)
+        ax.set_ylabel('Number of Patients', fontsize=12)
+        ax.set_title('Sex Distribution', fontsize=14, fontweight='bold')
+        ax.grid(True, alpha=0.3, axis='y')
+        
+        # Add value labels on bars
+        for i, v in enumerate(sex_counts.values):
+            ax.text(i, v + 1, str(v), ha='center', fontweight='bold')
+        
+        plt.tight_layout()
+        return fig
+    
+    @output
+    @render.ui
+    def demographics_summary():
+        df = filtered_data()
+        unique_patients = df.drop_duplicates('mrn')
+        
+        return ui.div(
+            ui.p(f"Total Patients: {len(unique_patients)}", style="font-size: 16px;"),
+            ui.p(f"Average Age: {unique_patients['age'].mean():.1f} years", style="font-size: 16px;"),
+            ui.p(f"Age Range: {unique_patients['age'].min()} - {unique_patients['age'].max()} years", style="font-size: 16px;"),
+            style="background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);"
+        )
+    
+    # ═══════════════════════════════════════════════════════════════
+    # GENOMICS TAB OUTPUTS
+    # ═══════════════════════════════════════════════════════════════
+    
+    @output
+    @render.ui
+    def total_variants_card():
+        df = filtered_data()
+        return summary_card("Total Variants", len(df), "🧬")
+    
+    @output
+    @render.ui
+    def unique_genes_card():
+        df = filtered_data()
+        return summary_card("Unique Genes", df['gene'].nunique(), "🧬")
+    
+    @output
+    @render.ui
+    def pathogenic_count_card():
+        df = filtered_data()
+        pathogenic = df[df['assessment'].isin(['Pathogenic', 'Likely Pathogenic'])]
+        return summary_card("Pathogenic", len(pathogenic), "⚠️")
+    
+    @output
+    @render.ui
+    def actionable_count_card():
+        df = filtered_data()
+        actionable = df[df['actionability'].notna() & (df['actionability'] != '')]
+        return summary_card("Actionable", len(actionable), "💊")
+    
+    @output
+    @render.plot
+    def assessment_pie():
+        fig, ax = plt.subplots(figsize=(8, 6))
+        df = filtered_data()
+        
+        assessment_counts = df['assessment'].value_counts()
+        colors = ['#e74c3c', '#f39c12', '#95a5a6', '#3498db', '#2ecc71']
+        
+        ax.pie(assessment_counts.values, labels=assessment_counts.index, autopct='%1.1f%%',
+               colors=colors, startangle=90)
+        ax.set_title('Clinical Assessment Distribution', fontsize=14, fontweight='bold')
+        
+        plt.tight_layout()
+        return fig
+    
+    @output
+    @render.plot
+    def gene_bar():
+        fig, ax = plt.subplots(figsize=(8, 6))
+        df = filtered_data()
+        
+        top_genes = df['gene'].value_counts().head(10)
+        ax.barh(top_genes.index[::-1], top_genes.values[::-1], color='#3498db', alpha=0.7)
+        ax.set_xlabel('Number of Variants', fontsize=12)
+        ax.set_title('Top 10 Mutated Genes', fontsize=14, fontweight='bold')
+        ax.grid(True, alpha=0.3, axis='x')
+        
+        plt.tight_layout()
+        return fig
+    
+    @output
+    @render.plot
+    def allele_fraction_hist():
+        fig, ax = plt.subplots(figsize=(8, 6))
+        df = filtered_data()
+        
+        ax.hist(df['allelefraction'], bins=30, color='#2ecc71', alpha=0.7, edgecolor='black')
+        ax.set_xlabel('Allele Fraction', fontsize=12)
+        ax.set_ylabel('Count', fontsize=12)
+        ax.set_title('Allele Fraction Distribution', fontsize=14, fontweight='bold')
+        ax.grid(True, alpha=0.3)
+        
+        plt.tight_layout()
+        return fig
+    
+    @output
+    @render.plot
+    def oncoprint():
+        """Create a simplified oncoprint visualization"""
+        fig, ax = plt.subplots(figsize=(10, 8))
+        df = filtered_data()
+        
+        # Get top genes and sample of patients
+        top_genes = df['gene'].value_counts().head(10).index
+        gene_data = df[df['gene'].isin(top_genes)]
+        
+        # Create matrix
+        patients = gene_data['mrn'].unique()[:20]  # Limit to 20 patients for visibility
+        
+        # Create color map for assessments
+        color_map = {
+            'Pathogenic': '#e74c3c',
+            'Likely Pathogenic': '#f39c12',
+            'VUS': '#95a5a6',
+            'Likely Benign': '#3498db',
+            'Benign': '#2ecc71'
+        }
+        
+        # Plot
+        y_pos = 0
+        for gene in top_genes:
+            x_pos = 0
+            for patient in patients:
+                patient_gene = gene_data[(gene_data['mrn'] == patient) & (gene_data['gene'] == gene)]
+                if not patient_gene.empty:
+                    assessment = patient_gene.iloc[0]['assessment']
+                    color = color_map.get(assessment, 'gray')
+                    rect = Rectangle((x_pos, y_pos), 1, 1, facecolor=color, edgecolor='black', linewidth=0.5)
+                    ax.add_patch(rect)
+                x_pos += 1
+            y_pos += 1
+        
+        ax.set_xlim(0, len(patients))
+        ax.set_ylim(0, len(top_genes))
+        ax.set_xticks(range(len(patients)))
+        ax.set_xticklabels([f"P{i+1}" for i in range(len(patients))], rotation=45)
+        ax.set_yticks(range(len(top_genes)))
+        ax.set_yticklabels(top_genes)
+        ax.set_title('Mutation Landscape (Top 10 Genes)', fontsize=14, fontweight='bold')
+        ax.set_xlabel('Patients', fontsize=12)
+        ax.set_ylabel('Genes', fontsize=12)
+        
+        # Add legend
+        from matplotlib.patches import Patch
+        legend_elements = [Patch(facecolor=color, label=assessment) 
+                          for assessment, color in color_map.items()]
+        ax.legend(handles=legend_elements, loc='center left', bbox_to_anchor=(1, 0.5))
+        
+        plt.tight_layout()
+        return fig
+    
+    # ═══════════════════════════════════════════════════════════════
+    # CLINICAL TRIAL PARTICIPATION TAB OUTPUTS
+    # ═══════════════════════════════════════════════════════════════
+    
+    @output
+    @render.ui
+    def total_protocols_card():
+        return summary_card("Active Protocols", len(data['protocols']), "🏥")
+    
+    @output
+    @render.ui
+    def enrolled_patients_card():
+        df = filtered_data()
+        enrolled = len(df['mrn'].unique())
+        return summary_card("Enrolled Patients", enrolled, "👥")
+    
+    @output
+    @render.ui
+    def total_interventions_card():
+        return summary_card("Intervention Types", len(data['interventions']['intervention_category'].unique()), "💊")
+    
+    @output
+    @render.ui
+    def serious_ae_card():
+        serious_ae = data['adverse_events'][data['adverse_events']['serious'] == True]
+        return summary_card("Serious AEs", len(serious_ae), "⚠️")
+    
+    @output
+    @render.plot
+    def protocol_enrollment():
+        fig, ax = plt.subplots(figsize=(8, 6))
+        
+        # Count enrollments per protocol
+        protocol_counts = data['subjects']['protocol_id'].value_counts()
+        
+        ax.bar(range(len(protocol_counts)), protocol_counts.values, color='#3498db', alpha=0.7)
+        ax.set_xlabel('Protocol', fontsize=12)
+        ax.set_ylabel('Number of Patients', fontsize=12)
+        ax.set_title('Protocol Enrollment', fontsize=14, fontweight='bold')
+        ax.set_xticks(range(len(protocol_counts)))
+        ax.set_xticklabels(protocol_counts.index, rotation=45)
+        ax.grid(True, alpha=0.3, axis='y')
+        
+        plt.tight_layout()
+        return fig
+    
+    @output
+    @render.plot
+    def intervention_dist():
+        fig, ax = plt.subplots(figsize=(8, 6))
+        
+        intervention_counts = data['interventions']['intervention_category'].value_counts()
+        
+        ax.barh(intervention_counts.index[::-1], intervention_counts.values[::-1], 
+                color='#2ecc71', alpha=0.7)
+        ax.set_xlabel('Number of Patients', fontsize=12)
+        ax.set_title('Intervention Distribution', fontsize=14, fontweight='bold')
+        ax.grid(True, alpha=0.3, axis='x')
+        
+        plt.tight_layout()
+        return fig
+    
+    @output
+    @render.plot
+    def ae_grade_dist():
+        fig, ax = plt.subplots(figsize=(8, 6))
+        
+        grade_counts = data['adverse_events']['grade'].value_counts().sort_index()
+        
+        colors = ['#2ecc71', '#3498db', '#f39c12', '#e74c3c', '#c0392b']
+        ax.bar(grade_counts.index, grade_counts.values, 
+               color=[colors[i-1] for i in grade_counts.index], alpha=0.7)
+        ax.set_xlabel('Grade', fontsize=12)
+        ax.set_ylabel('Number of Events', fontsize=12)
+        ax.set_title('Adverse Events by Grade', fontsize=14, fontweight='bold')
+        ax.grid(True, alpha=0.3, axis='y')
+        
+        plt.tight_layout()
+        return fig
+    
+    @output
+    @render.plot
+    def ae_system_dist():
+        fig, ax = plt.subplots(figsize=(10, 6))
+        
+        system_counts = data['adverse_events']['ae_body_system'].value_counts().head(8)
+        
+        ax.barh(range(len(system_counts)), system_counts.values, color='#e74c3c', alpha=0.7)
+        ax.set_yticks(range(len(system_counts)))
+        ax.set_yticklabels([s[:30] + '...' if len(s) > 30 else s for s in system_counts.index])
+        ax.set_xlabel('Number of Events', fontsize=12)
+        ax.set_title('Adverse Events by Body System', fontsize=14, fontweight='bold')
+        ax.grid(True, alpha=0.3, axis='x')
+        
+        plt.tight_layout()
+        return fig
+    
+    # ═══════════════════════════════════════════════════════════════
+    # OUTCOMES TAB OUTPUTS
+    # ═══════════════════════════════════════════════════════════════
+    
+    @output
+    @render.plot
+    def survival_curve():
+        """Generate Kaplan-Meier survival curves"""
+        fig, ax = plt.subplots(figsize=(10, 6))
+        
+        from lifelines import KaplanMeierFitter
+        
+        # Set seed for reproducibility
+        np.random.seed(42)
+        
+        stratify_by = input.survival_stratify()
+        
+        # Get filtered patient data
+        df = filtered_data()
+        
+        if stratify_by == "intervention":
+            # Load intervention data from CSV
+            try:
+                subjects_df = pd.read_csv('clinical_trial_subjects.csv')
+                interventions_df = pd.read_csv('interventions.csv')
+                
+                # Get unique interventions
+                intervention_types = interventions_df['intervention_category'].unique()[:4]
+                
+                for intervention in intervention_types:
+                    # Get patients with this intervention
+                    intervention_raves = interventions_df[
+                        interventions_df['intervention_category'] == intervention
+                    ]['rave_id'].unique()
+                    
+                    intervention_mrns = subjects_df[
+                        subjects_df['rave_id'].isin(intervention_raves)
+                    ]['mrn'].unique()
+                    
+                    # Filter to patients in our current dataset
+                    intervention_patients = df[df['mrn'].isin(intervention_mrns)]['mrn'].unique()
+                    n_patients = len(intervention_patients)
+                    
+                    if n_patients > 0:
+                        # Generate synthetic survival data based on intervention type
+                        if intervention == "Immunotherapy":
+                            times = np.random.exponential(scale=500, size=n_patients)
+                            events = np.random.binomial(1, 0.6, size=n_patients)
+                        elif intervention == "Chemotherapy":
+                            times = np.random.exponential(scale=400, size=n_patients)
+                            events = np.random.binomial(1, 0.7, size=n_patients)
+                        elif intervention == "Targeted Therapy":
+                            times = np.random.exponential(scale=450, size=n_patients)
+                            events = np.random.binomial(1, 0.65, size=n_patients)
+                        else:
+                            times = np.random.exponential(scale=350, size=n_patients)
+                            events = np.random.binomial(1, 0.75, size=n_patients)
+                        
+                        # Fit and plot
+                        kmf = KaplanMeierFitter()
+                        kmf.fit(times, events, label=f"{intervention} (n={n_patients})")
+                        kmf.plot_survival_function(ax=ax)
+                        
+            except Exception as e:
+                print(f"Error loading intervention data: {e}")
+        
+        elif stratify_by == "protocol":
+            # Load protocol data from CSV
+            try:
+                subjects_df = pd.read_csv('clinical_trial_subjects.csv')
+                protocols_df = pd.read_csv('protocols.csv')
+                
+                # Get protocol enrollment counts
+                protocol_counts = subjects_df['protocol_id'].value_counts().head(4)
+                
+                for protocol_id in protocol_counts.index:
+                    # Get patients in this protocol
+                    protocol_mrns = subjects_df[
+                        subjects_df['protocol_id'] == protocol_id
+                    ]['mrn'].unique()
+                    
+                    # Filter to patients in our current dataset
+                    protocol_patients = df[df['mrn'].isin(protocol_mrns)]['mrn'].unique()
+                    n_patients = len(protocol_patients)
+                    
+                    if n_patients > 0:
+                        # Get phase information
+                        phase = protocols_df[
+                            protocols_df['protocol_id'] == protocol_id
+                        ]['phase'].iloc[0] if len(protocols_df[protocols_df['protocol_id'] == protocol_id]) > 0 else "Unknown"
+                        
+                        # Generate synthetic survival data based on phase
+                        if phase == "Phase III":
+                            times = np.random.exponential(scale=500, size=n_patients)
+                            events = np.random.binomial(1, 0.6, size=n_patients)
+                        elif phase == "Phase II":
+                            times = np.random.exponential(scale=400, size=n_patients)
+                            events = np.random.binomial(1, 0.7, size=n_patients)
+                        else:  # Phase I
+                            times = np.random.exponential(scale=300, size=n_patients)
+                            events = np.random.binomial(1, 0.8, size=n_patients)
+                        
+                        # Fit and plot
+                        kmf = KaplanMeierFitter()
+                        kmf.fit(times, events, label=f"{protocol_id} - {phase} (n={n_patients})")
+                        kmf.plot_survival_function(ax=ax)
+                        
+            except Exception as e:
+                print(f"Error loading protocol data: {e}")
+        
+        elif stratify_by == "gene":
+            # Get top mutated genes from filtered data
+            top_genes = df['gene'].value_counts().head(4).index
+            
+            for gene in top_genes:
+                # Get patients with this gene mutation
+                gene_patients = df[df['gene'] == gene]['mrn'].unique()
+                n_patients = len(gene_patients)
+                
+                if n_patients > 0:
+                    # Generate synthetic survival data based on gene
+                    if gene in ['TP53', 'KRAS']:
+                        times = np.random.exponential(scale=350, size=n_patients)
+                        events = np.random.binomial(1, 0.75, size=n_patients)
+                    elif gene in ['BRCA1', 'BRCA2']:
+                        times = np.random.exponential(scale=500, size=n_patients)
+                        events = np.random.binomial(1, 0.6, size=n_patients)
+                    else:
+                        times = np.random.exponential(scale=450, size=n_patients)
+                        events = np.random.binomial(1, 0.65, size=n_patients)
+                    
+                    # Fit and plot
+                    kmf = KaplanMeierFitter()
+                    kmf.fit(times, events, label=f"{gene} mutation (n={n_patients})")
+                    kmf.plot_survival_function(ax=ax)
+        
+        elif stratify_by == "sex":
+            # Stratify by sex - this should work since it's in the filtered data
+            unique_patients = df.drop_duplicates('mrn')
+            
+            for sex in ['male', 'female']:
+                sex_patients = unique_patients[unique_patients['sex'] == sex]['mrn'].values
+                n_patients = len(sex_patients)
+                
+                if n_patients > 0:
+                    # Generate synthetic survival data
+                    if sex == 'female':
+                        times = np.random.exponential(scale=480, size=n_patients)
+                        events = np.random.binomial(1, 0.65, size=n_patients)
+                    else:
+                        times = np.random.exponential(scale=420, size=n_patients)
+                        events = np.random.binomial(1, 0.7, size=n_patients)
+                    
+                    # Fit and plot
+                    kmf = KaplanMeierFitter()
+                    kmf.fit(times, events, label=f"{sex.capitalize()} (n={n_patients})")
+                    kmf.plot_survival_function(ax=ax)
+        
+        # Customize plot
+        ax.set_xlabel('Time (days)', fontsize=12)
+        ax.set_ylabel('Survival Probability', fontsize=12)
+        ax.set_title(f'Kaplan-Meier Survival Analysis - Stratified by {stratify_by.replace("_", " ").title()}', fontsize=14, fontweight='bold')
+        ax.grid(True, alpha=0.3)
+        ax.legend(loc='best')
+        
+        # Add median survival line
+        ax.axhline(y=0.5, color='gray', linestyle='--', alpha=0.5)
+        
+        plt.tight_layout()
+        return fig
+    @output
+    @render.ui
+    def outcomes_summary():
+        """Generate outcomes summary statistics"""
+        df = filtered_data()
+        unique_patients = df.drop_duplicates('mrn')
+        
+        # Get clinical trial data
+        enrolled_patients = data['subjects']['mrn'].nunique()
+        completed_trials = len(data['subjects'][data['subjects']['enrollment_status'] == 'Completed'])
+        
+        return ui.div(
+            ui.h5("Clinical Trial Outcomes", style="margin-bottom: 15px;"),
+            ui.p(f"Total Enrolled Patients: {enrolled_patients}", style="font-size: 16px;"),
+            ui.p(f"Completed Enrollments: {completed_trials}", style="font-size: 16px;"),
+            ui.p(f"Active Enrollments: {len(data['subjects'][data['subjects']['enrollment_status'] == 'Active'])}", style="font-size: 16px;"),
+            ui.p(f"Withdrawal Rate: {len(data['subjects'][data['subjects']['enrollment_status'] == 'Withdrawn']) / len(data['subjects']) * 100:.1f}%", style="font-size: 16px;"),
+            style="background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);"
+        )
+
+# Create the app
+app = App(app_ui, server) 

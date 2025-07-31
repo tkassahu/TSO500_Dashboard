@@ -1,0 +1,4 @@
+rave_id,intervention_category,dose_level,start_date,duration_days
+RAVE_100000,Radiation Therapy,High,2021-10-15,199
+RAVE_100000,Angiogenesis Inhibitors,High,2021-10-12,335
+RAVE_100000,Gene Therapy,Low,2021-10-10,42

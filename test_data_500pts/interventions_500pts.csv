@@ -1,0 +1,1444 @@
+rave_id,intervention_category,dose_level,start_date,duration_days
+RAVE_100000,Chemotherapy,High,2023-07-05,337
+RAVE_100001,Chemotherapy,Medium,2020-04-15,55
+RAVE_100002,Targeted Therapy,High,2024-07-10,306
+RAVE_100002,Surgery,Low,2024-07-24,92
+RAVE_100003,Targeted Therapy,Medium,2022-01-25,253
+RAVE_100004,Radiation Therapy,High,2022-01-07,173
+RAVE_100004,CAR-T Cell Therapy,Low,2021-12-21,202
+RAVE_100004,Angiogenesis Inhibitors,Medium,2022-01-01,116
+RAVE_100005,Stem Cell Transplant,Low,2023-01-05,246
+RAVE_100005,Immunotherapy,Low,2023-01-06,305
+RAVE_100006,CAR-T Cell Therapy,High,2021-08-04,143
+RAVE_100007,Surgery,Medium,2024-06-11,55
+RAVE_100007,Hormone Therapy,Low,2024-06-10,363
+RAVE_100007,Immunotherapy,Medium,2024-06-06,282
+RAVE_100008,Immunotherapy,High,2024-02-01,157
+RAVE_100009,CAR-T Cell Therapy,High,2023-03-30,82
+RAVE_100009,Radiation Therapy,High,2023-04-08,134
+RAVE_100010,Surgery,High,2021-07-02,292
+RAVE_100011,Hormone Therapy,High,2021-05-25,358
+RAVE_100012,Chemotherapy,Low,2023-11-19,360
+RAVE_100012,Angiogenesis Inhibitors,Medium,2023-11-22,105
+RAVE_100012,Stem Cell Transplant,Medium,2023-11-05,256
+RAVE_100013,Targeted Therapy,Low,2022-03-16,340
+RAVE_100013,Angiogenesis Inhibitors,High,2022-02-24,75
+RAVE_100014,Chemotherapy,Low,2020-02-28,289
+RAVE_100015,Hormone Therapy,High,2024-06-05,243
+RAVE_100015,Stem Cell Transplant,Low,2024-05-31,281
+RAVE_100015,Angiogenesis Inhibitors,Low,2024-05-11,66
+RAVE_100016,Chemotherapy,Low,2021-04-26,225
+RAVE_100016,Stem Cell Transplant,Medium,2021-05-05,249
+RAVE_100016,Immunotherapy,High,2021-05-04,72
+RAVE_100017,Gene Therapy,High,2023-12-19,40
+RAVE_100017,Immunotherapy,Medium,2023-12-23,347
+RAVE_100018,Gene Therapy,High,2020-06-11,314
+RAVE_100019,Hormone Therapy,High,2020-04-28,84
+RAVE_100020,Targeted Therapy,Low,2021-01-04,294
+RAVE_100020,CAR-T Cell Therapy,Low,2021-01-11,140
+RAVE_100021,Chemotherapy,Medium,2023-08-15,276
+RAVE_100022,Radiation Therapy,Low,2022-11-27,189
+RAVE_100022,Chemotherapy,High,2022-11-07,133
+RAVE_100023,Immunotherapy,Medium,2021-09-20,134
+RAVE_100024,CAR-T Cell Therapy,High,2020-12-04,256
+RAVE_100025,Radiation Therapy,Low,2023-07-24,126
+RAVE_100026,Radiation Therapy,High,2020-05-19,34
+RAVE_100026,Hormone Therapy,Low,2020-04-29,169
+RAVE_100027,Gene Therapy,High,2022-08-14,83
+RAVE_100027,Immunotherapy,Medium,2022-08-08,293
+RAVE_100028,Hormone Therapy,Low,2020-07-20,165
+RAVE_100029,Angiogenesis Inhibitors,High,2023-11-24,70
+RAVE_100030,Targeted Therapy,Low,2020-02-29,231
+RAVE_100030,Hormone Therapy,Medium,2020-02-24,198
+RAVE_100030,Radiation Therapy,Low,2020-03-07,100
+RAVE_100031,Gene Therapy,Low,2023-11-13,350
+RAVE_100031,Targeted Therapy,High,2023-12-03,300
+RAVE_100031,CAR-T Cell Therapy,High,2023-11-30,336
+RAVE_100032,Angiogenesis Inhibitors,Low,2021-06-03,343
+RAVE_100033,Hormone Therapy,High,2021-06-17,196
+RAVE_100033,Surgery,Low,2021-06-30,133
+RAVE_100033,CAR-T Cell Therapy,Low,2021-07-01,140
+RAVE_100034,Gene Therapy,Medium,2024-05-14,236
+RAVE_100034,Radiation Therapy,Low,2024-05-14,268
+RAVE_100035,CAR-T Cell Therapy,High,2020-12-16,142
+RAVE_100036,Surgery,Low,2021-03-13,42
+RAVE_100036,Targeted Therapy,Medium,2021-03-18,180
+RAVE_100037,Hormone Therapy,High,2024-07-01,131
+RAVE_100038,Surgery,High,2022-08-15,298
+RAVE_100039,Immunotherapy,Low,2021-10-26,254
+RAVE_100039,Hormone Therapy,High,2021-10-31,241
+RAVE_100039,Stem Cell Transplant,Low,2021-10-11,282
+RAVE_100040,Gene Therapy,High,2022-03-09,92
+RAVE_100040,Radiation Therapy,Low,2022-03-15,346
+RAVE_100041,CAR-T Cell Therapy,Low,2024-08-09,169
+RAVE_100042,Stem Cell Transplant,High,2022-11-17,225
+RAVE_100042,CAR-T Cell Therapy,Low,2022-11-18,254
+RAVE_100042,Hormone Therapy,High,2022-11-12,352
+RAVE_100043,Gene Therapy,Low,2024-10-22,342
+RAVE_100043,Chemotherapy,High,2024-10-27,350
+RAVE_100043,Stem Cell Transplant,Medium,2024-10-18,177
+RAVE_100044,Radiation Therapy,High,2023-03-20,143
+RAVE_100044,Surgery,Medium,2023-03-24,80
+RAVE_100045,CAR-T Cell Therapy,Medium,2023-10-24,85
+RAVE_100045,Hormone Therapy,Medium,2023-10-30,132
+RAVE_100046,Angiogenesis Inhibitors,Low,2025-01-13,229
+RAVE_100046,Surgery,High,2024-12-22,116
+RAVE_100047,Targeted Therapy,Medium,2024-12-10,362
+RAVE_100047,Immunotherapy,Medium,2024-12-11,326
+RAVE_100048,Chemotherapy,High,2020-10-23,343
+RAVE_100049,Surgery,High,2023-06-07,289
+RAVE_100049,Hormone Therapy,Low,2023-06-02,363
+RAVE_100050,Surgery,Medium,2020-06-04,180
+RAVE_100051,Angiogenesis Inhibitors,Medium,2021-02-28,169
+RAVE_100051,Immunotherapy,High,2021-03-11,330
+RAVE_100052,Gene Therapy,Medium,2020-11-26,143
+RAVE_100053,Targeted Therapy,Low,2021-06-10,251
+RAVE_100054,Chemotherapy,Low,2023-11-07,126
+RAVE_100054,Targeted Therapy,High,2023-11-10,207
+RAVE_100055,Hormone Therapy,Low,2020-05-27,86
+RAVE_100056,Targeted Therapy,Low,2024-11-10,109
+RAVE_100057,Surgery,Low,2021-10-23,178
+RAVE_100058,Targeted Therapy,Low,2020-07-30,238
+RAVE_100059,Stem Cell Transplant,High,2021-02-24,336
+RAVE_100059,Surgery,Medium,2021-02-11,56
+RAVE_100060,Radiation Therapy,Low,2022-12-28,359
+RAVE_100060,Immunotherapy,High,2022-12-26,240
+RAVE_100061,Hormone Therapy,Low,2023-10-24,224
+RAVE_100062,Chemotherapy,Low,2020-10-20,159
+RAVE_100063,Radiation Therapy,Medium,2021-03-25,30
+RAVE_100064,Targeted Therapy,High,2024-02-13,321
+RAVE_100065,Stem Cell Transplant,High,2021-06-30,104
+RAVE_100066,Radiation Therapy,Medium,2020-04-17,133
+RAVE_100066,Immunotherapy,Low,2020-03-29,199
+RAVE_100066,Stem Cell Transplant,Low,2020-04-19,207
+RAVE_100067,Stem Cell Transplant,Medium,2020-08-08,342
+RAVE_100067,Angiogenesis Inhibitors,Medium,2020-09-04,108
+RAVE_100067,Gene Therapy,Low,2020-08-12,186
+RAVE_100068,Surgery,Medium,2024-12-26,343
+RAVE_100069,CAR-T Cell Therapy,High,2023-01-10,106
+RAVE_100069,Gene Therapy,Medium,2023-01-10,269
+RAVE_100069,Hormone Therapy,Medium,2023-01-15,155
+RAVE_100070,Gene Therapy,High,2022-11-01,153
+RAVE_100071,Stem Cell Transplant,Low,2022-01-14,329
+RAVE_100072,Gene Therapy,High,2024-08-29,52
+RAVE_100072,Targeted Therapy,Low,2024-09-09,255
+RAVE_100072,CAR-T Cell Therapy,High,2024-08-25,250
+RAVE_100073,CAR-T Cell Therapy,Medium,2021-06-06,50
+RAVE_100073,Angiogenesis Inhibitors,Low,2021-05-12,86
+RAVE_100073,Chemotherapy,High,2021-05-22,346
+RAVE_100074,Stem Cell Transplant,High,2020-03-31,39
+RAVE_100074,Chemotherapy,Medium,2020-04-19,273
+RAVE_100075,Targeted Therapy,Low,2022-03-26,112
+RAVE_100076,Stem Cell Transplant,Low,2022-07-06,124
+RAVE_100076,Angiogenesis Inhibitors,Medium,2022-06-24,271
+RAVE_100076,CAR-T Cell Therapy,Low,2022-06-24,326
+RAVE_100077,Stem Cell Transplant,Medium,2021-05-23,292
+RAVE_100078,Hormone Therapy,Low,2022-11-12,281
+RAVE_100079,Surgery,High,2024-03-25,95
+RAVE_100079,Stem Cell Transplant,Low,2024-03-19,242
+RAVE_100080,Hormone Therapy,High,2022-11-02,149
+RAVE_100081,Chemotherapy,Medium,2021-06-12,239
+RAVE_100081,Hormone Therapy,Medium,2021-06-11,341
+RAVE_100081,Gene Therapy,Medium,2021-06-12,222
+RAVE_100082,Stem Cell Transplant,Low,2023-12-15,223
+RAVE_100082,Surgery,High,2023-12-18,200
+RAVE_100083,Radiation Therapy,Low,2021-08-16,308
+RAVE_100084,Targeted Therapy,High,2022-04-21,194
+RAVE_100085,Radiation Therapy,Low,2023-05-05,173
+RAVE_100085,Hormone Therapy,High,2023-04-28,288
+RAVE_100085,Stem Cell Transplant,Low,2023-04-20,159
+RAVE_100086,Hormone Therapy,Medium,2022-02-24,362
+RAVE_100087,Angiogenesis Inhibitors,High,2023-11-15,95
+RAVE_100088,Radiation Therapy,Low,2021-11-10,97
+RAVE_100088,Surgery,Low,2021-11-12,215
+RAVE_100088,Chemotherapy,Medium,2021-11-11,143
+RAVE_100089,Angiogenesis Inhibitors,High,2022-09-09,82
+RAVE_100089,Targeted Therapy,Low,2022-09-02,98
+RAVE_100090,Surgery,High,2020-08-11,240
+RAVE_100090,CAR-T Cell Therapy,Medium,2020-08-15,149
+RAVE_100091,Radiation Therapy,Low,2021-12-21,56
+RAVE_100091,Surgery,Medium,2021-12-24,328
+RAVE_100092,Chemotherapy,Medium,2023-07-13,332
+RAVE_100092,Immunotherapy,Low,2023-07-29,42
+RAVE_100092,CAR-T Cell Therapy,Medium,2023-07-18,216
+RAVE_100093,Angiogenesis Inhibitors,Low,2023-04-10,208
+RAVE_100093,Hormone Therapy,Medium,2023-04-23,50
+RAVE_100093,Chemotherapy,High,2023-04-25,81
+RAVE_100094,CAR-T Cell Therapy,Low,2022-02-01,132
+RAVE_100094,Chemotherapy,High,2022-01-17,246
+RAVE_100095,Gene Therapy,High,2023-02-23,178
+RAVE_100095,Surgery,High,2023-02-27,334
+RAVE_100096,Chemotherapy,Low,2021-08-21,271
+RAVE_100096,Immunotherapy,High,2021-08-06,262
+RAVE_100097,Hormone Therapy,Medium,2023-12-16,331
+RAVE_100098,Hormone Therapy,Low,2023-01-31,266
+RAVE_100099,Hormone Therapy,Medium,2022-03-12,362
+RAVE_100099,Gene Therapy,Low,2022-02-28,251
+RAVE_100099,Chemotherapy,High,2022-02-21,59
+RAVE_100100,Radiation Therapy,Medium,2023-02-19,241
+RAVE_100100,Targeted Therapy,Low,2023-03-07,271
+RAVE_100101,CAR-T Cell Therapy,Medium,2022-04-15,306
+RAVE_100102,Targeted Therapy,Low,2022-08-08,272
+RAVE_100103,Chemotherapy,Medium,2020-05-04,360
+RAVE_100103,CAR-T Cell Therapy,Medium,2020-04-26,176
+RAVE_100103,Surgery,Medium,2020-04-24,45
+RAVE_100104,Radiation Therapy,Medium,2020-03-02,176
+RAVE_100104,Hormone Therapy,Low,2020-03-07,211
+RAVE_100104,CAR-T Cell Therapy,Medium,2020-03-03,117
+RAVE_100105,CAR-T Cell Therapy,High,2024-04-05,236
+RAVE_100106,Targeted Therapy,Medium,2021-02-17,228
+RAVE_100106,Hormone Therapy,Low,2021-02-06,116
+RAVE_100107,Gene Therapy,Medium,2024-08-03,33
+RAVE_100107,Immunotherapy,Medium,2024-07-24,300
+RAVE_100107,Stem Cell Transplant,Medium,2024-07-31,250
+RAVE_100108,Immunotherapy,Medium,2021-04-06,54
+RAVE_100109,Immunotherapy,High,2024-02-03,335
+RAVE_100110,Hormone Therapy,Medium,2021-05-15,58
+RAVE_100111,Stem Cell Transplant,Low,2020-10-17,59
+RAVE_100111,Surgery,Low,2020-10-26,32
+RAVE_100111,CAR-T Cell Therapy,High,2020-11-09,225
+RAVE_100112,Hormone Therapy,Low,2022-06-13,76
+RAVE_100112,Surgery,Medium,2022-06-10,95
+RAVE_100112,CAR-T Cell Therapy,Medium,2022-06-16,48
+RAVE_100113,Immunotherapy,Medium,2020-11-26,105
+RAVE_100113,Gene Therapy,Low,2020-11-26,364
+RAVE_100114,CAR-T Cell Therapy,High,2021-07-24,138
+RAVE_100115,Hormone Therapy,Low,2020-06-30,303
+RAVE_100115,Gene Therapy,Low,2020-06-18,341
+RAVE_100116,Immunotherapy,Low,2020-03-30,51
+RAVE_100116,Stem Cell Transplant,Low,2020-03-30,105
+RAVE_100116,Hormone Therapy,Medium,2020-04-02,53
+RAVE_100117,Angiogenesis Inhibitors,Medium,2023-08-18,253
+RAVE_100117,Hormone Therapy,Low,2023-08-16,85
+RAVE_100118,Immunotherapy,Low,2020-03-14,109
+RAVE_100119,Surgery,High,2020-10-04,348
+RAVE_100119,Radiation Therapy,Low,2020-10-13,222
+RAVE_100120,Stem Cell Transplant,High,2020-08-24,36
+RAVE_100121,Stem Cell Transplant,High,2021-03-19,52
+RAVE_100121,Immunotherapy,Low,2021-03-12,223
+RAVE_100121,Surgery,Low,2021-03-17,77
+RAVE_100122,Hormone Therapy,Low,2022-10-09,73
+RAVE_100122,Targeted Therapy,Medium,2022-09-13,354
+RAVE_100123,Radiation Therapy,Medium,2023-10-03,130
+RAVE_100124,Angiogenesis Inhibitors,Medium,2021-11-12,208
+RAVE_100124,Radiation Therapy,Medium,2021-11-06,195
+RAVE_100125,Surgery,High,2023-10-06,124
+RAVE_100125,CAR-T Cell Therapy,Low,2023-10-14,93
+RAVE_100126,Chemotherapy,Medium,2022-12-31,79
+RAVE_100127,Targeted Therapy,Low,2024-07-11,181
+RAVE_100127,Chemotherapy,Medium,2024-07-20,65
+RAVE_100128,Chemotherapy,Low,2020-11-19,278
+RAVE_100128,Gene Therapy,High,2020-11-25,129
+RAVE_100128,Surgery,Low,2020-12-04,89
+RAVE_100129,Targeted Therapy,Low,2023-02-10,162
+RAVE_100130,Gene Therapy,Low,2024-07-01,64
+RAVE_100130,Hormone Therapy,Low,2024-06-16,173
+RAVE_100130,Stem Cell Transplant,High,2024-07-11,82
+RAVE_100131,Radiation Therapy,High,2022-05-27,262
+RAVE_100132,Radiation Therapy,Medium,2023-04-01,51
+RAVE_100132,Hormone Therapy,High,2023-04-14,177
+RAVE_100133,Stem Cell Transplant,Medium,2021-12-27,263
+RAVE_100134,Gene Therapy,Low,2020-05-31,243
+RAVE_100134,Stem Cell Transplant,High,2020-05-28,136
+RAVE_100135,Gene Therapy,High,2020-10-24,113
+RAVE_100136,Gene Therapy,High,2024-12-03,267
+RAVE_100137,Angiogenesis Inhibitors,Low,2022-05-20,91
+RAVE_100138,Angiogenesis Inhibitors,High,2023-06-10,208
+RAVE_100138,Surgery,Low,2023-06-15,89
+RAVE_100138,Immunotherapy,Medium,2023-05-18,87
+RAVE_100139,Angiogenesis Inhibitors,Medium,2023-04-09,223
+RAVE_100139,Gene Therapy,Low,2023-03-29,297
+RAVE_100140,CAR-T Cell Therapy,Medium,2021-11-25,97
+RAVE_100141,Radiation Therapy,Medium,2020-08-01,114
+RAVE_100141,Stem Cell Transplant,Low,2020-07-30,142
+RAVE_100142,Immunotherapy,Low,2020-05-30,208
+RAVE_100143,Chemotherapy,High,2024-10-10,334
+RAVE_100143,Gene Therapy,High,2024-10-08,310
+RAVE_100143,CAR-T Cell Therapy,High,2024-10-08,62
+RAVE_100144,Hormone Therapy,Low,2022-12-12,349
+RAVE_100144,Angiogenesis Inhibitors,Low,2022-12-31,278
+RAVE_100145,Targeted Therapy,Medium,2020-09-24,188
+RAVE_100145,Stem Cell Transplant,Low,2020-09-03,70
+RAVE_100146,Radiation Therapy,Low,2023-09-28,157
+RAVE_100146,Immunotherapy,Medium,2023-10-05,151
+RAVE_100146,Angiogenesis Inhibitors,Medium,2023-10-15,139
+RAVE_100147,Hormone Therapy,High,2024-07-06,103
+RAVE_100148,Immunotherapy,Low,2023-02-24,266
+RAVE_100148,Targeted Therapy,Medium,2023-02-03,37
+RAVE_100149,Surgery,Low,2020-01-17,347
+RAVE_100149,Gene Therapy,High,2020-01-21,30
+RAVE_100150,Gene Therapy,High,2022-04-08,361
+RAVE_100151,Immunotherapy,High,2020-11-11,290
+RAVE_100151,Angiogenesis Inhibitors,Medium,2020-12-08,205
+RAVE_100152,Immunotherapy,Medium,2023-02-20,204
+RAVE_100153,Angiogenesis Inhibitors,Medium,2020-02-08,115
+RAVE_100153,Hormone Therapy,Medium,2020-02-09,246
+RAVE_100154,Chemotherapy,Low,2023-07-26,130
+RAVE_100154,Angiogenesis Inhibitors,High,2023-08-12,287
+RAVE_100154,Immunotherapy,Medium,2023-07-22,264
+RAVE_100155,Immunotherapy,Low,2020-04-21,151
+RAVE_100156,Radiation Therapy,High,2023-11-28,362
+RAVE_100157,CAR-T Cell Therapy,Low,2020-08-21,340
+RAVE_100158,Surgery,Low,2023-09-25,35
+RAVE_100159,Stem Cell Transplant,Medium,2020-06-12,184
+RAVE_100159,Hormone Therapy,Medium,2020-05-19,151
+RAVE_100159,Radiation Therapy,Medium,2020-06-03,142
+RAVE_100160,Radiation Therapy,Medium,2020-10-12,281
+RAVE_100161,CAR-T Cell Therapy,High,2020-12-20,51
+RAVE_100162,Stem Cell Transplant,Low,2023-02-20,310
+RAVE_100163,Angiogenesis Inhibitors,Low,2022-12-08,205
+RAVE_100163,CAR-T Cell Therapy,High,2022-12-11,106
+RAVE_100164,Surgery,Medium,2022-08-08,269
+RAVE_100165,Chemotherapy,Low,2022-06-09,312
+RAVE_100165,Gene Therapy,Low,2022-05-28,94
+RAVE_100166,Targeted Therapy,Low,2022-12-09,117
+RAVE_100167,Gene Therapy,Medium,2021-04-07,30
+RAVE_100168,Stem Cell Transplant,Medium,2020-09-12,314
+RAVE_100168,Chemotherapy,Medium,2020-09-18,344
+RAVE_100168,Surgery,Medium,2020-09-19,363
+RAVE_100169,Angiogenesis Inhibitors,High,2021-04-21,110
+RAVE_100170,Hormone Therapy,Medium,2020-01-27,187
+RAVE_100171,CAR-T Cell Therapy,Low,2022-12-03,333
+RAVE_100171,Surgery,Low,2022-12-16,288
+RAVE_100172,Hormone Therapy,Low,2021-11-17,354
+RAVE_100173,Targeted Therapy,Medium,2020-06-28,231
+RAVE_100174,Radiation Therapy,Medium,2020-03-08,264
+RAVE_100175,CAR-T Cell Therapy,Low,2021-05-21,37
+RAVE_100176,Hormone Therapy,High,2024-02-15,67
+RAVE_100176,Angiogenesis Inhibitors,Medium,2024-02-20,306
+RAVE_100176,CAR-T Cell Therapy,High,2024-02-19,101
+RAVE_100177,Radiation Therapy,Low,2021-04-01,336
+RAVE_100178,Gene Therapy,High,2023-01-08,114
+RAVE_100178,Hormone Therapy,Low,2023-01-16,78
+RAVE_100179,Targeted Therapy,High,2021-10-16,272
+RAVE_100179,CAR-T Cell Therapy,Medium,2021-10-10,71
+RAVE_100180,CAR-T Cell Therapy,Low,2021-10-03,40
+RAVE_100180,Stem Cell Transplant,High,2021-10-04,38
+RAVE_100181,Hormone Therapy,Medium,2023-09-30,162
+RAVE_100181,Radiation Therapy,High,2023-10-06,196
+RAVE_100182,Targeted Therapy,Low,2023-03-06,49
+RAVE_100183,Angiogenesis Inhibitors,High,2022-07-15,298
+RAVE_100183,Immunotherapy,Low,2022-07-18,56
+RAVE_100184,Surgery,Medium,2023-12-16,79
+RAVE_100185,Radiation Therapy,High,2024-12-09,339
+RAVE_100185,Stem Cell Transplant,Medium,2024-12-19,138
+RAVE_100185,Gene Therapy,Low,2024-12-23,45
+RAVE_100186,Immunotherapy,High,2020-08-18,162
+RAVE_100186,Gene Therapy,High,2020-07-31,49
+RAVE_100187,Surgery,High,2022-05-16,43
+RAVE_100188,Surgery,Low,2020-12-31,155
+RAVE_100189,Surgery,Medium,2021-06-25,144
+RAVE_100189,Angiogenesis Inhibitors,Low,2021-06-18,55
+RAVE_100190,Angiogenesis Inhibitors,Medium,2023-12-31,336
+RAVE_100191,Immunotherapy,High,2024-06-16,358
+RAVE_100192,Angiogenesis Inhibitors,Low,2020-01-31,358
+RAVE_100193,Gene Therapy,High,2023-05-24,290
+RAVE_100194,CAR-T Cell Therapy,High,2020-09-20,263
+RAVE_100195,Hormone Therapy,Low,2023-04-03,227
+RAVE_100195,Radiation Therapy,Medium,2023-04-11,186
+RAVE_100195,Chemotherapy,High,2023-04-03,111
+RAVE_100196,Hormone Therapy,Medium,2021-05-08,225
+RAVE_100196,Chemotherapy,High,2021-05-21,123
+RAVE_100196,Angiogenesis Inhibitors,Low,2021-05-27,99
+RAVE_100197,Surgery,Medium,2023-07-19,147
+RAVE_100197,CAR-T Cell Therapy,Low,2023-07-23,167
+RAVE_100198,Targeted Therapy,Low,2024-12-19,313
+RAVE_100198,CAR-T Cell Therapy,Medium,2024-12-28,362
+RAVE_100198,Surgery,High,2024-12-18,86
+RAVE_100199,Radiation Therapy,Medium,2024-02-17,181
+RAVE_100200,Surgery,Low,2021-08-22,281
+RAVE_100200,Targeted Therapy,Medium,2021-09-15,158
+RAVE_100200,Chemotherapy,Low,2021-09-16,103
+RAVE_100201,CAR-T Cell Therapy,Medium,2023-07-28,90
+RAVE_100202,Immunotherapy,Low,2021-01-07,103
+RAVE_100202,Radiation Therapy,Medium,2021-01-05,78
+RAVE_100203,Hormone Therapy,Medium,2020-06-07,310
+RAVE_100203,Surgery,High,2020-06-23,318
+RAVE_100203,Chemotherapy,Low,2020-06-08,198
+RAVE_100204,Hormone Therapy,Low,2024-03-30,123
+RAVE_100204,CAR-T Cell Therapy,Medium,2024-03-29,344
+RAVE_100205,Chemotherapy,High,2021-11-08,188
+RAVE_100206,Stem Cell Transplant,Low,2021-10-20,334
+RAVE_100206,Surgery,Medium,2021-10-30,56
+RAVE_100207,Hormone Therapy,Low,2023-03-24,264
+RAVE_100207,Chemotherapy,Medium,2023-03-19,85
+RAVE_100207,CAR-T Cell Therapy,Medium,2023-03-06,247
+RAVE_100208,Targeted Therapy,Low,2022-09-12,147
+RAVE_100209,Angiogenesis Inhibitors,High,2021-05-08,359
+RAVE_100209,Immunotherapy,High,2021-04-25,230
+RAVE_100209,Surgery,Low,2021-04-24,198
+RAVE_100210,Radiation Therapy,Low,2024-07-26,150
+RAVE_100210,Targeted Therapy,High,2024-07-28,173
+RAVE_100211,Targeted Therapy,Low,2020-04-16,233
+RAVE_100211,Hormone Therapy,High,2020-04-24,193
+RAVE_100212,CAR-T Cell Therapy,High,2021-08-26,194
+RAVE_100213,Surgery,Low,2023-04-20,216
+RAVE_100214,Gene Therapy,Medium,2022-12-04,138
+RAVE_100214,Targeted Therapy,Medium,2022-12-02,174
+RAVE_100214,Surgery,Low,2022-12-08,281
+RAVE_100215,Angiogenesis Inhibitors,High,2022-02-11,167
+RAVE_100215,Immunotherapy,Medium,2022-01-24,333
+RAVE_100216,Stem Cell Transplant,High,2024-07-12,263
+RAVE_100217,Stem Cell Transplant,Medium,2021-12-04,88
+RAVE_100218,Gene Therapy,Low,2024-09-27,187
+RAVE_100219,CAR-T Cell Therapy,Medium,2020-01-29,73
+RAVE_100220,Angiogenesis Inhibitors,Medium,2022-08-30,310
+RAVE_100221,Angiogenesis Inhibitors,Low,2024-06-02,356
+RAVE_100221,Radiation Therapy,Medium,2024-05-16,171
+RAVE_100222,CAR-T Cell Therapy,Low,2021-05-16,55
+RAVE_100223,Surgery,Medium,2020-07-10,145
+RAVE_100223,Immunotherapy,High,2020-06-15,231
+RAVE_100224,Radiation Therapy,Low,2020-11-22,269
+RAVE_100224,Immunotherapy,Low,2020-12-09,310
+RAVE_100225,Gene Therapy,Medium,2022-02-16,318
+RAVE_100225,Angiogenesis Inhibitors,Medium,2022-02-15,173
+RAVE_100226,Radiation Therapy,High,2022-07-04,251
+RAVE_100227,Surgery,Low,2022-01-14,364
+RAVE_100227,CAR-T Cell Therapy,Medium,2022-01-09,113
+RAVE_100228,Immunotherapy,Medium,2023-03-01,274
+RAVE_100228,CAR-T Cell Therapy,Medium,2023-02-24,201
+RAVE_100229,Gene Therapy,Medium,2020-04-01,257
+RAVE_100230,Stem Cell Transplant,Medium,2021-02-26,77
+RAVE_100230,Hormone Therapy,Medium,2021-02-15,346
+RAVE_100231,Gene Therapy,High,2020-10-09,55
+RAVE_100232,Gene Therapy,Low,2024-03-13,185
+RAVE_100232,Surgery,Low,2024-03-22,313
+RAVE_100233,CAR-T Cell Therapy,Low,2024-05-05,257
+RAVE_100234,Hormone Therapy,Medium,2020-04-16,242
+RAVE_100235,Chemotherapy,High,2023-09-26,295
+RAVE_100236,Gene Therapy,High,2020-08-27,238
+RAVE_100237,CAR-T Cell Therapy,High,2020-05-01,138
+RAVE_100237,Surgery,Low,2020-05-09,62
+RAVE_100238,Stem Cell Transplant,Medium,2022-10-25,214
+RAVE_100238,Angiogenesis Inhibitors,Low,2022-11-02,272
+RAVE_100239,Stem Cell Transplant,High,2022-07-08,293
+RAVE_100239,Chemotherapy,Medium,2022-06-30,73
+RAVE_100239,Targeted Therapy,Medium,2022-07-11,129
+RAVE_100240,Angiogenesis Inhibitors,Low,2021-05-07,142
+RAVE_100241,Gene Therapy,Low,2020-07-29,108
+RAVE_100241,Immunotherapy,Low,2020-08-04,198
+RAVE_100242,Surgery,High,2022-09-04,98
+RAVE_100243,Stem Cell Transplant,Medium,2023-11-15,158
+RAVE_100243,Angiogenesis Inhibitors,Medium,2023-11-03,51
+RAVE_100244,Stem Cell Transplant,Low,2020-02-20,324
+RAVE_100245,Radiation Therapy,Medium,2023-12-22,159
+RAVE_100246,Angiogenesis Inhibitors,Medium,2022-01-16,103
+RAVE_100246,Targeted Therapy,Medium,2021-12-28,76
+RAVE_100247,Angiogenesis Inhibitors,Medium,2023-02-07,297
+RAVE_100248,Chemotherapy,High,2021-03-11,183
+RAVE_100249,Stem Cell Transplant,Medium,2022-02-28,276
+RAVE_100250,Hormone Therapy,Medium,2023-09-02,250
+RAVE_100250,Angiogenesis Inhibitors,Medium,2023-09-16,107
+RAVE_100251,Gene Therapy,Medium,2021-09-17,308
+RAVE_100251,CAR-T Cell Therapy,High,2021-09-21,347
+RAVE_100251,Radiation Therapy,High,2021-09-14,184
+RAVE_100252,Hormone Therapy,Low,2020-12-12,62
+RAVE_100253,Radiation Therapy,High,2020-10-20,109
+RAVE_100253,Stem Cell Transplant,Low,2020-11-15,71
+RAVE_100253,Targeted Therapy,Medium,2020-10-26,231
+RAVE_100254,Radiation Therapy,Medium,2023-06-27,138
+RAVE_100254,Angiogenesis Inhibitors,High,2023-07-01,229
+RAVE_100254,CAR-T Cell Therapy,Medium,2023-07-02,99
+RAVE_100255,Radiation Therapy,High,2020-12-20,190
+RAVE_100256,Gene Therapy,Medium,2023-03-02,40
+RAVE_100257,Immunotherapy,Low,2021-03-12,278
+RAVE_100257,Radiation Therapy,High,2021-03-25,47
+RAVE_100258,Chemotherapy,Low,2024-07-18,93
+RAVE_100259,Chemotherapy,High,2020-01-20,225
+RAVE_100259,CAR-T Cell Therapy,Medium,2020-01-26,76
+RAVE_100260,Surgery,Low,2023-02-03,114
+RAVE_100260,Immunotherapy,Medium,2023-02-21,31
+RAVE_100260,Gene Therapy,Medium,2023-02-09,109
+RAVE_100261,Stem Cell Transplant,Medium,2024-06-11,156
+RAVE_100261,Immunotherapy,Medium,2024-05-30,93
+RAVE_100261,Surgery,Medium,2024-06-05,364
+RAVE_100262,Stem Cell Transplant,Low,2020-04-13,88
+RAVE_100263,Targeted Therapy,Low,2020-06-22,357
+RAVE_100264,Chemotherapy,Medium,2020-02-24,223
+RAVE_100264,Immunotherapy,Medium,2020-02-19,94
+RAVE_100265,Surgery,Medium,2021-11-19,65
+RAVE_100266,Radiation Therapy,Medium,2020-01-24,66
+RAVE_100266,CAR-T Cell Therapy,High,2020-01-22,301
+RAVE_100266,Angiogenesis Inhibitors,High,2020-01-22,110
+RAVE_100267,Chemotherapy,High,2023-06-14,62
+RAVE_100267,Targeted Therapy,Medium,2023-06-09,103
+RAVE_100267,Hormone Therapy,Low,2023-06-15,235
+RAVE_100268,Surgery,Low,2022-01-20,314
+RAVE_100268,Radiation Therapy,High,2022-01-09,281
+RAVE_100268,CAR-T Cell Therapy,High,2021-12-30,122
+RAVE_100269,Surgery,High,2021-04-25,83
+RAVE_100270,Hormone Therapy,Low,2022-03-27,364
+RAVE_100270,Radiation Therapy,Medium,2022-03-29,80
+RAVE_100270,Chemotherapy,Low,2022-03-06,246
+RAVE_100271,Radiation Therapy,High,2024-05-23,75
+RAVE_100272,Stem Cell Transplant,High,2024-02-18,211
+RAVE_100273,Surgery,Medium,2023-03-07,318
+RAVE_100273,CAR-T Cell Therapy,High,2023-03-14,90
+RAVE_100274,Angiogenesis Inhibitors,High,2020-04-23,64
+RAVE_100275,Hormone Therapy,Low,2022-03-20,152
+RAVE_100276,Angiogenesis Inhibitors,Medium,2020-09-05,133
+RAVE_100277,Gene Therapy,Medium,2022-05-07,355
+RAVE_100278,Radiation Therapy,Low,2021-10-15,106
+RAVE_100279,Targeted Therapy,Medium,2024-01-18,261
+RAVE_100280,Targeted Therapy,Low,2021-10-03,301
+RAVE_100281,Angiogenesis Inhibitors,High,2023-02-08,281
+RAVE_100282,Angiogenesis Inhibitors,Medium,2022-01-12,138
+RAVE_100283,CAR-T Cell Therapy,Low,2020-07-28,93
+RAVE_100284,Targeted Therapy,Medium,2023-06-24,301
+RAVE_100284,Chemotherapy,High,2023-07-12,212
+RAVE_100285,Stem Cell Transplant,Low,2020-03-16,363
+RAVE_100286,Surgery,Low,2025-01-20,228
+RAVE_100287,Radiation Therapy,Medium,2021-08-10,239
+RAVE_100287,CAR-T Cell Therapy,Medium,2021-08-22,252
+RAVE_100288,Chemotherapy,High,2020-07-31,180
+RAVE_100289,Radiation Therapy,Medium,2023-03-20,60
+RAVE_100290,CAR-T Cell Therapy,High,2021-02-22,41
+RAVE_100291,Targeted Therapy,High,2023-09-21,34
+RAVE_100291,Hormone Therapy,Low,2023-09-29,90
+RAVE_100292,Surgery,High,2020-07-06,229
+RAVE_100292,Stem Cell Transplant,Low,2020-07-10,334
+RAVE_100293,Stem Cell Transplant,Medium,2022-01-27,85
+RAVE_100294,Targeted Therapy,Low,2021-12-06,210
+RAVE_100294,Immunotherapy,Low,2021-11-21,278
+RAVE_100295,Targeted Therapy,High,2024-03-14,137
+RAVE_100296,Targeted Therapy,Medium,2022-08-14,180
+RAVE_100296,CAR-T Cell Therapy,High,2022-08-09,171
+RAVE_100296,Gene Therapy,Medium,2022-08-14,301
+RAVE_100297,Surgery,Medium,2021-02-09,133
+RAVE_100297,Immunotherapy,Low,2021-02-15,48
+RAVE_100297,Radiation Therapy,Medium,2021-02-17,206
+RAVE_100298,Gene Therapy,High,2024-08-11,127
+RAVE_100299,Stem Cell Transplant,Medium,2020-06-11,300
+RAVE_100300,Immunotherapy,Low,2022-08-11,343
+RAVE_100301,Targeted Therapy,Medium,2020-05-25,306
+RAVE_100301,Angiogenesis Inhibitors,Medium,2020-05-24,197
+RAVE_100301,Surgery,Low,2020-05-12,225
+RAVE_100302,Gene Therapy,High,2024-09-02,98
+RAVE_100303,Angiogenesis Inhibitors,Medium,2021-02-04,280
+RAVE_100303,Immunotherapy,Medium,2021-01-29,360
+RAVE_100303,Chemotherapy,Medium,2021-02-04,206
+RAVE_100304,Angiogenesis Inhibitors,High,2024-04-20,124
+RAVE_100304,CAR-T Cell Therapy,Medium,2024-04-26,195
+RAVE_100304,Gene Therapy,Low,2024-04-22,276
+RAVE_100305,Immunotherapy,Low,2023-09-12,104
+RAVE_100306,Stem Cell Transplant,Low,2024-01-15,347
+RAVE_100307,Gene Therapy,High,2024-07-26,221
+RAVE_100308,Surgery,Low,2023-03-21,259
+RAVE_100308,Targeted Therapy,Low,2023-04-01,241
+RAVE_100309,Radiation Therapy,High,2023-05-15,233
+RAVE_100310,Stem Cell Transplant,High,2024-05-06,115
+RAVE_100310,Targeted Therapy,High,2024-05-17,180
+RAVE_100311,Surgery,Medium,2022-10-21,142
+RAVE_100311,Gene Therapy,Low,2022-11-11,242
+RAVE_100311,Chemotherapy,Medium,2022-11-12,116
+RAVE_100312,Angiogenesis Inhibitors,High,2023-02-23,80
+RAVE_100312,Surgery,High,2023-02-12,148
+RAVE_100312,Immunotherapy,Medium,2023-01-30,195
+RAVE_100313,Angiogenesis Inhibitors,Low,2023-11-19,108
+RAVE_100314,Surgery,Medium,2023-06-15,180
+RAVE_100315,Immunotherapy,Medium,2024-01-24,240
+RAVE_100316,Immunotherapy,Medium,2023-03-31,200
+RAVE_100316,Gene Therapy,High,2023-03-27,307
+RAVE_100316,CAR-T Cell Therapy,Medium,2023-04-01,304
+RAVE_100317,Angiogenesis Inhibitors,Medium,2024-02-04,335
+RAVE_100318,Chemotherapy,Low,2021-09-14,43
+RAVE_100318,Immunotherapy,Medium,2021-10-08,332
+RAVE_100319,Immunotherapy,High,2024-02-13,279
+RAVE_100319,Targeted Therapy,Low,2024-01-20,332
+RAVE_100319,Chemotherapy,High,2024-02-06,223
+RAVE_100320,Immunotherapy,Medium,2024-07-16,224
+RAVE_100321,Angiogenesis Inhibitors,High,2022-09-05,282
+RAVE_100322,Targeted Therapy,Medium,2024-10-11,60
+RAVE_100322,Radiation Therapy,Medium,2024-10-12,313
+RAVE_100323,Stem Cell Transplant,Low,2020-09-04,144
+RAVE_100323,Chemotherapy,Medium,2020-09-16,212
+RAVE_100324,Targeted Therapy,Low,2020-01-23,281
+RAVE_100324,Immunotherapy,High,2020-01-24,249
+RAVE_100325,Targeted Therapy,High,2023-01-24,38
+RAVE_100326,Gene Therapy,Medium,2020-09-17,265
+RAVE_100326,Stem Cell Transplant,Medium,2020-09-05,98
+RAVE_100326,Chemotherapy,Low,2020-09-11,101
+RAVE_100327,Hormone Therapy,High,2023-12-21,50
+RAVE_100327,Chemotherapy,Low,2023-12-17,347
+RAVE_100328,Surgery,High,2020-03-05,266
+RAVE_100328,Gene Therapy,Medium,2020-02-19,279
+RAVE_100329,CAR-T Cell Therapy,Low,2020-01-21,86
+RAVE_100329,Gene Therapy,Medium,2020-02-14,85
+RAVE_100330,Immunotherapy,Low,2023-06-19,222
+RAVE_100330,Stem Cell Transplant,Medium,2023-06-08,131
+RAVE_100330,Chemotherapy,Medium,2023-06-12,339
+RAVE_100331,Surgery,Low,2020-11-27,345
+RAVE_100332,Stem Cell Transplant,Low,2022-04-26,318
+RAVE_100333,Radiation Therapy,High,2021-09-02,51
+RAVE_100333,Chemotherapy,Low,2021-09-14,318
+RAVE_100334,CAR-T Cell Therapy,Medium,2024-07-14,169
+RAVE_100334,Chemotherapy,High,2024-07-29,110
+RAVE_100334,Radiation Therapy,Medium,2024-07-12,109
+RAVE_100335,Targeted Therapy,Low,2020-02-16,51
+RAVE_100335,Angiogenesis Inhibitors,High,2020-02-19,185
+RAVE_100335,Stem Cell Transplant,Low,2020-02-07,301
+RAVE_100336,Hormone Therapy,High,2020-05-25,276
+RAVE_100336,Radiation Therapy,High,2020-05-15,57
+RAVE_100336,Gene Therapy,Medium,2020-05-17,180
+RAVE_100337,Angiogenesis Inhibitors,Medium,2024-10-04,229
+RAVE_100337,Targeted Therapy,High,2024-10-04,72
+RAVE_100337,Gene Therapy,Low,2024-10-04,357
+RAVE_100338,CAR-T Cell Therapy,High,2023-10-07,51
+RAVE_100338,Targeted Therapy,Medium,2023-10-25,83
+RAVE_100339,Hormone Therapy,High,2024-02-13,89
+RAVE_100340,Surgery,Medium,2022-05-31,215
+RAVE_100341,Hormone Therapy,Low,2020-10-25,50
+RAVE_100341,Surgery,Low,2020-10-06,299
+RAVE_100341,Angiogenesis Inhibitors,Medium,2020-10-10,35
+RAVE_100342,CAR-T Cell Therapy,Low,2022-10-28,70
+RAVE_100343,Angiogenesis Inhibitors,Low,2021-07-03,315
+RAVE_100343,Hormone Therapy,Medium,2021-07-26,53
+RAVE_100344,CAR-T Cell Therapy,Low,2020-09-08,40
+RAVE_100344,Gene Therapy,Medium,2020-09-20,212
+RAVE_100345,Gene Therapy,High,2024-12-21,281
+RAVE_100346,Gene Therapy,Low,2024-11-13,148
+RAVE_100346,CAR-T Cell Therapy,Medium,2024-11-03,32
+RAVE_100347,Immunotherapy,High,2023-01-23,113
+RAVE_100348,Chemotherapy,Medium,2024-04-11,150
+RAVE_100349,Immunotherapy,Low,2022-09-03,296
+RAVE_100350,Immunotherapy,High,2023-06-13,132
+RAVE_100350,Targeted Therapy,Medium,2023-06-24,112
+RAVE_100350,Angiogenesis Inhibitors,Low,2023-07-06,79
+RAVE_100351,Chemotherapy,Medium,2020-12-11,314
+RAVE_100351,Radiation Therapy,Medium,2020-12-17,91
+RAVE_100352,Stem Cell Transplant,Low,2021-06-21,297
+RAVE_100352,Gene Therapy,High,2021-07-10,248
+RAVE_100352,Hormone Therapy,High,2021-07-01,94
+RAVE_100353,Angiogenesis Inhibitors,Medium,2020-03-27,277
+RAVE_100353,Chemotherapy,Medium,2020-03-24,260
+RAVE_100354,Angiogenesis Inhibitors,Medium,2020-01-20,302
+RAVE_100355,Gene Therapy,Medium,2021-07-28,68
+RAVE_100356,Immunotherapy,Medium,2021-08-28,239
+RAVE_100357,Radiation Therapy,Medium,2022-10-29,270
+RAVE_100358,Stem Cell Transplant,Low,2020-04-14,173
+RAVE_100359,Gene Therapy,Medium,2023-09-03,364
+RAVE_100359,Angiogenesis Inhibitors,Medium,2023-09-17,98
+RAVE_100359,Surgery,Low,2023-09-05,186
+RAVE_100360,Targeted Therapy,High,2022-11-26,288
+RAVE_100361,CAR-T Cell Therapy,Low,2024-05-16,181
+RAVE_100362,Surgery,Low,2023-02-22,275
+RAVE_100363,Stem Cell Transplant,Medium,2021-01-28,154
+RAVE_100363,Targeted Therapy,High,2021-02-02,248
+RAVE_100364,Stem Cell Transplant,High,2021-02-13,165
+RAVE_100365,Immunotherapy,Low,2022-12-01,245
+RAVE_100365,Hormone Therapy,High,2022-11-05,134
+RAVE_100365,Angiogenesis Inhibitors,Low,2022-11-04,207
+RAVE_100366,Radiation Therapy,Medium,2023-10-22,331
+RAVE_100367,Stem Cell Transplant,High,2022-05-12,226
+RAVE_100368,Radiation Therapy,High,2023-11-27,59
+RAVE_100369,Stem Cell Transplant,Low,2024-10-31,310
+RAVE_100369,Radiation Therapy,Medium,2024-11-03,214
+RAVE_100370,Stem Cell Transplant,Low,2020-07-27,350
+RAVE_100370,Immunotherapy,Low,2020-07-30,31
+RAVE_100370,Chemotherapy,Medium,2020-07-18,99
+RAVE_100371,Immunotherapy,Low,2022-02-05,63
+RAVE_100372,Gene Therapy,Low,2022-03-02,68
+RAVE_100372,Stem Cell Transplant,High,2022-03-02,54
+RAVE_100373,Gene Therapy,High,2021-02-27,53
+RAVE_100373,Immunotherapy,High,2021-02-27,113
+RAVE_100373,Chemotherapy,Low,2021-02-19,235
+RAVE_100374,Surgery,High,2024-05-10,155
+RAVE_100374,Targeted Therapy,Medium,2024-04-20,103
+RAVE_100374,Chemotherapy,High,2024-05-07,214
+RAVE_100375,Stem Cell Transplant,High,2024-07-01,189
+RAVE_100375,Radiation Therapy,Medium,2024-06-21,200
+RAVE_100376,Angiogenesis Inhibitors,Medium,2024-07-06,47
+RAVE_100377,Gene Therapy,High,2021-09-27,268
+RAVE_100377,Hormone Therapy,Medium,2021-10-20,98
+RAVE_100377,Targeted Therapy,Medium,2021-09-22,124
+RAVE_100378,CAR-T Cell Therapy,Low,2021-04-16,317
+RAVE_100378,Surgery,Medium,2021-05-04,257
+RAVE_100379,Surgery,High,2020-01-23,163
+RAVE_100380,Surgery,Low,2024-11-27,109
+RAVE_100381,Angiogenesis Inhibitors,Low,2021-09-02,70
+RAVE_100381,CAR-T Cell Therapy,Low,2021-09-08,272
+RAVE_100382,CAR-T Cell Therapy,Low,2021-03-16,144
+RAVE_100383,Gene Therapy,High,2020-06-29,239
+RAVE_100383,CAR-T Cell Therapy,High,2020-06-25,168
+RAVE_100383,Surgery,Low,2020-07-06,170
+RAVE_100384,Hormone Therapy,High,2023-06-12,97
+RAVE_100385,CAR-T Cell Therapy,Low,2024-09-02,270
+RAVE_100386,Radiation Therapy,Medium,2023-06-28,41
+RAVE_100386,Hormone Therapy,High,2023-06-16,264
+RAVE_100386,Chemotherapy,Medium,2023-06-14,247
+RAVE_100387,Radiation Therapy,Medium,2021-04-27,148
+RAVE_100387,Chemotherapy,Medium,2021-05-16,33
+RAVE_100388,Targeted Therapy,Medium,2021-06-22,187
+RAVE_100388,Radiation Therapy,High,2021-06-17,102
+RAVE_100388,Angiogenesis Inhibitors,Medium,2021-06-30,340
+RAVE_100389,Immunotherapy,Low,2024-06-08,173
+RAVE_100390,Immunotherapy,Low,2024-05-09,166
+RAVE_100391,Radiation Therapy,Low,2021-02-22,266
+RAVE_100392,Surgery,Medium,2021-06-02,54
+RAVE_100393,Stem Cell Transplant,Low,2020-09-07,236
+RAVE_100393,Chemotherapy,High,2020-09-07,57
+RAVE_100394,Chemotherapy,Medium,2023-05-03,79
+RAVE_100394,Stem Cell Transplant,High,2023-05-04,273
+RAVE_100395,CAR-T Cell Therapy,Medium,2022-05-24,240
+RAVE_100396,Stem Cell Transplant,Low,2024-05-30,230
+RAVE_100396,CAR-T Cell Therapy,Medium,2024-06-02,296
+RAVE_100397,Targeted Therapy,Low,2023-09-14,33
+RAVE_100398,Stem Cell Transplant,Medium,2021-12-08,275
+RAVE_100398,CAR-T Cell Therapy,Low,2021-12-09,353
+RAVE_100398,Radiation Therapy,High,2021-12-11,290
+RAVE_100399,Targeted Therapy,Low,2021-04-20,290
+RAVE_100399,Surgery,Medium,2021-04-24,153
+RAVE_100400,Chemotherapy,Low,2021-01-07,231
+RAVE_100401,Immunotherapy,Medium,2022-10-06,48
+RAVE_100402,Targeted Therapy,High,2023-05-22,170
+RAVE_100403,Surgery,Low,2020-02-28,66
+RAVE_100403,Stem Cell Transplant,Medium,2020-03-07,283
+RAVE_100404,Surgery,High,2020-02-26,285
+RAVE_100404,Hormone Therapy,High,2020-02-19,76
+RAVE_100405,Angiogenesis Inhibitors,Low,2023-10-12,116
+RAVE_100405,Targeted Therapy,High,2023-10-10,175
+RAVE_100406,Angiogenesis Inhibitors,Low,2024-10-20,204
+RAVE_100406,Surgery,Low,2024-10-28,92
+RAVE_100406,Radiation Therapy,High,2024-10-23,210
+RAVE_100407,Hormone Therapy,High,2021-05-24,250
+RAVE_100408,Chemotherapy,High,2021-03-29,149
+RAVE_100409,CAR-T Cell Therapy,High,2022-01-26,82
+RAVE_100409,Immunotherapy,Medium,2022-01-17,126
+RAVE_100409,Targeted Therapy,High,2022-02-03,352
+RAVE_100410,Immunotherapy,High,2023-03-29,267
+RAVE_100411,Immunotherapy,Medium,2023-02-28,158
+RAVE_100411,CAR-T Cell Therapy,Low,2023-03-11,194
+RAVE_100412,CAR-T Cell Therapy,High,2024-10-19,337
+RAVE_100412,Hormone Therapy,Low,2024-10-16,168
+RAVE_100413,Hormone Therapy,Medium,2020-08-30,349
+RAVE_100413,Stem Cell Transplant,Low,2020-08-14,214
+RAVE_100414,Stem Cell Transplant,High,2022-07-19,267
+RAVE_100415,Radiation Therapy,Medium,2020-09-14,122
+RAVE_100416,Immunotherapy,Low,2022-04-04,289
+RAVE_100417,Gene Therapy,Medium,2024-06-16,267
+RAVE_100418,Angiogenesis Inhibitors,Medium,2020-11-21,89
+RAVE_100419,Immunotherapy,High,2023-02-12,201
+RAVE_100419,Surgery,High,2023-01-27,32
+RAVE_100419,Chemotherapy,Medium,2023-02-16,77
+RAVE_100420,Targeted Therapy,Medium,2021-08-12,261
+RAVE_100421,Angiogenesis Inhibitors,High,2024-11-22,205
+RAVE_100421,Stem Cell Transplant,Medium,2024-11-06,301
+RAVE_100421,Immunotherapy,High,2024-11-09,148
+RAVE_100422,Chemotherapy,Medium,2020-06-07,362
+RAVE_100422,Immunotherapy,Low,2020-06-22,268
+RAVE_100422,Targeted Therapy,High,2020-07-02,302
+RAVE_100423,Radiation Therapy,Low,2023-04-30,257
+RAVE_100424,Radiation Therapy,Medium,2021-01-15,156
+RAVE_100424,Targeted Therapy,Low,2021-01-07,269
+RAVE_100425,Angiogenesis Inhibitors,Medium,2024-09-23,67
+RAVE_100426,Angiogenesis Inhibitors,Medium,2021-11-15,188
+RAVE_100426,Immunotherapy,Medium,2021-12-07,230
+RAVE_100427,Targeted Therapy,High,2020-01-20,147
+RAVE_100427,Surgery,Low,2020-01-10,200
+RAVE_100428,Gene Therapy,Low,2024-01-25,164
+RAVE_100428,Chemotherapy,High,2024-01-18,271
+RAVE_100429,Immunotherapy,Low,2021-12-22,216
+RAVE_100429,Stem Cell Transplant,High,2022-01-14,152
+RAVE_100429,CAR-T Cell Therapy,Low,2022-01-13,53
+RAVE_100430,Angiogenesis Inhibitors,Low,2022-07-31,242
+RAVE_100431,Immunotherapy,Low,2024-03-24,47
+RAVE_100431,Radiation Therapy,High,2024-02-25,283
+RAVE_100432,Angiogenesis Inhibitors,High,2021-04-20,156
+RAVE_100433,Angiogenesis Inhibitors,High,2021-11-20,69
+RAVE_100433,Gene Therapy,Medium,2021-11-12,184
+RAVE_100434,Immunotherapy,Medium,2022-04-27,61
+RAVE_100435,Gene Therapy,Low,2023-06-26,271
+RAVE_100436,Chemotherapy,Low,2023-07-06,48
+RAVE_100437,Immunotherapy,High,2020-01-17,263
+RAVE_100437,Gene Therapy,High,2020-01-11,223
+RAVE_100438,Targeted Therapy,Medium,2023-11-27,68
+RAVE_100438,Stem Cell Transplant,High,2023-11-30,311
+RAVE_100439,Surgery,High,2021-05-16,61
+RAVE_100439,Radiation Therapy,Low,2021-04-27,312
+RAVE_100440,Immunotherapy,Medium,2024-01-03,302
+RAVE_100441,CAR-T Cell Therapy,Medium,2021-12-30,306
+RAVE_100442,Radiation Therapy,Low,2022-11-08,36
+RAVE_100442,CAR-T Cell Therapy,High,2022-11-10,240
+RAVE_100443,Surgery,Low,2022-05-17,205
+RAVE_100444,Chemotherapy,Medium,2022-12-03,227
+RAVE_100444,CAR-T Cell Therapy,Low,2022-12-12,45
+RAVE_100445,Chemotherapy,Medium,2023-06-09,147
+RAVE_100446,Immunotherapy,Low,2021-08-14,281
+RAVE_100446,Chemotherapy,Low,2021-08-03,318
+RAVE_100447,Hormone Therapy,Medium,2020-10-07,50
+RAVE_100448,Surgery,Low,2021-02-27,52
+RAVE_100448,Immunotherapy,High,2021-03-01,171
+RAVE_100449,Immunotherapy,Low,2021-02-08,191
+RAVE_100450,Targeted Therapy,Medium,2023-08-07,211
+RAVE_100450,Stem Cell Transplant,Low,2023-07-17,264
+RAVE_100450,Hormone Therapy,High,2023-07-18,361
+RAVE_100451,CAR-T Cell Therapy,High,2020-10-24,330
+RAVE_100452,Chemotherapy,High,2022-12-08,233
+RAVE_100452,Immunotherapy,High,2022-12-02,122
+RAVE_100453,Angiogenesis Inhibitors,High,2022-07-06,297
+RAVE_100453,Targeted Therapy,High,2022-07-06,31
+RAVE_100454,Angiogenesis Inhibitors,Low,2024-07-30,330
+RAVE_100455,Stem Cell Transplant,Medium,2022-12-21,299
+RAVE_100456,Radiation Therapy,Medium,2022-03-12,41
+RAVE_100456,Angiogenesis Inhibitors,Low,2022-03-19,126
+RAVE_100456,Stem Cell Transplant,Low,2022-03-21,275
+RAVE_100457,Hormone Therapy,Medium,2023-08-03,205
+RAVE_100458,Hormone Therapy,Medium,2020-07-12,37
+RAVE_100459,Chemotherapy,High,2020-11-03,234
+RAVE_100459,Immunotherapy,Low,2020-10-29,243
+RAVE_100459,Stem Cell Transplant,Medium,2020-10-12,106
+RAVE_100460,Angiogenesis Inhibitors,Low,2020-06-24,94
+RAVE_100460,Surgery,Medium,2020-06-22,177
+RAVE_100461,Immunotherapy,High,2021-06-20,311
+RAVE_100462,Immunotherapy,Low,2023-09-24,310
+RAVE_100463,Hormone Therapy,High,2023-09-22,354
+RAVE_100464,Stem Cell Transplant,Low,2024-01-05,160
+RAVE_100464,Chemotherapy,Low,2024-01-18,60
+RAVE_100464,Immunotherapy,Low,2024-01-09,232
+RAVE_100465,Surgery,Low,2020-07-31,322
+RAVE_100466,Hormone Therapy,Medium,2023-06-23,308
+RAVE_100467,Angiogenesis Inhibitors,Medium,2022-08-27,323
+RAVE_100468,Immunotherapy,Low,2020-03-06,237
+RAVE_100468,Radiation Therapy,High,2020-02-29,166
+RAVE_100469,Surgery,Low,2020-08-20,94
+RAVE_100470,Hormone Therapy,Low,2022-01-17,182
+RAVE_100470,Chemotherapy,Low,2022-01-10,48
+RAVE_100471,Chemotherapy,High,2023-10-10,60
+RAVE_100471,Hormone Therapy,High,2023-10-25,306
+RAVE_100472,Gene Therapy,High,2020-10-29,117
+RAVE_100473,Targeted Therapy,Low,2021-01-23,299
+RAVE_100473,Chemotherapy,High,2021-01-14,325
+RAVE_100473,Stem Cell Transplant,High,2021-01-25,357
+RAVE_100474,Hormone Therapy,High,2022-12-29,231
+RAVE_100475,Surgery,High,2022-01-24,294
+RAVE_100476,Gene Therapy,High,2024-12-03,311
+RAVE_100476,Hormone Therapy,High,2024-11-29,204
+RAVE_100476,Radiation Therapy,Low,2024-12-12,173
+RAVE_100477,Chemotherapy,Medium,2022-11-18,215
+RAVE_100477,Angiogenesis Inhibitors,Low,2022-11-03,224
+RAVE_100477,Surgery,Low,2022-11-25,123
+RAVE_100478,Angiogenesis Inhibitors,Medium,2023-12-06,38
+RAVE_100479,Hormone Therapy,Medium,2020-12-26,218
+RAVE_100480,Chemotherapy,Medium,2022-10-01,76
+RAVE_100480,Gene Therapy,Low,2022-09-15,93
+RAVE_100480,Immunotherapy,High,2022-09-19,129
+RAVE_100481,Targeted Therapy,Low,2021-09-12,294
+RAVE_100482,Stem Cell Transplant,Medium,2023-05-31,31
+RAVE_100482,Angiogenesis Inhibitors,High,2023-05-17,302
+RAVE_100483,CAR-T Cell Therapy,Medium,2020-08-24,93
+RAVE_100483,Hormone Therapy,Low,2020-08-13,343
+RAVE_100483,Targeted Therapy,Medium,2020-08-05,361
+RAVE_100484,Gene Therapy,Medium,2022-10-11,301
+RAVE_100485,Radiation Therapy,High,2022-10-02,306
+RAVE_100485,Targeted Therapy,Low,2022-09-30,358
+RAVE_100486,Chemotherapy,Medium,2024-02-29,91
+RAVE_100486,Immunotherapy,Medium,2024-03-04,319
+RAVE_100487,CAR-T Cell Therapy,High,2021-11-19,113
+RAVE_100488,Radiation Therapy,High,2020-04-16,361
+RAVE_100488,Targeted Therapy,High,2020-04-01,284
+RAVE_100488,Gene Therapy,Low,2020-04-23,76
+RAVE_100489,Gene Therapy,Medium,2024-01-02,191
+RAVE_100489,Radiation Therapy,Medium,2023-12-22,134
+RAVE_100490,Targeted Therapy,High,2024-10-15,292
+RAVE_100490,Hormone Therapy,High,2024-10-03,191
+RAVE_100490,Surgery,High,2024-10-17,169
+RAVE_100491,Surgery,High,2024-04-29,53
+RAVE_100492,Angiogenesis Inhibitors,Low,2021-01-22,270
+RAVE_100493,Immunotherapy,Medium,2020-09-10,133
+RAVE_100494,Angiogenesis Inhibitors,Medium,2023-08-07,241
+RAVE_100495,Targeted Therapy,Low,2022-03-17,159
+RAVE_100495,Surgery,High,2022-03-29,155
+RAVE_100495,Immunotherapy,Low,2022-03-17,187
+RAVE_100496,Angiogenesis Inhibitors,High,2023-11-15,344
+RAVE_100496,Gene Therapy,Low,2023-11-10,84
+RAVE_100496,CAR-T Cell Therapy,High,2023-11-03,228
+RAVE_100497,Stem Cell Transplant,Low,2020-12-03,217
+RAVE_100497,Gene Therapy,Low,2020-12-09,205
+RAVE_100497,Radiation Therapy,Low,2020-12-07,247
+RAVE_100498,Targeted Therapy,Medium,2023-08-18,348
+RAVE_100499,Targeted Therapy,Medium,2020-07-19,292
+RAVE_100500,Radiation Therapy,Low,2023-10-20,322
+RAVE_100500,CAR-T Cell Therapy,High,2023-10-02,257
+RAVE_100500,Gene Therapy,Low,2023-09-30,312
+RAVE_100501,Targeted Therapy,Low,2021-08-14,53
+RAVE_100502,Surgery,High,2022-09-10,261
+RAVE_100502,Radiation Therapy,High,2022-09-09,41
+RAVE_100502,Angiogenesis Inhibitors,Medium,2022-08-26,117
+RAVE_100503,Angiogenesis Inhibitors,High,2020-11-16,67
+RAVE_100504,Targeted Therapy,High,2023-06-02,159
+RAVE_100505,Gene Therapy,Medium,2022-06-03,239
+RAVE_100505,Radiation Therapy,Medium,2022-05-24,91
+RAVE_100506,CAR-T Cell Therapy,High,2024-10-22,311
+RAVE_100506,Surgery,Low,2024-10-07,220
+RAVE_100506,Radiation Therapy,Low,2024-10-20,196
+RAVE_100507,Hormone Therapy,High,2020-05-07,183
+RAVE_100507,Angiogenesis Inhibitors,Low,2020-05-18,272
+RAVE_100507,Chemotherapy,High,2020-05-19,134
+RAVE_100508,Gene Therapy,Medium,2023-10-15,354
+RAVE_100508,Targeted Therapy,Medium,2023-10-30,259
+RAVE_100509,Gene Therapy,High,2023-05-21,152
+RAVE_100510,Immunotherapy,Medium,2023-08-03,115
+RAVE_100510,Chemotherapy,High,2023-08-03,148
+RAVE_100510,Surgery,Low,2023-08-19,139
+RAVE_100511,Angiogenesis Inhibitors,Low,2022-01-20,77
+RAVE_100511,Chemotherapy,Medium,2021-12-29,217
+RAVE_100512,Gene Therapy,Low,2020-10-25,213
+RAVE_100512,Surgery,Low,2020-10-01,149
+RAVE_100513,Surgery,Medium,2022-07-30,309
+RAVE_100514,Surgery,High,2020-06-05,201
+RAVE_100514,Gene Therapy,Medium,2020-06-09,34
+RAVE_100515,Targeted Therapy,Medium,2020-09-29,247
+RAVE_100516,Gene Therapy,High,2023-01-02,322
+RAVE_100517,Gene Therapy,High,2023-10-09,202
+RAVE_100517,Surgery,Medium,2023-10-10,262
+RAVE_100518,Radiation Therapy,Medium,2022-08-26,263
+RAVE_100518,Surgery,High,2022-08-22,56
+RAVE_100519,Targeted Therapy,Low,2024-09-06,226
+RAVE_100520,Angiogenesis Inhibitors,Medium,2021-12-07,350
+RAVE_100520,Stem Cell Transplant,High,2021-12-14,132
+RAVE_100521,Angiogenesis Inhibitors,Medium,2021-10-14,81
+RAVE_100522,Radiation Therapy,High,2021-02-21,163
+RAVE_100523,Chemotherapy,Low,2024-01-09,106
+RAVE_100523,Immunotherapy,Medium,2024-01-09,44
+RAVE_100523,Hormone Therapy,Low,2024-01-03,117
+RAVE_100524,Targeted Therapy,Low,2023-07-17,47
+RAVE_100525,Immunotherapy,Low,2022-01-27,214
+RAVE_100525,Stem Cell Transplant,Medium,2022-01-26,144
+RAVE_100525,CAR-T Cell Therapy,High,2022-01-20,120
+RAVE_100526,Targeted Therapy,Low,2021-05-29,259
+RAVE_100527,Surgery,Medium,2020-11-27,293
+RAVE_100527,CAR-T Cell Therapy,High,2020-11-03,245
+RAVE_100528,Surgery,High,2023-03-14,316
+RAVE_100529,CAR-T Cell Therapy,High,2022-11-22,67
+RAVE_100530,Hormone Therapy,Low,2024-04-11,212
+RAVE_100530,Immunotherapy,Low,2024-04-11,260
+RAVE_100530,Targeted Therapy,Medium,2024-04-13,267
+RAVE_100531,Stem Cell Transplant,High,2024-11-14,60
+RAVE_100532,Gene Therapy,Low,2022-12-17,39
+RAVE_100532,Chemotherapy,Medium,2022-12-12,101
+RAVE_100533,Immunotherapy,Medium,2021-01-04,228
+RAVE_100534,Angiogenesis Inhibitors,High,2021-06-02,207
+RAVE_100535,CAR-T Cell Therapy,Medium,2020-10-31,89
+RAVE_100535,Immunotherapy,Medium,2020-11-01,197
+RAVE_100536,Angiogenesis Inhibitors,High,2022-09-14,224
+RAVE_100536,Immunotherapy,High,2022-10-06,90
+RAVE_100537,CAR-T Cell Therapy,Low,2024-04-18,42
+RAVE_100538,Hormone Therapy,Low,2021-09-14,206
+RAVE_100539,Targeted Therapy,Low,2020-02-15,232
+RAVE_100540,Chemotherapy,Medium,2021-07-07,331
+RAVE_100541,Immunotherapy,High,2023-02-16,324
+RAVE_100542,Hormone Therapy,Low,2021-11-19,344
+RAVE_100542,Surgery,Medium,2021-11-15,280
+RAVE_100543,Gene Therapy,High,2022-05-09,140
+RAVE_100544,Stem Cell Transplant,Low,2024-10-04,162
+RAVE_100544,Angiogenesis Inhibitors,Low,2024-09-10,61
+RAVE_100544,Radiation Therapy,Low,2024-09-15,308
+RAVE_100545,Chemotherapy,Medium,2021-05-21,132
+RAVE_100546,Chemotherapy,Medium,2024-05-09,261
+RAVE_100547,Hormone Therapy,Low,2023-10-16,334
+RAVE_100548,Gene Therapy,Medium,2022-12-18,346
+RAVE_100548,Chemotherapy,Medium,2022-12-13,39
+RAVE_100549,Immunotherapy,High,2024-09-16,188
+RAVE_100550,Surgery,Medium,2020-08-26,191
+RAVE_100550,Chemotherapy,Medium,2020-09-09,107
+RAVE_100551,Stem Cell Transplant,Low,2023-04-25,184
+RAVE_100552,Immunotherapy,High,2020-05-01,139
+RAVE_100552,Chemotherapy,Medium,2020-04-28,101
+RAVE_100553,Gene Therapy,Low,2024-10-06,283
+RAVE_100553,Radiation Therapy,Low,2024-10-12,234
+RAVE_100554,Immunotherapy,Low,2022-06-13,322
+RAVE_100554,Gene Therapy,Low,2022-05-22,219
+RAVE_100554,Radiation Therapy,Low,2022-06-13,126
+RAVE_100555,Stem Cell Transplant,Medium,2023-12-12,82
+RAVE_100556,Hormone Therapy,Medium,2021-12-24,108
+RAVE_100556,Immunotherapy,Low,2021-12-10,213
+RAVE_100557,Radiation Therapy,Medium,2020-09-11,85
+RAVE_100557,Hormone Therapy,Medium,2020-09-24,126
+RAVE_100558,CAR-T Cell Therapy,High,2021-03-11,250
+RAVE_100558,Immunotherapy,Low,2021-02-13,345
+RAVE_100559,Chemotherapy,High,2022-06-03,343
+RAVE_100559,Hormone Therapy,Medium,2022-06-16,66
+RAVE_100560,Chemotherapy,Medium,2023-10-05,87
+RAVE_100561,CAR-T Cell Therapy,Medium,2023-08-10,45
+RAVE_100561,Hormone Therapy,Medium,2023-09-01,233
+RAVE_100562,CAR-T Cell Therapy,Medium,2021-07-06,177
+RAVE_100562,Stem Cell Transplant,Low,2021-07-03,110
+RAVE_100563,Surgery,High,2020-06-09,326
+RAVE_100564,Hormone Therapy,High,2024-02-14,247
+RAVE_100565,Targeted Therapy,Medium,2022-03-13,166
+RAVE_100565,Chemotherapy,Medium,2022-03-26,51
+RAVE_100565,Angiogenesis Inhibitors,Medium,2022-03-04,187
+RAVE_100566,Targeted Therapy,Low,2022-05-12,216
+RAVE_100567,Gene Therapy,High,2022-09-20,295
+RAVE_100568,Targeted Therapy,Medium,2023-03-04,166
+RAVE_100569,Chemotherapy,Low,2024-08-08,307
+RAVE_100570,Hormone Therapy,Low,2023-12-29,114
+RAVE_100570,Surgery,Low,2023-12-23,79
+RAVE_100571,Radiation Therapy,High,2020-07-16,88
+RAVE_100572,Gene Therapy,High,2020-08-15,104
+RAVE_100573,Chemotherapy,High,2024-05-18,42
+RAVE_100574,Hormone Therapy,High,2024-04-08,110
+RAVE_100575,Gene Therapy,High,2022-03-26,77
+RAVE_100575,Radiation Therapy,High,2022-03-21,126
+RAVE_100575,Surgery,High,2022-03-27,362
+RAVE_100576,Immunotherapy,Medium,2024-03-15,118
+RAVE_100576,Stem Cell Transplant,Medium,2024-02-28,148
+RAVE_100576,Surgery,High,2024-03-24,354
+RAVE_100577,Angiogenesis Inhibitors,Low,2023-02-06,103
+RAVE_100578,CAR-T Cell Therapy,High,2021-01-01,326
+RAVE_100578,Gene Therapy,High,2020-12-28,353
+RAVE_100579,Radiation Therapy,High,2021-03-18,280
+RAVE_100579,Angiogenesis Inhibitors,Low,2021-02-25,249
+RAVE_100580,Chemotherapy,High,2021-08-12,310
+RAVE_100580,Surgery,High,2021-08-25,201
+RAVE_100581,Radiation Therapy,Medium,2022-03-13,64
+RAVE_100581,Stem Cell Transplant,Low,2022-03-01,147
+RAVE_100581,Angiogenesis Inhibitors,Medium,2022-03-18,108
+RAVE_100582,Immunotherapy,Medium,2021-03-24,311
+RAVE_100582,Hormone Therapy,Low,2021-03-11,242
+RAVE_100582,Targeted Therapy,High,2021-03-24,192
+RAVE_100583,Hormone Therapy,Medium,2024-02-19,198
+RAVE_100584,CAR-T Cell Therapy,Medium,2020-04-02,277
+RAVE_100585,Angiogenesis Inhibitors,Medium,2023-12-12,255
+RAVE_100585,CAR-T Cell Therapy,Low,2023-12-16,219
+RAVE_100586,Gene Therapy,High,2024-03-05,145
+RAVE_100587,Gene Therapy,Low,2020-10-06,253
+RAVE_100587,Immunotherapy,Medium,2020-09-15,240
+RAVE_100587,Surgery,High,2020-09-25,194
+RAVE_100588,Chemotherapy,Low,2024-05-14,76
+RAVE_100588,Targeted Therapy,Low,2024-05-17,258
+RAVE_100588,Hormone Therapy,High,2024-05-16,362
+RAVE_100589,Immunotherapy,Low,2022-09-20,94
+RAVE_100589,Radiation Therapy,Low,2022-10-11,46
+RAVE_100589,Chemotherapy,Low,2022-09-14,120
+RAVE_100590,Immunotherapy,High,2024-02-20,63
+RAVE_100591,Stem Cell Transplant,High,2020-04-20,152
+RAVE_100591,Surgery,Low,2020-04-29,249
+RAVE_100591,Radiation Therapy,Medium,2020-04-22,115
+RAVE_100592,Hormone Therapy,Low,2023-08-20,238
+RAVE_100593,Hormone Therapy,Medium,2020-10-16,304
+RAVE_100594,CAR-T Cell Therapy,Low,2022-10-20,140
+RAVE_100595,Surgery,High,2024-01-17,50
+RAVE_100596,CAR-T Cell Therapy,Low,2023-10-06,74
+RAVE_100596,Stem Cell Transplant,High,2023-10-01,328
+RAVE_100597,Gene Therapy,Low,2020-02-03,139
+RAVE_100598,Radiation Therapy,Low,2022-07-08,144
+RAVE_100598,Angiogenesis Inhibitors,High,2022-06-29,339
+RAVE_100598,CAR-T Cell Therapy,Low,2022-06-20,359
+RAVE_100599,Hormone Therapy,Medium,2024-08-28,41
+RAVE_100600,Stem Cell Transplant,Medium,2022-01-30,330
+RAVE_100601,Hormone Therapy,High,2021-08-19,113
+RAVE_100602,Surgery,Medium,2020-02-17,170
+RAVE_100602,CAR-T Cell Therapy,High,2020-02-12,179
+RAVE_100603,Stem Cell Transplant,Low,2023-02-04,79
+RAVE_100603,CAR-T Cell Therapy,Medium,2023-01-15,309
+RAVE_100604,Stem Cell Transplant,Low,2022-06-22,30
+RAVE_100605,CAR-T Cell Therapy,Medium,2020-11-09,200
+RAVE_100605,Hormone Therapy,High,2020-10-19,87
+RAVE_100606,CAR-T Cell Therapy,Medium,2022-05-23,185
+RAVE_100606,Surgery,Medium,2022-05-21,127
+RAVE_100607,Immunotherapy,High,2021-08-22,317
+RAVE_100608,Surgery,Medium,2024-11-08,160
+RAVE_100608,Stem Cell Transplant,Low,2024-11-09,292
+RAVE_100609,Radiation Therapy,High,2023-12-16,320
+RAVE_100609,Surgery,Low,2023-12-14,98
+RAVE_100609,Targeted Therapy,Medium,2023-12-02,238
+RAVE_100610,Gene Therapy,High,2023-01-08,127
+RAVE_100610,CAR-T Cell Therapy,High,2023-01-19,362
+RAVE_100611,Stem Cell Transplant,High,2024-06-13,224
+RAVE_100612,Stem Cell Transplant,High,2024-03-22,122
+RAVE_100612,Targeted Therapy,Medium,2024-03-23,350
+RAVE_100613,Angiogenesis Inhibitors,Low,2021-05-06,54
+RAVE_100614,Stem Cell Transplant,Medium,2022-07-10,83
+RAVE_100614,Hormone Therapy,Medium,2022-07-02,360
+RAVE_100614,Surgery,Medium,2022-06-18,233
+RAVE_100615,Targeted Therapy,Medium,2023-04-23,316
+RAVE_100615,Angiogenesis Inhibitors,Medium,2023-04-17,133
+RAVE_100616,Angiogenesis Inhibitors,Low,2021-11-11,130
+RAVE_100617,Hormone Therapy,Low,2020-09-22,172
+RAVE_100618,Chemotherapy,Low,2021-01-25,207
+RAVE_100619,Radiation Therapy,Medium,2022-02-07,303
+RAVE_100619,Stem Cell Transplant,Low,2022-01-26,307
+RAVE_100620,Gene Therapy,High,2024-03-23,313
+RAVE_100620,Hormone Therapy,High,2024-03-26,106
+RAVE_100621,Gene Therapy,Low,2022-05-19,210
+RAVE_100622,CAR-T Cell Therapy,High,2021-10-10,242
+RAVE_100623,Stem Cell Transplant,High,2022-11-02,35
+RAVE_100623,Radiation Therapy,High,2022-10-29,170
+RAVE_100624,Angiogenesis Inhibitors,High,2022-06-23,98
+RAVE_100625,Surgery,Medium,2024-05-22,248
+RAVE_100626,Gene Therapy,Low,2020-11-21,110
+RAVE_100626,Surgery,High,2020-11-12,361
+RAVE_100627,Surgery,Medium,2021-09-21,253
+RAVE_100628,Chemotherapy,Low,2023-08-31,94
+RAVE_100629,Targeted Therapy,High,2020-09-12,351
+RAVE_100629,Stem Cell Transplant,Medium,2020-09-27,325
+RAVE_100629,Angiogenesis Inhibitors,Medium,2020-09-27,82
+RAVE_100630,Surgery,High,2022-02-18,219
+RAVE_100631,Stem Cell Transplant,Low,2025-01-16,155
+RAVE_100631,Radiation Therapy,Medium,2025-01-06,194
+RAVE_100632,Chemotherapy,Medium,2024-08-21,294
+RAVE_100633,Hormone Therapy,High,2023-07-29,212
+RAVE_100633,Stem Cell Transplant,Medium,2023-07-27,355
+RAVE_100634,Chemotherapy,Low,2020-08-09,145
+RAVE_100635,CAR-T Cell Therapy,High,2025-01-09,350
+RAVE_100636,Gene Therapy,High,2022-04-01,87
+RAVE_100637,Surgery,High,2024-12-30,359
+RAVE_100638,Immunotherapy,Medium,2022-07-24,325
+RAVE_100638,CAR-T Cell Therapy,High,2022-08-06,154
+RAVE_100639,Stem Cell Transplant,High,2023-04-25,248
+RAVE_100639,Surgery,Medium,2023-04-29,315
+RAVE_100640,CAR-T Cell Therapy,High,2025-01-23,150
+RAVE_100640,Chemotherapy,Medium,2025-01-21,168
+RAVE_100640,Targeted Therapy,Low,2025-01-29,320
+RAVE_100641,Angiogenesis Inhibitors,Medium,2024-12-28,304
+RAVE_100642,Stem Cell Transplant,Medium,2024-12-18,197
+RAVE_100642,CAR-T Cell Therapy,Medium,2024-12-18,119
+RAVE_100642,Hormone Therapy,Low,2024-12-05,334
+RAVE_100643,CAR-T Cell Therapy,Medium,2023-02-27,44
+RAVE_100643,Hormone Therapy,High,2023-03-18,209
+RAVE_100643,Targeted Therapy,Medium,2023-03-07,107
+RAVE_100644,Chemotherapy,Medium,2024-12-29,345
+RAVE_100644,Hormone Therapy,Low,2024-12-29,332
+RAVE_100645,Chemotherapy,Medium,2020-08-26,111
+RAVE_100646,Stem Cell Transplant,High,2024-08-06,143
+RAVE_100646,Chemotherapy,High,2024-08-17,80
+RAVE_100646,Surgery,Low,2024-08-13,103
+RAVE_100647,Stem Cell Transplant,High,2020-06-19,62
+RAVE_100648,Angiogenesis Inhibitors,Low,2021-11-17,332
+RAVE_100648,Stem Cell Transplant,High,2021-11-17,315
+RAVE_100649,Immunotherapy,Low,2021-02-21,279
+RAVE_100649,CAR-T Cell Therapy,Low,2021-03-02,152
+RAVE_100650,CAR-T Cell Therapy,High,2022-05-10,102
+RAVE_100651,Angiogenesis Inhibitors,High,2024-03-19,326
+RAVE_100652,Chemotherapy,Low,2022-10-02,49
+RAVE_100652,Immunotherapy,Low,2022-09-16,44
+RAVE_100652,Surgery,Medium,2022-09-23,129
+RAVE_100653,Angiogenesis Inhibitors,High,2024-08-10,334
+RAVE_100653,CAR-T Cell Therapy,High,2024-07-28,302
+RAVE_100654,Chemotherapy,High,2020-01-26,79
+RAVE_100654,Gene Therapy,Medium,2020-02-05,73
+RAVE_100655,CAR-T Cell Therapy,Medium,2021-12-31,253
+RAVE_100656,Chemotherapy,Low,2021-07-12,235
+RAVE_100657,Stem Cell Transplant,Low,2021-01-28,109
+RAVE_100658,Gene Therapy,High,2020-08-20,283
+RAVE_100658,Surgery,Low,2020-08-15,146
+RAVE_100659,Surgery,Low,2020-03-18,51
+RAVE_100659,Chemotherapy,Medium,2020-03-30,202
+RAVE_100660,Gene Therapy,Low,2023-11-21,296
+RAVE_100661,Chemotherapy,Medium,2023-05-26,217
+RAVE_100661,Surgery,Low,2023-05-10,152
+RAVE_100662,Chemotherapy,Medium,2021-01-06,153
+RAVE_100663,Surgery,High,2022-02-16,253
+RAVE_100664,Angiogenesis Inhibitors,Low,2024-01-23,143
+RAVE_100665,Hormone Therapy,High,2020-06-11,345
+RAVE_100665,Angiogenesis Inhibitors,Medium,2020-05-26,111
+RAVE_100666,Immunotherapy,Medium,2020-11-21,258
+RAVE_100666,CAR-T Cell Therapy,Medium,2020-11-30,125
+RAVE_100666,Targeted Therapy,Low,2020-11-21,202
+RAVE_100667,Radiation Therapy,Low,2022-05-14,159
+RAVE_100667,Stem Cell Transplant,Medium,2022-05-11,147
+RAVE_100668,Hormone Therapy,Medium,2021-03-23,91
+RAVE_100668,Gene Therapy,High,2021-03-27,107
+RAVE_100668,CAR-T Cell Therapy,Low,2021-03-09,72
+RAVE_100669,Chemotherapy,Medium,2020-09-23,362
+RAVE_100670,Stem Cell Transplant,Medium,2020-10-02,317
+RAVE_100670,Hormone Therapy,Low,2020-09-23,352
+RAVE_100671,Gene Therapy,High,2023-06-26,263
+RAVE_100671,Immunotherapy,Medium,2023-06-11,318
+RAVE_100671,Angiogenesis Inhibitors,Low,2023-06-10,311
+RAVE_100672,Targeted Therapy,High,2020-09-21,205
+RAVE_100672,Surgery,High,2020-09-22,354
+RAVE_100673,Stem Cell Transplant,High,2021-03-14,111
+RAVE_100673,Radiation Therapy,Low,2021-02-26,273
+RAVE_100674,Chemotherapy,Low,2025-01-09,70
+RAVE_100674,CAR-T Cell Therapy,Low,2025-01-07,182
+RAVE_100675,Immunotherapy,Low,2023-05-28,232
+RAVE_100676,Surgery,Medium,2021-04-07,52
+RAVE_100677,Surgery,Medium,2021-11-20,64
+RAVE_100677,Targeted Therapy,High,2021-12-08,284
+RAVE_100678,Immunotherapy,Low,2024-06-30,253
+RAVE_100679,Stem Cell Transplant,Low,2024-05-28,257
+RAVE_100679,Targeted Therapy,Low,2024-05-26,356
+RAVE_100680,Angiogenesis Inhibitors,Low,2020-11-05,64
+RAVE_100680,Targeted Therapy,Medium,2020-11-09,34
+RAVE_100681,Gene Therapy,Low,2023-09-01,49
+RAVE_100681,Angiogenesis Inhibitors,Medium,2023-08-25,71
+RAVE_100682,Gene Therapy,Medium,2023-01-20,297
+RAVE_100683,Radiation Therapy,Medium,2023-03-15,101
+RAVE_100683,Chemotherapy,High,2023-03-22,85
+RAVE_100684,Surgery,Low,2023-06-13,247
+RAVE_100685,CAR-T Cell Therapy,Medium,2023-03-26,364
+RAVE_100685,Chemotherapy,Low,2023-04-11,138
+RAVE_100686,CAR-T Cell Therapy,Low,2021-06-01,190
+RAVE_100687,Gene Therapy,Low,2022-05-02,143
+RAVE_100687,Targeted Therapy,Medium,2022-04-16,204
+RAVE_100688,Targeted Therapy,High,2020-06-05,70
+RAVE_100689,Hormone Therapy,High,2020-12-14,231
+RAVE_100689,Gene Therapy,Medium,2020-12-28,352
+RAVE_100689,Chemotherapy,Medium,2021-01-04,98
+RAVE_100690,Hormone Therapy,Medium,2022-06-19,327
+RAVE_100691,Gene Therapy,Medium,2022-07-04,121
+RAVE_100691,Hormone Therapy,Low,2022-06-21,213
+RAVE_100691,CAR-T Cell Therapy,High,2022-07-04,38
+RAVE_100692,Surgery,High,2020-12-23,263
+RAVE_100692,Stem Cell Transplant,High,2020-12-10,92
+RAVE_100693,Stem Cell Transplant,Low,2023-04-29,41
+RAVE_100694,Radiation Therapy,Medium,2023-06-05,317
+RAVE_100694,Hormone Therapy,Medium,2023-06-08,276
+RAVE_100694,Angiogenesis Inhibitors,Medium,2023-06-08,149
+RAVE_100695,Immunotherapy,High,2021-01-19,168
+RAVE_100696,Targeted Therapy,Low,2020-08-05,137
+RAVE_100697,Surgery,High,2022-06-03,124
+RAVE_100698,Angiogenesis Inhibitors,Low,2021-07-04,52
+RAVE_100698,Immunotherapy,Medium,2021-06-14,160
+RAVE_100699,CAR-T Cell Therapy,Medium,2020-11-29,209
+RAVE_100700,Hormone Therapy,Low,2021-03-03,94
+RAVE_100700,Immunotherapy,High,2021-02-27,83
+RAVE_100700,Chemotherapy,High,2021-03-05,36
+RAVE_100701,Targeted Therapy,Medium,2020-06-18,359
+RAVE_100702,Immunotherapy,High,2024-02-20,96
+RAVE_100703,Immunotherapy,Medium,2022-09-10,180
+RAVE_100703,Surgery,High,2022-09-19,74
+RAVE_100704,Gene Therapy,High,2024-04-02,61
+RAVE_100705,Stem Cell Transplant,High,2024-03-22,145
+RAVE_100705,Angiogenesis Inhibitors,High,2024-03-26,360
+RAVE_100705,Surgery,Low,2024-03-26,273
+RAVE_100706,Gene Therapy,Low,2022-01-23,310
+RAVE_100707,Radiation Therapy,Low,2023-05-03,146
+RAVE_100708,Hormone Therapy,High,2024-06-29,314
+RAVE_100709,Hormone Therapy,High,2021-05-18,141
+RAVE_100709,Gene Therapy,High,2021-06-03,149
+RAVE_100709,Targeted Therapy,Medium,2021-06-07,99
+RAVE_100710,Targeted Therapy,High,2021-04-16,304
+RAVE_100711,Hormone Therapy,High,2023-06-07,77
+RAVE_100712,CAR-T Cell Therapy,Medium,2022-08-01,300
+RAVE_100713,Targeted Therapy,High,2020-06-18,273
+RAVE_100714,CAR-T Cell Therapy,Low,2025-01-04,322
+RAVE_100714,Targeted Therapy,Medium,2024-12-12,269
+RAVE_100715,Hormone Therapy,Medium,2020-05-11,122
+RAVE_100716,Gene Therapy,Medium,2024-03-09,363
+RAVE_100717,Surgery,Low,2021-09-06,244
+RAVE_100717,Immunotherapy,Medium,2021-09-15,75
+RAVE_100717,Angiogenesis Inhibitors,Low,2021-09-14,151
+RAVE_100718,Targeted Therapy,Medium,2021-09-15,36
+RAVE_100719,Gene Therapy,Low,2024-01-26,273
+RAVE_100720,Targeted Therapy,Medium,2022-03-10,141
+RAVE_100721,Angiogenesis Inhibitors,High,2024-12-05,317
+RAVE_100721,Immunotherapy,High,2024-12-31,131
+RAVE_100722,Hormone Therapy,Medium,2025-01-02,324
+RAVE_100723,Radiation Therapy,Low,2022-04-09,242
+RAVE_100724,Gene Therapy,Medium,2021-10-21,48
+RAVE_100724,Stem Cell Transplant,High,2021-10-18,62
+RAVE_100725,Hormone Therapy,Low,2024-07-05,261
+RAVE_100725,Surgery,Low,2024-06-22,249
+RAVE_100726,Targeted Therapy,High,2023-11-25,284
+RAVE_100727,CAR-T Cell Therapy,Low,2022-03-26,222
+RAVE_100727,Radiation Therapy,Medium,2022-02-26,344
+RAVE_100727,Gene Therapy,Medium,2022-02-27,189
+RAVE_100728,Angiogenesis Inhibitors,Medium,2023-12-12,159
+RAVE_100729,Immunotherapy,Low,2023-10-04,190
+RAVE_100729,CAR-T Cell Therapy,High,2023-10-02,281
+RAVE_100730,Immunotherapy,High,2023-03-09,304
+RAVE_100730,Surgery,Medium,2023-03-15,159
+RAVE_100730,Stem Cell Transplant,High,2023-03-17,192
+RAVE_100731,Surgery,Medium,2021-05-13,121
+RAVE_100732,Gene Therapy,High,2020-10-31,243
+RAVE_100732,Hormone Therapy,High,2020-11-08,294
+RAVE_100733,Stem Cell Transplant,Medium,2023-08-13,35
+RAVE_100733,CAR-T Cell Therapy,High,2023-08-26,158
+RAVE_100733,Chemotherapy,High,2023-08-26,233
+RAVE_100734,Stem Cell Transplant,Low,2024-01-17,64
+RAVE_100735,Targeted Therapy,High,2023-03-27,158
+RAVE_100736,Chemotherapy,Medium,2024-08-20,296
+RAVE_100737,Surgery,Low,2023-04-01,103
+RAVE_100737,Radiation Therapy,Low,2023-03-31,356
+RAVE_100737,Immunotherapy,High,2023-03-03,222
+RAVE_100738,Hormone Therapy,High,2021-08-17,354
+RAVE_100738,Radiation Therapy,High,2021-08-16,39
+RAVE_100739,Hormone Therapy,Medium,2022-01-31,177
+RAVE_100739,CAR-T Cell Therapy,High,2022-02-13,76
+RAVE_100739,Immunotherapy,Low,2022-02-05,136
+RAVE_100740,CAR-T Cell Therapy,Low,2024-08-09,42
+RAVE_100740,Targeted Therapy,Low,2024-07-19,302
+RAVE_100740,Gene Therapy,Medium,2024-07-31,285
+RAVE_100741,Surgery,High,2024-06-06,166
+RAVE_100742,CAR-T Cell Therapy,High,2021-04-13,266
+RAVE_100742,Chemotherapy,Medium,2021-03-29,48
+RAVE_100743,Radiation Therapy,High,2024-01-12,103
+RAVE_100744,Hormone Therapy,Low,2024-11-29,231
+RAVE_100744,Immunotherapy,High,2024-11-19,165
+RAVE_100744,CAR-T Cell Therapy,Medium,2024-11-15,120
+RAVE_100745,Stem Cell Transplant,Medium,2022-09-18,302
+RAVE_100746,CAR-T Cell Therapy,High,2023-08-13,151
+RAVE_100747,Chemotherapy,High,2021-07-08,360
+RAVE_100747,Targeted Therapy,Low,2021-07-11,175
+RAVE_100748,CAR-T Cell Therapy,Low,2021-01-25,268
+RAVE_100748,Hormone Therapy,Medium,2021-01-11,330
+RAVE_100749,Immunotherapy,Low,2023-12-29,302
+RAVE_100750,Hormone Therapy,Low,2021-12-02,165
+RAVE_100750,Immunotherapy,High,2021-12-26,143
+RAVE_100751,Gene Therapy,High,2022-03-16,257
+RAVE_100751,Immunotherapy,High,2022-03-07,350
+RAVE_100752,Angiogenesis Inhibitors,High,2020-03-25,163
+RAVE_100752,Hormone Therapy,Low,2020-04-02,180
+RAVE_100753,Targeted Therapy,Medium,2021-07-01,89
+RAVE_100754,Surgery,Medium,2023-04-13,77
+RAVE_100754,Gene Therapy,Low,2023-03-31,85
+RAVE_100754,Angiogenesis Inhibitors,Medium,2023-04-02,230
+RAVE_100755,Immunotherapy,Low,2022-09-25,244
+RAVE_100756,Angiogenesis Inhibitors,Medium,2022-07-17,87
+RAVE_100757,Surgery,Medium,2020-10-18,190
+RAVE_100757,Radiation Therapy,Medium,2020-11-04,86
+RAVE_100757,Stem Cell Transplant,Medium,2020-10-23,319
+RAVE_100758,Targeted Therapy,High,2020-04-07,122
+RAVE_100758,Angiogenesis Inhibitors,High,2020-04-10,134
+RAVE_100758,Chemotherapy,Medium,2020-04-27,273
+RAVE_100759,Stem Cell Transplant,Medium,2020-09-06,120
+RAVE_100759,Radiation Therapy,Low,2020-08-31,149
+RAVE_100759,Chemotherapy,Low,2020-08-29,166
+RAVE_100760,Targeted Therapy,High,2020-02-14,169
+RAVE_100761,Surgery,Medium,2022-09-02,75
+RAVE_100761,Immunotherapy,High,2022-09-15,256
+RAVE_100762,Targeted Therapy,Medium,2022-10-06,121
+RAVE_100763,CAR-T Cell Therapy,Low,2022-05-18,284
+RAVE_100763,Hormone Therapy,Low,2022-05-18,340
+RAVE_100763,Targeted Therapy,Medium,2022-06-01,237
+RAVE_100764,Radiation Therapy,Low,2021-04-13,252
+RAVE_100765,Stem Cell Transplant,Low,2022-11-06,178
+RAVE_100766,Immunotherapy,Medium,2021-10-19,236
+RAVE_100767,Radiation Therapy,Medium,2023-03-19,355
+RAVE_100767,CAR-T Cell Therapy,Low,2023-04-12,293
+RAVE_100768,Hormone Therapy,Medium,2023-06-10,133
+RAVE_100769,Chemotherapy,Low,2023-09-01,57
+RAVE_100769,Stem Cell Transplant,Medium,2023-09-08,172
+RAVE_100769,Immunotherapy,Low,2023-08-17,343
+RAVE_100770,Stem Cell Transplant,Medium,2020-05-26,123
+RAVE_100771,Chemotherapy,High,2024-12-13,238
+RAVE_100771,Hormone Therapy,Medium,2024-12-04,278
+RAVE_100772,Stem Cell Transplant,Medium,2021-03-22,298
+RAVE_100773,Angiogenesis Inhibitors,Low,2023-07-16,349
+RAVE_100773,Hormone Therapy,Medium,2023-07-06,260
+RAVE_100773,CAR-T Cell Therapy,Low,2023-06-28,184
+RAVE_100774,Radiation Therapy,Medium,2023-07-21,35
+RAVE_100775,Chemotherapy,Medium,2020-09-25,182
+RAVE_100775,CAR-T Cell Therapy,High,2020-09-19,183
+RAVE_100776,Radiation Therapy,Low,2023-04-15,58
+RAVE_100777,CAR-T Cell Therapy,Low,2020-12-24,162
+RAVE_100777,Immunotherapy,Low,2021-01-16,126
+RAVE_100777,Targeted Therapy,High,2020-12-30,289
+RAVE_100778,Stem Cell Transplant,Medium,2021-07-25,147
+RAVE_100778,Chemotherapy,Medium,2021-08-11,89
+RAVE_100779,Surgery,Low,2022-05-15,148
+RAVE_100779,Hormone Therapy,High,2022-05-16,324
+RAVE_100780,Immunotherapy,High,2020-12-08,272
+RAVE_100781,Surgery,Medium,2021-08-02,98
+RAVE_100781,Gene Therapy,Low,2021-07-29,318
+RAVE_100781,Chemotherapy,High,2021-08-06,170
+RAVE_100782,Stem Cell Transplant,Medium,2021-09-22,336
+RAVE_100783,CAR-T Cell Therapy,High,2024-10-25,323
+RAVE_100783,Targeted Therapy,Low,2024-10-20,215
+RAVE_100783,Radiation Therapy,Medium,2024-10-23,324
+RAVE_100784,Radiation Therapy,Low,2024-09-17,253
+RAVE_100784,Immunotherapy,Medium,2024-08-27,256
+RAVE_100785,Immunotherapy,Medium,2023-07-29,57
+RAVE_100786,Radiation Therapy,Low,2022-03-26,245
+RAVE_100787,Surgery,Low,2022-02-26,59
+RAVE_100788,Surgery,Low,2023-12-16,44
+RAVE_100789,Hormone Therapy,Medium,2022-10-13,287
+RAVE_100789,Immunotherapy,Medium,2022-11-08,214
+RAVE_100790,Immunotherapy,Medium,2022-10-03,61
+RAVE_100791,Immunotherapy,Low,2020-01-16,291
+RAVE_100792,Radiation Therapy,Low,2024-12-19,41
+RAVE_100792,Stem Cell Transplant,Medium,2024-12-03,246
+RAVE_100792,Surgery,Low,2024-12-18,59
+RAVE_100793,Hormone Therapy,Medium,2024-03-12,320
+RAVE_100793,Gene Therapy,Medium,2024-03-04,349
+RAVE_100794,Angiogenesis Inhibitors,Low,2022-03-17,235
+RAVE_100795,Gene Therapy,Low,2021-08-01,159
+RAVE_100795,Surgery,High,2021-07-25,150
+RAVE_100796,Targeted Therapy,Medium,2023-07-24,243
+RAVE_100796,Chemotherapy,Low,2023-07-09,155
+RAVE_100796,Gene Therapy,High,2023-07-14,185
+RAVE_100797,CAR-T Cell Therapy,Low,2022-11-23,82
+RAVE_100797,Radiation Therapy,Medium,2022-11-11,255
+RAVE_100798,Stem Cell Transplant,Medium,2023-10-07,355
+RAVE_100799,Stem Cell Transplant,High,2022-08-22,91
+RAVE_100800,Targeted Therapy,Low,2024-04-14,256
+RAVE_100801,Immunotherapy,Low,2023-09-11,186
+RAVE_100802,Radiation Therapy,High,2020-09-07,76
+RAVE_100803,Chemotherapy,High,2021-06-03,40
+RAVE_100804,Chemotherapy,Medium,2024-10-07,258
+RAVE_100804,Immunotherapy,Medium,2024-09-25,243
+RAVE_100805,Stem Cell Transplant,Low,2022-12-25,120
+RAVE_100805,Angiogenesis Inhibitors,Medium,2022-12-27,127
+RAVE_100805,Targeted Therapy,Medium,2023-01-02,146
+RAVE_100806,Stem Cell Transplant,Medium,2021-01-25,234
+RAVE_100807,Angiogenesis Inhibitors,Medium,2023-03-23,333
+RAVE_100807,CAR-T Cell Therapy,Low,2023-03-19,144
+RAVE_100808,CAR-T Cell Therapy,High,2020-12-15,179
+RAVE_100809,Hormone Therapy,High,2020-04-15,201
+RAVE_100809,Gene Therapy,High,2020-04-16,300
+RAVE_100810,Surgery,High,2023-07-17,296
+RAVE_100811,CAR-T Cell Therapy,Low,2022-03-28,91
+RAVE_100812,Chemotherapy,High,2024-08-11,346
+RAVE_100813,CAR-T Cell Therapy,High,2024-06-10,363
+RAVE_100814,Immunotherapy,Low,2021-10-13,341
+RAVE_100815,Hormone Therapy,High,2020-11-18,240
+RAVE_100816,Radiation Therapy,Medium,2023-03-23,221
+RAVE_100817,Targeted Therapy,Medium,2022-07-22,213
+RAVE_100818,Chemotherapy,High,2023-04-10,64
+RAVE_100819,Stem Cell Transplant,High,2021-06-20,360
+RAVE_100820,Angiogenesis Inhibitors,Low,2023-05-07,167
+RAVE_100821,CAR-T Cell Therapy,High,2024-07-27,48
+RAVE_100822,Hormone Therapy,High,2024-04-03,101
+RAVE_100823,Stem Cell Transplant,Low,2021-09-17,117
+RAVE_100823,Chemotherapy,Medium,2021-09-29,47
+RAVE_100824,Radiation Therapy,Medium,2022-03-03,124
+RAVE_100824,Chemotherapy,Low,2022-03-03,282
+RAVE_100825,Gene Therapy,Low,2023-12-28,216
+RAVE_100825,Stem Cell Transplant,High,2023-12-23,182
+RAVE_100825,Angiogenesis Inhibitors,High,2024-01-03,167
+RAVE_100826,Radiation Therapy,High,2024-08-30,326
+RAVE_100826,Surgery,Low,2024-09-05,218
+RAVE_100827,Gene Therapy,Medium,2020-04-30,218
+RAVE_100827,Immunotherapy,Medium,2020-04-21,76
+RAVE_100828,Angiogenesis Inhibitors,High,2020-06-15,102
+RAVE_100828,Stem Cell Transplant,Medium,2020-06-10,91
+RAVE_100828,Targeted Therapy,High,2020-06-07,238
+RAVE_100829,Stem Cell Transplant,High,2024-03-09,69
+RAVE_100830,Chemotherapy,Low,2023-03-02,218
+RAVE_100830,Stem Cell Transplant,High,2023-02-19,92
+RAVE_100831,Targeted Therapy,Medium,2021-09-06,202
+RAVE_100832,Chemotherapy,Medium,2023-11-11,219
+RAVE_100833,Surgery,Medium,2021-10-16,199
+RAVE_100834,Angiogenesis Inhibitors,Medium,2023-02-06,235
+RAVE_100834,Targeted Therapy,Low,2023-02-08,64
+RAVE_100835,Chemotherapy,Low,2022-02-22,289
+RAVE_100836,Targeted Therapy,High,2023-02-20,294
+RAVE_100837,Surgery,Low,2022-11-08,318
+RAVE_100838,CAR-T Cell Therapy,High,2024-10-24,218
+RAVE_100839,Targeted Therapy,Low,2022-10-07,272
+RAVE_100839,Radiation Therapy,High,2022-09-15,148
+RAVE_100840,Gene Therapy,Low,2020-03-16,149
+RAVE_100840,Radiation Therapy,High,2020-03-07,318
+RAVE_100841,Radiation Therapy,Low,2022-12-09,145
+RAVE_100842,Hormone Therapy,Low,2022-09-04,250
+RAVE_100843,Targeted Therapy,Low,2020-10-29,331
+RAVE_100844,Radiation Therapy,High,2020-12-20,46
+RAVE_100845,Gene Therapy,Low,2022-02-08,55
+RAVE_100845,Hormone Therapy,High,2022-01-21,30
+RAVE_100845,Targeted Therapy,High,2022-02-08,176
+RAVE_100846,Chemotherapy,High,2024-12-06,235
+RAVE_100846,Immunotherapy,High,2024-12-03,345
+RAVE_100847,Chemotherapy,High,2020-09-10,32
+RAVE_100848,Hormone Therapy,High,2022-09-27,176
+RAVE_100848,Stem Cell Transplant,Low,2022-10-06,345
+RAVE_100849,CAR-T Cell Therapy,High,2021-12-28,118
+RAVE_100849,Surgery,Low,2021-12-30,189
+RAVE_100850,CAR-T Cell Therapy,Medium,2020-07-14,215
+RAVE_100851,Chemotherapy,High,2023-04-29,294
+RAVE_100852,Angiogenesis Inhibitors,High,2021-01-08,52
+RAVE_100852,Hormone Therapy,High,2021-01-14,232
+RAVE_100852,CAR-T Cell Therapy,High,2021-01-13,50
+RAVE_100853,Surgery,Medium,2022-04-03,360

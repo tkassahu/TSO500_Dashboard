@@ -1,0 +1,528 @@
+rave_id,ae_body_system,grade,serious,onset_date
+RAVE_100000,Infections and infestations,2,True,2021-02-12
+RAVE_100000,Musculoskeletal and connective tissue disorders,1,False,2021-02-09
+RAVE_100000,Nervous system disorders,3,False,2020-10-21
+RAVE_100001,Blood and lymphatic system disorders,1,False,2020-11-04
+RAVE_100002,Hepatobiliary disorders,1,False,2022-08-27
+RAVE_100002,Hepatobiliary disorders,1,True,2022-10-21
+RAVE_100002,Skin and subcutaneous tissue disorders,4,False,2022-09-08
+RAVE_100002,Nervous system disorders,2,False,2022-12-22
+RAVE_100003,General disorders and administration site conditions,3,False,2024-11-15
+RAVE_100003,Metabolism and nutrition disorders,1,False,2024-10-01
+RAVE_100003,Nervous system disorders,3,False,2024-08-29
+RAVE_100003,Cardiac disorders,2,False,2024-08-03
+RAVE_100004,Metabolism and nutrition disorders,1,False,2024-12-13
+RAVE_100004,Cardiac disorders,1,False,2025-01-29
+RAVE_100004,"Respiratory, thoracic and mediastinal disorders",1,True,2025-03-15
+RAVE_100004,Skin and subcutaneous tissue disorders,3,False,2025-03-08
+RAVE_100004,Nervous system disorders,1,False,2024-12-06
+RAVE_100005,Musculoskeletal and connective tissue disorders,2,False,2020-12-18
+RAVE_100005,Metabolism and nutrition disorders,1,False,2020-11-18
+RAVE_100006,"Respiratory, thoracic and mediastinal disorders",1,False,2021-02-05
+RAVE_100007,Blood and lymphatic system disorders,1,False,2023-05-23
+RAVE_100007,"Respiratory, thoracic and mediastinal disorders",4,False,2023-06-28
+RAVE_100007,Cardiac disorders,1,False,2023-08-01
+RAVE_100007,General disorders and administration site conditions,2,False,2023-10-20
+RAVE_100008,Immune system disorders,3,False,2023-02-02
+RAVE_100008,Hepatobiliary disorders,1,True,2023-02-10
+RAVE_100008,Metabolism and nutrition disorders,3,False,2023-01-01
+RAVE_100008,Musculoskeletal and connective tissue disorders,4,False,2022-12-04
+RAVE_100008,Immune system disorders,1,False,2022-12-06
+RAVE_100009,Blood and lymphatic system disorders,3,True,2022-01-26
+RAVE_100010,Infections and infestations,2,False,2022-04-10
+RAVE_100010,Gastrointestinal disorders,4,False,2022-06-07
+RAVE_100010,Metabolism and nutrition disorders,4,False,2022-01-18
+RAVE_100010,Hepatobiliary disorders,3,False,2022-03-29
+RAVE_100010,Gastrointestinal disorders,1,False,2022-05-30
+RAVE_100011,Infections and infestations,2,False,2021-07-01
+RAVE_100012,General disorders and administration site conditions,1,True,2023-08-10
+RAVE_100013,Immune system disorders,1,False,2020-08-03
+RAVE_100014,General disorders and administration site conditions,4,False,2024-07-06
+RAVE_100014,Infections and infestations,1,False,2024-06-10
+RAVE_100014,"Respiratory, thoracic and mediastinal disorders",1,False,2024-05-13
+RAVE_100014,Blood and lymphatic system disorders,1,False,2024-08-27
+RAVE_100015,Hepatobiliary disorders,2,False,2022-06-08
+RAVE_100015,Blood and lymphatic system disorders,2,True,2022-11-01
+RAVE_100016,Metabolism and nutrition disorders,2,False,2022-10-10
+RAVE_100017,Musculoskeletal and connective tissue disorders,1,False,2023-12-26
+RAVE_100017,Metabolism and nutrition disorders,3,False,2023-10-17
+RAVE_100018,Cardiac disorders,3,False,2022-01-10
+RAVE_100018,Cardiac disorders,2,True,2021-11-05
+RAVE_100018,Skin and subcutaneous tissue disorders,1,False,2022-01-26
+RAVE_100018,Immune system disorders,2,False,2022-03-09
+RAVE_100018,Gastrointestinal disorders,3,False,2021-11-15
+RAVE_100019,Cardiac disorders,2,False,2024-09-11
+RAVE_100020,General disorders and administration site conditions,3,False,2024-02-26
+RAVE_100020,Cardiac disorders,4,False,2024-04-13
+RAVE_100020,General disorders and administration site conditions,4,False,2024-03-01
+RAVE_100020,Nervous system disorders,4,False,2024-05-08
+RAVE_100021,Blood and lymphatic system disorders,3,False,2021-08-04
+RAVE_100021,Immune system disorders,2,True,2021-11-28
+RAVE_100021,Immune system disorders,1,True,2021-11-01
+RAVE_100021,Cardiac disorders,3,False,2021-07-13
+RAVE_100022,Blood and lymphatic system disorders,4,False,2022-02-16
+RAVE_100022,Blood and lymphatic system disorders,4,False,2022-05-15
+RAVE_100022,General disorders and administration site conditions,1,False,2022-04-09
+RAVE_100023,Blood and lymphatic system disorders,3,False,2024-07-07
+RAVE_100024,Metabolism and nutrition disorders,3,False,2020-12-27
+RAVE_100024,Nervous system disorders,1,False,2021-02-18
+RAVE_100024,Cardiac disorders,3,True,2021-02-18
+RAVE_100024,Skin and subcutaneous tissue disorders,1,False,2020-11-20
+RAVE_100024,Musculoskeletal and connective tissue disorders,4,False,2021-03-16
+RAVE_100024,Hepatobiliary disorders,3,False,2020-10-21
+RAVE_100025,General disorders and administration site conditions,2,False,2024-06-27
+RAVE_100025,Skin and subcutaneous tissue disorders,1,False,2024-11-25
+RAVE_100025,Skin and subcutaneous tissue disorders,3,False,2024-05-26
+RAVE_100026,Immune system disorders,2,False,2021-09-09
+RAVE_100026,Immune system disorders,3,True,2021-05-07
+RAVE_100026,Skin and subcutaneous tissue disorders,1,False,2021-06-15
+RAVE_100026,Cardiac disorders,2,False,2021-08-29
+RAVE_100026,Hepatobiliary disorders,3,False,2021-06-03
+RAVE_100026,Musculoskeletal and connective tissue disorders,1,False,2021-07-28
+RAVE_100026,Blood and lymphatic system disorders,1,True,2021-05-30
+RAVE_100026,General disorders and administration site conditions,4,False,2021-09-11
+RAVE_100026,Nervous system disorders,2,False,2021-03-26
+RAVE_100026,Nervous system disorders,2,False,2021-03-13
+RAVE_100027,Musculoskeletal and connective tissue disorders,2,False,2024-03-28
+RAVE_100027,General disorders and administration site conditions,2,False,2023-11-23
+RAVE_100027,Musculoskeletal and connective tissue disorders,1,False,2023-10-20
+RAVE_100028,Musculoskeletal and connective tissue disorders,1,False,2022-06-11
+RAVE_100028,Immune system disorders,4,False,2022-05-14
+RAVE_100028,Metabolism and nutrition disorders,3,False,2022-06-30
+RAVE_100028,"Respiratory, thoracic and mediastinal disorders",4,False,2022-04-01
+RAVE_100029,Immune system disorders,1,False,2024-09-14
+RAVE_100029,Skin and subcutaneous tissue disorders,1,False,2024-05-31
+RAVE_100030,Blood and lymphatic system disorders,1,False,2021-03-11
+RAVE_100030,Nervous system disorders,3,False,2020-12-11
+RAVE_100031,General disorders and administration site conditions,1,False,2024-04-07
+RAVE_100032,Metabolism and nutrition disorders,2,False,2022-08-19
+RAVE_100032,Gastrointestinal disorders,1,False,2022-04-26
+RAVE_100032,Cardiac disorders,1,False,2022-06-24
+RAVE_100032,Blood and lymphatic system disorders,1,False,2022-04-24
+RAVE_100033,Infections and infestations,3,False,2020-03-13
+RAVE_100033,Cardiac disorders,2,False,2020-06-14
+RAVE_100034,General disorders and administration site conditions,3,False,2022-07-09
+RAVE_100034,Musculoskeletal and connective tissue disorders,3,False,2022-07-04
+RAVE_100034,Gastrointestinal disorders,1,False,2022-02-24
+RAVE_100034,Cardiac disorders,2,False,2022-07-05
+RAVE_100034,Skin and subcutaneous tissue disorders,1,True,2022-07-05
+RAVE_100035,Cardiac disorders,2,False,2020-10-26
+RAVE_100035,Infections and infestations,1,False,2020-11-25
+RAVE_100035,Hepatobiliary disorders,1,False,2021-03-06
+RAVE_100035,Blood and lymphatic system disorders,2,False,2021-02-21
+RAVE_100035,Cardiac disorders,2,True,2020-11-27
+RAVE_100035,Immune system disorders,1,False,2021-03-18
+RAVE_100035,General disorders and administration site conditions,1,True,2020-11-10
+RAVE_100035,Infections and infestations,2,False,2020-12-15
+RAVE_100035,Cardiac disorders,1,False,2021-01-16
+RAVE_100035,Skin and subcutaneous tissue disorders,1,True,2020-10-09
+RAVE_100036,Hepatobiliary disorders,2,False,2021-04-28
+RAVE_100036,Cardiac disorders,3,False,2021-03-19
+RAVE_100036,Hepatobiliary disorders,1,False,2021-02-10
+RAVE_100036,Infections and infestations,1,True,2021-07-30
+RAVE_100036,Hepatobiliary disorders,2,False,2021-01-26
+RAVE_100037,"Respiratory, thoracic and mediastinal disorders",1,False,2020-07-17
+RAVE_100037,Immune system disorders,5,False,2020-08-05
+RAVE_100037,Infections and infestations,1,False,2020-06-25
+RAVE_100037,Skin and subcutaneous tissue disorders,1,False,2020-07-14
+RAVE_100037,Hepatobiliary disorders,2,False,2020-07-26
+RAVE_100038,Infections and infestations,2,False,2022-12-30
+RAVE_100039,Nervous system disorders,2,False,2022-02-07
+RAVE_100039,Infections and infestations,3,False,2022-04-14
+RAVE_100039,Gastrointestinal disorders,2,False,2021-12-09
+RAVE_100040,Gastrointestinal disorders,1,False,2021-08-15
+RAVE_100040,Cardiac disorders,3,False,2021-07-25
+RAVE_100041,General disorders and administration site conditions,3,False,2025-02-18
+RAVE_100041,Cardiac disorders,2,False,2024-12-29
+RAVE_100041,General disorders and administration site conditions,1,True,2025-03-12
+RAVE_100042,Musculoskeletal and connective tissue disorders,1,False,2024-02-12
+RAVE_100042,"Respiratory, thoracic and mediastinal disorders",1,False,2024-04-03
+RAVE_100042,Cardiac disorders,1,False,2024-03-04
+RAVE_100043,Musculoskeletal and connective tissue disorders,1,False,2022-10-02
+RAVE_100043,Infections and infestations,2,False,2022-07-06
+RAVE_100043,Immune system disorders,1,False,2022-05-21
+RAVE_100044,Gastrointestinal disorders,1,False,2024-10-31
+RAVE_100044,Immune system disorders,2,False,2024-12-12
+RAVE_100044,Metabolism and nutrition disorders,1,False,2024-10-06
+RAVE_100044,Nervous system disorders,1,False,2024-10-08
+RAVE_100044,Gastrointestinal disorders,2,False,2025-01-26
+RAVE_100044,Skin and subcutaneous tissue disorders,1,False,2025-02-02
+RAVE_100045,Hepatobiliary disorders,1,False,2020-06-27
+RAVE_100045,"Respiratory, thoracic and mediastinal disorders",1,True,2020-05-18
+RAVE_100046,Skin and subcutaneous tissue disorders,3,False,2022-08-27
+RAVE_100046,Metabolism and nutrition disorders,4,True,2022-10-01
+RAVE_100046,"Respiratory, thoracic and mediastinal disorders",2,False,2022-11-28
+RAVE_100046,Blood and lymphatic system disorders,3,True,2023-01-21
+RAVE_100047,Skin and subcutaneous tissue disorders,2,True,2020-12-19
+RAVE_100047,"Respiratory, thoracic and mediastinal disorders",1,True,2020-12-22
+RAVE_100048,Immune system disorders,2,False,2020-12-04
+RAVE_100048,Nervous system disorders,1,False,2021-03-26
+RAVE_100048,Immune system disorders,1,False,2021-05-15
+RAVE_100048,Cardiac disorders,1,False,2021-02-22
+RAVE_100048,"Respiratory, thoracic and mediastinal disorders",4,False,2021-04-10
+RAVE_100048,Nervous system disorders,1,False,2021-01-06
+RAVE_100048,Nervous system disorders,2,False,2021-02-04
+RAVE_100049,Immune system disorders,2,False,2022-11-19
+RAVE_100050,Musculoskeletal and connective tissue disorders,4,True,2021-10-07
+RAVE_100050,Blood and lymphatic system disorders,1,False,2021-08-12
+RAVE_100050,Infections and infestations,1,False,2021-07-21
+RAVE_100050,Nervous system disorders,3,False,2021-08-04
+RAVE_100051,Infections and infestations,3,False,2020-06-24
+RAVE_100051,Immune system disorders,3,False,2020-08-11
+RAVE_100052,"Respiratory, thoracic and mediastinal disorders",1,False,2024-10-10
+RAVE_100052,Skin and subcutaneous tissue disorders,1,False,2024-09-24
+RAVE_100052,Immune system disorders,2,False,2024-09-27
+RAVE_100053,Infections and infestations,2,False,2023-12-31
+RAVE_100053,Nervous system disorders,1,False,2023-10-18
+RAVE_100054,General disorders and administration site conditions,2,False,2022-05-07
+RAVE_100054,Immune system disorders,4,False,2022-03-26
+RAVE_100054,Gastrointestinal disorders,1,False,2022-01-08
+RAVE_100054,Musculoskeletal and connective tissue disorders,2,False,2022-01-26
+RAVE_100054,Cardiac disorders,1,True,2022-05-18
+RAVE_100054,Infections and infestations,3,False,2022-03-11
+RAVE_100055,"Respiratory, thoracic and mediastinal disorders",1,False,2020-11-21
+RAVE_100055,Hepatobiliary disorders,3,False,2020-10-01
+RAVE_100055,General disorders and administration site conditions,4,False,2021-02-22
+RAVE_100055,Immune system disorders,3,True,2021-02-03
+RAVE_100056,Musculoskeletal and connective tissue disorders,4,False,2023-02-03
+RAVE_100056,Nervous system disorders,1,False,2023-04-06
+RAVE_100056,Infections and infestations,1,False,2023-05-14
+RAVE_100056,Skin and subcutaneous tissue disorders,1,False,2023-05-17
+RAVE_100056,Skin and subcutaneous tissue disorders,3,False,2022-12-24
+RAVE_100056,Skin and subcutaneous tissue disorders,2,False,2023-01-14
+RAVE_100057,Nervous system disorders,4,False,2023-01-20
+RAVE_100057,Nervous system disorders,3,False,2022-08-27
+RAVE_100057,Cardiac disorders,1,False,2022-11-22
+RAVE_100057,Immune system disorders,1,False,2023-01-18
+RAVE_100057,General disorders and administration site conditions,1,False,2022-12-22
+RAVE_100057,Cardiac disorders,1,False,2023-02-11
+RAVE_100058,Musculoskeletal and connective tissue disorders,1,False,2023-08-18
+RAVE_100059,Hepatobiliary disorders,2,False,2023-11-06
+RAVE_100059,Hepatobiliary disorders,1,False,2023-09-07
+RAVE_100060,Hepatobiliary disorders,1,False,2022-10-05
+RAVE_100060,Metabolism and nutrition disorders,4,True,2022-10-23
+RAVE_100060,Metabolism and nutrition disorders,2,False,2022-05-16
+RAVE_100060,Gastrointestinal disorders,2,False,2022-09-02
+RAVE_100060,Hepatobiliary disorders,1,False,2022-06-02
+RAVE_100060,Skin and subcutaneous tissue disorders,1,False,2022-07-13
+RAVE_100061,Blood and lymphatic system disorders,1,False,2022-09-17
+RAVE_100061,Hepatobiliary disorders,1,False,2022-10-28
+RAVE_100062,Skin and subcutaneous tissue disorders,3,False,2022-03-03
+RAVE_100062,Cardiac disorders,2,False,2022-04-16
+RAVE_100063,Blood and lymphatic system disorders,3,False,2024-08-24
+RAVE_100063,Immune system disorders,2,True,2024-10-04
+RAVE_100063,Gastrointestinal disorders,3,False,2024-12-30
+RAVE_100064,Skin and subcutaneous tissue disorders,1,False,2023-02-12
+RAVE_100064,Blood and lymphatic system disorders,3,False,2022-11-11
+RAVE_100064,Skin and subcutaneous tissue disorders,2,False,2023-01-08
+RAVE_100064,General disorders and administration site conditions,4,True,2023-02-09
+RAVE_100065,Gastrointestinal disorders,4,False,2022-08-10
+RAVE_100066,Blood and lymphatic system disorders,2,True,2023-10-20
+RAVE_100066,Blood and lymphatic system disorders,3,False,2023-09-01
+RAVE_100067,Nervous system disorders,3,False,2024-11-12
+RAVE_100068,Musculoskeletal and connective tissue disorders,5,True,2024-02-03
+RAVE_100068,Blood and lymphatic system disorders,3,False,2024-02-03
+RAVE_100069,"Respiratory, thoracic and mediastinal disorders",3,False,2020-03-26
+RAVE_100069,General disorders and administration site conditions,4,False,2020-02-28
+RAVE_100069,Cardiac disorders,1,False,2020-04-28
+RAVE_100069,Skin and subcutaneous tissue disorders,3,False,2020-01-10
+RAVE_100069,Musculoskeletal and connective tissue disorders,1,True,2020-04-14
+RAVE_100069,Nervous system disorders,1,False,2020-01-29
+RAVE_100070,Metabolism and nutrition disorders,2,False,2020-07-27
+RAVE_100070,Blood and lymphatic system disorders,3,False,2020-06-30
+RAVE_100070,Musculoskeletal and connective tissue disorders,2,True,2020-07-14
+RAVE_100070,Immune system disorders,1,True,2020-06-06
+RAVE_100071,General disorders and administration site conditions,4,False,2023-10-31
+RAVE_100071,"Respiratory, thoracic and mediastinal disorders",3,False,2023-11-20
+RAVE_100072,Nervous system disorders,2,False,2021-03-20
+RAVE_100072,Skin and subcutaneous tissue disorders,1,False,2021-03-20
+RAVE_100073,Blood and lymphatic system disorders,1,False,2024-08-07
+RAVE_100074,Immune system disorders,2,False,2023-01-30
+RAVE_100074,Metabolism and nutrition disorders,3,False,2023-02-05
+RAVE_100074,Musculoskeletal and connective tissue disorders,1,False,2022-10-12
+RAVE_100074,General disorders and administration site conditions,1,True,2023-04-09
+RAVE_100074,Blood and lymphatic system disorders,2,False,2022-10-13
+RAVE_100074,Hepatobiliary disorders,3,False,2023-04-09
+RAVE_100075,General disorders and administration site conditions,4,True,2023-07-01
+RAVE_100075,General disorders and administration site conditions,4,False,2023-02-03
+RAVE_100075,Blood and lymphatic system disorders,1,False,2023-04-27
+RAVE_100075,Immune system disorders,4,False,2023-04-17
+RAVE_100075,Cardiac disorders,3,False,2023-06-09
+RAVE_100076,Metabolism and nutrition disorders,3,False,2025-03-05
+RAVE_100077,Skin and subcutaneous tissue disorders,2,False,2020-08-31
+RAVE_100077,Cardiac disorders,2,False,2020-07-06
+RAVE_100078,Cardiac disorders,1,False,2022-02-26
+RAVE_100078,Gastrointestinal disorders,1,False,2022-05-19
+RAVE_100079,General disorders and administration site conditions,4,False,2025-05-25
+RAVE_100079,Immune system disorders,2,False,2025-02-07
+RAVE_100079,Musculoskeletal and connective tissue disorders,3,False,2025-06-05
+RAVE_100079,Gastrointestinal disorders,1,False,2025-05-02
+RAVE_100080,Infections and infestations,1,True,2020-10-16
+RAVE_100080,"Respiratory, thoracic and mediastinal disorders",3,False,2020-08-29
+RAVE_100080,Immune system disorders,1,False,2020-11-05
+RAVE_100080,Skin and subcutaneous tissue disorders,1,False,2020-07-25
+RAVE_100080,Blood and lymphatic system disorders,2,False,2020-07-22
+RAVE_100080,Hepatobiliary disorders,1,False,2020-08-27
+RAVE_100080,Skin and subcutaneous tissue disorders,2,False,2020-11-19
+RAVE_100081,Infections and infestations,1,False,2025-01-27
+RAVE_100081,Hepatobiliary disorders,4,False,2024-12-17
+RAVE_100082,"Respiratory, thoracic and mediastinal disorders",1,False,2022-10-01
+RAVE_100082,General disorders and administration site conditions,3,True,2022-09-19
+RAVE_100082,Musculoskeletal and connective tissue disorders,1,False,2022-12-04
+RAVE_100082,Immune system disorders,1,False,2022-10-30
+RAVE_100083,Musculoskeletal and connective tissue disorders,2,False,2021-05-21
+RAVE_100083,Blood and lymphatic system disorders,2,False,2021-06-05
+RAVE_100083,Gastrointestinal disorders,2,False,2021-01-26
+RAVE_100084,Infections and infestations,2,False,2022-07-07
+RAVE_100084,Gastrointestinal disorders,3,False,2022-04-02
+RAVE_100084,General disorders and administration site conditions,3,False,2022-02-26
+RAVE_100084,Immune system disorders,2,False,2022-05-01
+RAVE_100085,Musculoskeletal and connective tissue disorders,3,False,2021-04-06
+RAVE_100085,General disorders and administration site conditions,1,False,2021-07-07
+RAVE_100085,Cardiac disorders,2,False,2021-04-26
+RAVE_100085,Infections and infestations,1,False,2021-08-26
+RAVE_100085,General disorders and administration site conditions,1,False,2021-09-17
+RAVE_100085,Hepatobiliary disorders,1,False,2021-08-02
+RAVE_100085,Blood and lymphatic system disorders,3,False,2021-05-21
+RAVE_100086,Nervous system disorders,2,False,2022-09-29
+RAVE_100087,Skin and subcutaneous tissue disorders,1,False,2022-08-07
+RAVE_100087,Metabolism and nutrition disorders,2,True,2022-03-11
+RAVE_100087,Infections and infestations,1,False,2022-06-09
+RAVE_100087,Cardiac disorders,3,True,2022-07-26
+RAVE_100087,Blood and lymphatic system disorders,2,False,2022-03-15
+RAVE_100088,Gastrointestinal disorders,2,True,2024-07-20
+RAVE_100088,"Respiratory, thoracic and mediastinal disorders",1,False,2024-08-22
+RAVE_100089,Metabolism and nutrition disorders,1,True,2021-12-16
+RAVE_100090,Cardiac disorders,3,False,2021-11-07
+RAVE_100090,Skin and subcutaneous tissue disorders,2,False,2021-08-14
+RAVE_100090,Infections and infestations,3,False,2021-09-30
+RAVE_100090,Hepatobiliary disorders,1,False,2021-06-12
+RAVE_100090,Metabolism and nutrition disorders,3,False,2021-09-26
+RAVE_100090,Cardiac disorders,1,False,2021-11-24
+RAVE_100090,Metabolism and nutrition disorders,4,False,2021-10-28
+RAVE_100090,Infections and infestations,3,False,2021-11-16
+RAVE_100090,Skin and subcutaneous tissue disorders,2,False,2021-10-05
+RAVE_100091,"Respiratory, thoracic and mediastinal disorders",1,False,2024-06-05
+RAVE_100091,Skin and subcutaneous tissue disorders,1,False,2024-03-19
+RAVE_100091,Cardiac disorders,1,False,2024-05-13
+RAVE_100092,Nervous system disorders,1,False,2022-08-04
+RAVE_100092,Immune system disorders,2,False,2022-07-09
+RAVE_100092,Blood and lymphatic system disorders,1,False,2022-05-25
+RAVE_100093,General disorders and administration site conditions,3,False,2024-04-28
+RAVE_100094,Blood and lymphatic system disorders,1,False,2020-10-10
+RAVE_100094,Cardiac disorders,1,False,2020-10-03
+RAVE_100095,Skin and subcutaneous tissue disorders,1,False,2020-02-02
+RAVE_100096,Nervous system disorders,1,False,2023-03-12
+RAVE_100096,Hepatobiliary disorders,2,False,2023-07-20
+RAVE_100097,Cardiac disorders,2,False,2020-06-06
+RAVE_100097,Musculoskeletal and connective tissue disorders,2,False,2020-04-12
+RAVE_100097,Musculoskeletal and connective tissue disorders,1,False,2020-03-18
+RAVE_100097,Musculoskeletal and connective tissue disorders,3,False,2020-07-16
+RAVE_100098,Skin and subcutaneous tissue disorders,4,False,2022-02-09
+RAVE_100098,Hepatobiliary disorders,3,False,2022-01-24
+RAVE_100098,Blood and lymphatic system disorders,1,False,2022-06-16
+RAVE_100098,Musculoskeletal and connective tissue disorders,1,False,2022-02-18
+RAVE_100098,Metabolism and nutrition disorders,1,False,2022-01-28
+RAVE_100098,Hepatobiliary disorders,2,False,2022-01-17
+RAVE_100099,Hepatobiliary disorders,3,False,2020-03-06
+RAVE_100099,Immune system disorders,1,False,2020-06-23
+RAVE_100100,Nervous system disorders,1,False,2023-02-03
+RAVE_100100,General disorders and administration site conditions,1,False,2022-12-08
+RAVE_100101,Hepatobiliary disorders,1,False,2021-10-29
+RAVE_100101,Hepatobiliary disorders,1,True,2022-01-09
+RAVE_100101,"Respiratory, thoracic and mediastinal disorders",1,True,2021-09-18
+RAVE_100101,Skin and subcutaneous tissue disorders,3,False,2022-02-02
+RAVE_100101,Gastrointestinal disorders,2,False,2021-08-25
+RAVE_100101,Gastrointestinal disorders,2,False,2021-12-01
+RAVE_100101,Blood and lymphatic system disorders,2,False,2021-11-10
+RAVE_100101,Skin and subcutaneous tissue disorders,1,True,2022-01-14
+RAVE_100101,"Respiratory, thoracic and mediastinal disorders",2,False,2022-01-09
+RAVE_100102,Blood and lymphatic system disorders,1,False,2021-11-20
+RAVE_100102,Gastrointestinal disorders,2,False,2021-08-16
+RAVE_100102,Musculoskeletal and connective tissue disorders,2,False,2021-12-10
+RAVE_100102,Infections and infestations,1,False,2021-11-03
+RAVE_100102,Skin and subcutaneous tissue disorders,2,False,2022-01-19
+RAVE_100103,Metabolism and nutrition disorders,3,False,2021-11-01
+RAVE_100103,Musculoskeletal and connective tissue disorders,2,True,2021-10-03
+RAVE_100104,Metabolism and nutrition disorders,2,False,2025-03-08
+RAVE_100104,"Respiratory, thoracic and mediastinal disorders",2,False,2024-12-28
+RAVE_100105,Musculoskeletal and connective tissue disorders,5,False,2024-11-26
+RAVE_100105,General disorders and administration site conditions,3,False,2024-09-14
+RAVE_100105,Metabolism and nutrition disorders,2,False,2024-11-26
+RAVE_100105,"Respiratory, thoracic and mediastinal disorders",2,False,2024-08-21
+RAVE_100105,Hepatobiliary disorders,1,False,2025-01-11
+RAVE_100105,Gastrointestinal disorders,2,False,2024-08-20
+RAVE_100105,Hepatobiliary disorders,1,False,2024-09-25
+RAVE_100106,Musculoskeletal and connective tissue disorders,5,False,2022-07-01
+RAVE_100106,Immune system disorders,1,False,2022-02-06
+RAVE_100106,General disorders and administration site conditions,1,False,2022-01-27
+RAVE_100107,Infections and infestations,3,True,2023-10-13
+RAVE_100107,Skin and subcutaneous tissue disorders,4,False,2023-08-16
+RAVE_100108,Musculoskeletal and connective tissue disorders,2,False,2023-07-20
+RAVE_100109,Metabolism and nutrition disorders,2,False,2022-09-24
+RAVE_100110,Cardiac disorders,3,False,2021-12-20
+RAVE_100110,"Respiratory, thoracic and mediastinal disorders",2,False,2022-04-10
+RAVE_100111,Cardiac disorders,1,False,2021-02-17
+RAVE_100111,Infections and infestations,1,False,2021-02-20
+RAVE_100111,Metabolism and nutrition disorders,3,False,2021-03-17
+RAVE_100111,Skin and subcutaneous tissue disorders,1,False,2020-11-19
+RAVE_100111,Blood and lymphatic system disorders,3,False,2020-09-27
+RAVE_100111,Musculoskeletal and connective tissue disorders,1,True,2020-10-17
+RAVE_100111,Metabolism and nutrition disorders,1,False,2020-12-04
+RAVE_100111,Musculoskeletal and connective tissue disorders,1,True,2021-04-11
+RAVE_100112,Blood and lymphatic system disorders,2,False,2024-10-27
+RAVE_100112,Gastrointestinal disorders,1,False,2024-11-28
+RAVE_100113,Infections and infestations,1,False,2021-06-04
+RAVE_100113,Blood and lymphatic system disorders,3,False,2021-07-16
+RAVE_100113,Cardiac disorders,2,False,2021-04-24
+RAVE_100113,Skin and subcutaneous tissue disorders,2,False,2021-04-22
+RAVE_100113,Nervous system disorders,3,False,2021-06-27
+RAVE_100114,Metabolism and nutrition disorders,1,False,2020-10-10
+RAVE_100114,Gastrointestinal disorders,3,False,2020-09-22
+RAVE_100114,General disorders and administration site conditions,4,False,2020-12-11
+RAVE_100114,"Respiratory, thoracic and mediastinal disorders",2,False,2021-02-03
+RAVE_100114,Musculoskeletal and connective tissue disorders,3,False,2020-08-15
+RAVE_100115,Metabolism and nutrition disorders,2,True,2021-01-07
+RAVE_100115,Hepatobiliary disorders,3,False,2020-09-07
+RAVE_100115,Cardiac disorders,1,False,2020-09-26
+RAVE_100115,Musculoskeletal and connective tissue disorders,1,False,2021-02-05
+RAVE_100115,General disorders and administration site conditions,2,False,2020-08-18
+RAVE_100116,Cardiac disorders,2,False,2024-10-28
+RAVE_100116,Gastrointestinal disorders,2,False,2024-07-27
+RAVE_100117,Gastrointestinal disorders,3,False,2023-03-10
+RAVE_100118,Nervous system disorders,2,False,2022-08-30
+RAVE_100118,Gastrointestinal disorders,2,False,2022-09-03
+RAVE_100119,Nervous system disorders,1,False,2023-05-09
+RAVE_100119,Immune system disorders,3,True,2023-07-19
+RAVE_100119,Hepatobiliary disorders,1,False,2023-06-12
+RAVE_100119,General disorders and administration site conditions,2,False,2023-07-25
+RAVE_100120,Nervous system disorders,3,True,2024-01-22
+RAVE_100120,General disorders and administration site conditions,1,False,2024-02-02
+RAVE_100121,Cardiac disorders,1,False,2020-12-21
+RAVE_100121,Musculoskeletal and connective tissue disorders,1,False,2021-01-04
+RAVE_100121,Infections and infestations,1,False,2020-10-26
+RAVE_100122,Infections and infestations,2,False,2024-09-14
+RAVE_100122,Blood and lymphatic system disorders,2,False,2024-06-01
+RAVE_100122,Blood and lymphatic system disorders,1,False,2024-04-19
+RAVE_100122,Musculoskeletal and connective tissue disorders,2,False,2024-06-11
+RAVE_100123,Skin and subcutaneous tissue disorders,3,False,2020-06-29
+RAVE_100123,Nervous system disorders,3,False,2020-04-03
+RAVE_100123,Musculoskeletal and connective tissue disorders,3,False,2020-04-23
+RAVE_100123,Gastrointestinal disorders,1,False,2020-04-16
+RAVE_100124,"Respiratory, thoracic and mediastinal disorders",2,False,2023-01-04
+RAVE_100124,General disorders and administration site conditions,2,False,2023-03-25
+RAVE_100124,Cardiac disorders,4,False,2023-03-20
+RAVE_100125,Musculoskeletal and connective tissue disorders,1,False,2021-02-08
+RAVE_100126,General disorders and administration site conditions,2,False,2021-09-20
+RAVE_100126,Nervous system disorders,2,False,2021-03-29
+RAVE_100127,Blood and lymphatic system disorders,3,False,2022-08-09
+RAVE_100128,Cardiac disorders,1,False,2023-06-26
+RAVE_100129,Infections and infestations,2,False,2023-02-21
+RAVE_100129,Immune system disorders,1,True,2022-10-05
+RAVE_100130,Cardiac disorders,2,False,2024-01-01
+RAVE_100130,Cardiac disorders,4,False,2023-12-01
+RAVE_100131,General disorders and administration site conditions,1,False,2023-07-15
+RAVE_100131,Gastrointestinal disorders,3,False,2023-07-14
+RAVE_100131,Gastrointestinal disorders,2,False,2023-07-26
+RAVE_100131,Metabolism and nutrition disorders,2,False,2023-02-15
+RAVE_100132,Infections and infestations,2,False,2022-07-16
+RAVE_100132,General disorders and administration site conditions,2,False,2022-07-31
+RAVE_100132,Blood and lymphatic system disorders,1,False,2022-07-13
+RAVE_100132,General disorders and administration site conditions,2,False,2022-10-26
+RAVE_100133,Gastrointestinal disorders,2,False,2022-05-15
+RAVE_100133,Cardiac disorders,2,False,2022-07-02
+RAVE_100133,"Respiratory, thoracic and mediastinal disorders",2,False,2022-07-01
+RAVE_100133,Immune system disorders,2,False,2022-05-26
+RAVE_100133,General disorders and administration site conditions,3,False,2022-04-12
+RAVE_100133,Gastrointestinal disorders,2,False,2022-07-23
+RAVE_100133,Gastrointestinal disorders,2,False,2022-10-01
+RAVE_100134,Musculoskeletal and connective tissue disorders,2,False,2022-09-16
+RAVE_100134,Infections and infestations,1,False,2022-10-08
+RAVE_100134,Immune system disorders,4,False,2022-08-29
+RAVE_100135,Infections and infestations,1,False,2020-08-14
+RAVE_100135,Blood and lymphatic system disorders,1,False,2020-12-17
+RAVE_100135,Blood and lymphatic system disorders,2,False,2020-12-27
+RAVE_100135,General disorders and administration site conditions,2,False,2020-12-26
+RAVE_100136,General disorders and administration site conditions,1,False,2024-01-25
+RAVE_100137,General disorders and administration site conditions,2,False,2022-06-16
+RAVE_100137,Skin and subcutaneous tissue disorders,2,True,2022-07-08
+RAVE_100137,Metabolism and nutrition disorders,1,False,2022-08-29
+RAVE_100137,Metabolism and nutrition disorders,1,False,2022-05-06
+RAVE_100137,Skin and subcutaneous tissue disorders,3,False,2022-07-28
+RAVE_100138,Blood and lymphatic system disorders,2,False,2021-09-17
+RAVE_100138,Hepatobiliary disorders,1,False,2021-05-29
+RAVE_100139,General disorders and administration site conditions,2,False,2021-11-13
+RAVE_100139,Skin and subcutaneous tissue disorders,2,False,2021-10-08
+RAVE_100139,Nervous system disorders,1,True,2022-01-27
+RAVE_100139,Immune system disorders,1,True,2022-01-14
+RAVE_100139,Cardiac disorders,3,False,2022-01-18
+RAVE_100139,Gastrointestinal disorders,1,False,2021-09-04
+RAVE_100140,Immune system disorders,1,False,2021-03-12
+RAVE_100140,Gastrointestinal disorders,3,True,2020-11-20
+RAVE_100140,Immune system disorders,1,True,2021-01-28
+RAVE_100140,Musculoskeletal and connective tissue disorders,1,False,2021-03-10
+RAVE_100140,Immune system disorders,2,False,2021-04-08
+RAVE_100140,Metabolism and nutrition disorders,2,False,2021-02-25
+RAVE_100140,Immune system disorders,1,False,2020-11-16
+RAVE_100140,Immune system disorders,2,False,2021-01-18
+RAVE_100140,Infections and infestations,1,True,2021-02-09
+RAVE_100140,"Respiratory, thoracic and mediastinal disorders",2,True,2021-04-27
+RAVE_100141,Cardiac disorders,1,False,2020-12-27
+RAVE_100141,Nervous system disorders,2,False,2020-09-21
+RAVE_100141,Infections and infestations,2,True,2020-08-12
+RAVE_100141,Blood and lymphatic system disorders,2,True,2020-12-05
+RAVE_100141,Musculoskeletal and connective tissue disorders,2,False,2020-12-09
+RAVE_100141,Nervous system disorders,3,False,2020-11-14
+RAVE_100142,Musculoskeletal and connective tissue disorders,2,False,2020-04-27
+RAVE_100142,Cardiac disorders,1,True,2020-03-05
+RAVE_100143,Cardiac disorders,2,False,2023-01-26
+RAVE_100143,General disorders and administration site conditions,2,False,2022-12-22
+RAVE_100143,Blood and lymphatic system disorders,3,True,2022-10-02
+RAVE_100143,"Respiratory, thoracic and mediastinal disorders",3,False,2022-09-04
+RAVE_100143,Infections and infestations,2,False,2022-12-21
+RAVE_100143,Cardiac disorders,2,True,2023-01-17
+RAVE_100144,Cardiac disorders,1,False,2024-10-23
+RAVE_100144,Metabolism and nutrition disorders,1,False,2024-07-21
+RAVE_100144,Gastrointestinal disorders,1,False,2024-07-30
+RAVE_100145,Cardiac disorders,3,False,2021-06-23
+RAVE_100145,Gastrointestinal disorders,3,False,2021-09-10
+RAVE_100146,General disorders and administration site conditions,1,True,2020-12-20
+RAVE_100146,Infections and infestations,1,False,2020-08-08
+RAVE_100146,Musculoskeletal and connective tissue disorders,1,True,2020-09-14
+RAVE_100146,Blood and lymphatic system disorders,4,False,2020-12-25
+RAVE_100147,General disorders and administration site conditions,3,False,2024-06-23
+RAVE_100147,Infections and infestations,1,True,2024-05-21
+RAVE_100148,Gastrointestinal disorders,2,False,2024-03-01
+RAVE_100148,General disorders and administration site conditions,1,False,2023-09-22
+RAVE_100148,General disorders and administration site conditions,1,False,2023-12-31
+RAVE_100148,Nervous system disorders,2,False,2024-03-02
+RAVE_100148,Metabolism and nutrition disorders,1,False,2023-10-28
+RAVE_100148,Immune system disorders,3,True,2023-11-22
+RAVE_100148,Cardiac disorders,4,False,2023-09-29
+RAVE_100148,General disorders and administration site conditions,3,False,2023-10-27
+RAVE_100148,Blood and lymphatic system disorders,2,True,2024-02-03
+RAVE_100149,Gastrointestinal disorders,1,False,2024-11-11
+RAVE_100149,"Respiratory, thoracic and mediastinal disorders",3,False,2024-11-05
+RAVE_100149,Hepatobiliary disorders,1,False,2024-07-22
+RAVE_100149,Cardiac disorders,4,False,2024-05-26
+RAVE_100150,Cardiac disorders,3,False,2022-08-13
+RAVE_100150,Gastrointestinal disorders,4,True,2022-07-13
+RAVE_100151,Skin and subcutaneous tissue disorders,2,False,2023-08-04
+RAVE_100151,Metabolism and nutrition disorders,1,False,2023-11-03
+RAVE_100151,Metabolism and nutrition disorders,4,False,2023-10-04
+RAVE_100152,General disorders and administration site conditions,3,True,2022-12-23
+RAVE_100152,Blood and lymphatic system disorders,2,False,2022-12-18
+RAVE_100153,"Respiratory, thoracic and mediastinal disorders",2,True,2022-10-23
+RAVE_100154,Nervous system disorders,1,False,2022-05-21
+RAVE_100154,Nervous system disorders,1,False,2022-04-13
+RAVE_100155,Metabolism and nutrition disorders,1,False,2024-02-05
+RAVE_100155,Musculoskeletal and connective tissue disorders,1,False,2024-03-11
+RAVE_100155,Infections and infestations,3,False,2024-03-05
+RAVE_100155,Skin and subcutaneous tissue disorders,1,False,2024-05-26
+RAVE_100156,Blood and lymphatic system disorders,1,False,2024-10-29
+RAVE_100156,Musculoskeletal and connective tissue disorders,2,False,2025-01-10
+RAVE_100157,Gastrointestinal disorders,1,False,2020-12-18
+RAVE_100157,Cardiac disorders,2,False,2020-09-05
+RAVE_100157,Nervous system disorders,2,True,2020-11-19
+RAVE_100157,Immune system disorders,2,False,2020-10-14
+RAVE_100157,Nervous system disorders,1,False,2020-10-18

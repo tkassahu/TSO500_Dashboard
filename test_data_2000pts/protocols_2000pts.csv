@@ -1,0 +1,26 @@
+protocol_id,protocol_name,phase,status,target_enrollment
+PROT_001,Clinical Trial Protocol 1,Phase II,Active,182
+PROT_002,Clinical Trial Protocol 2,Phase II,Active,57
+PROT_003,Clinical Trial Protocol 3,Phase I,Active,88
+PROT_004,Clinical Trial Protocol 4,Phase I,Active,51
+PROT_005,Clinical Trial Protocol 5,Phase I,Active,107
+PROT_006,Clinical Trial Protocol 6,Phase II,Active,212
+PROT_007,Clinical Trial Protocol 7,Phase II,Active,248
+PROT_008,Clinical Trial Protocol 8,Phase II,Active,298
+PROT_009,Clinical Trial Protocol 9,Phase II,Completed,220
+PROT_010,Clinical Trial Protocol 10,Phase I,Active,79
+PROT_011,Clinical Trial Protocol 11,Phase II,Active,180
+PROT_012,Clinical Trial Protocol 12,Phase I,Active,178
+PROT_013,Clinical Trial Protocol 13,Phase III,Active,297
+PROT_014,Clinical Trial Protocol 14,Phase III,Active,163
+PROT_015,Clinical Trial Protocol 15,Phase II,Active,258
+PROT_016,Clinical Trial Protocol 16,Phase II,Active,199
+PROT_017,Clinical Trial Protocol 17,Phase I,Completed,22
+PROT_018,Clinical Trial Protocol 18,Phase I,Completed,88
+PROT_019,Clinical Trial Protocol 19,Phase III,Active,251
+PROT_020,Clinical Trial Protocol 20,Phase I,Active,94
+PROT_021,Clinical Trial Protocol 21,Phase I,Completed,114
+PROT_022,Clinical Trial Protocol 22,Phase II,Completed,183
+PROT_023,Clinical Trial Protocol 23,Phase II,Active,78
+PROT_024,Clinical Trial Protocol 24,Phase I,Completed,27
+PROT_025,Clinical Trial Protocol 25,Phase II,Active,165

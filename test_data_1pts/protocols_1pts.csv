@@ -1,0 +1,11 @@
+protocol_id,protocol_name,phase,status,target_enrollment
+PROT_001,Clinical Trial Protocol 1,Phase II,Active,177
+PROT_002,Clinical Trial Protocol 2,Phase III,Active,283
+PROT_003,Clinical Trial Protocol 3,Phase II,Completed,116
+PROT_004,Clinical Trial Protocol 4,Phase II,Active,166
+PROT_005,Clinical Trial Protocol 5,Phase II,Completed,36
+PROT_006,Clinical Trial Protocol 6,Phase III,Active,65
+PROT_007,Clinical Trial Protocol 7,Phase III,Active,252
+PROT_008,Clinical Trial Protocol 8,Phase III,Active,200
+PROT_009,Clinical Trial Protocol 9,Phase II,Completed,135
+PROT_010,Clinical Trial Protocol 10,Phase I,Active,180

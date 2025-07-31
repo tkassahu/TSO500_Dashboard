@@ -1,0 +1,274 @@
+import os
+from shiny import App, ui, reactive, render
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+from matplotlib.colors import ListedColormap
+from matplotlib.patches import Patch
+from neo4j import GraphDatabase
+import seaborn as sns
+from lifelines import KaplanMeierFitter
+
+# ───── 1) Data Loading ─────
+variants_df = pd.read_csv("variants_with_50_demo_mrn.csv")
+demo_df     = pd.read_csv("clean_demographics.csv")
+df          = variants_df.merge(demo_df, on="mrn", how="left")
+
+# ───── 2) Memgraph Connection ─────
+MG_URL    = os.getenv("MEMGRAPH_URL", "bolt://127.0.0.1:7687")
+mg_driver = GraphDatabase.driver(MG_URL, auth=None)
+
+# ───── 3) Styling & Palette ─────
+sns.set_theme(style="whitegrid")
+PALETTE = {
+    "Pathogenic":             "#D62728",
+    "Likely Pathogenic":      "#FF7F0E",
+    "Likely Benign":          "#2CA02C",
+    "Uncertain Significance": "#1F77B4",
+}
+
+# ───── 4) Prepare Filter Choices ─────
+genes       = ["All"] + sorted(df["gene"].dropna().unique())
+assessments = ["All"] + sorted(df["assessment"].dropna().unique())
+
+# ───── 5) UI Definition ─────
+app_ui = ui.page_fluid(
+    ui.h2("TSO-500 Variant Explorer"),
+
+    # custom CSS to tighten cards
+    ui.tags.style("""
+      .card { border:1px solid #ddd; border-radius:6px; padding:12px; margin-bottom:12px; background:#fff; }
+      .card-title { font-size:1.1rem; font-weight:600; }
+      .card-value { font-size:1.4rem; margin-top:4px; }
+    """),
+
+    ui.layout_sidebar(
+      # ─── Sidebar filters ───
+      ui.sidebar(
+        ui.input_select("filter_gene",       "Gene:",       choices=genes,       selected="All"),
+        ui.input_select("filter_assessment", "Assessment:", choices=assessments, selected="All"),
+        ui.input_select("filter_sex",        "Sex:",        choices=["All","female","male"], selected="All"),
+        ui.input_slider("filter_age",        "Age range:",  min=0, max=100, value=[0,100]),
+      ),
+
+      # ─── Summary cards ───
+      ui.layout_column_wrap(
+        ui.tags.div(
+          ui.tags.div("Total Variants",       class_="card-title"),
+          ui.tags.div(ui.output_text("total_count"),       class_="card-value"),
+          class_="card"
+        ),
+        ui.tags.div(
+          ui.tags.div("Unique Genes",         class_="card-title"),
+          ui.tags.div(ui.output_text("unique_genes"),     class_="card-value"),
+          class_="card"
+        ),
+        ui.tags.div(
+          ui.tags.div("Actionable Variants",  class_="card-title"),
+          ui.tags.div(ui.output_text("actionable_count"), class_="card-value"),
+          class_="card"
+        ),
+        width=4,  # 3 cards × width 4 = full row
+      ),
+
+      # ─── Row 1: Pie & Bar ───
+      ui.layout_column_wrap(
+        ui.tags.div(ui.output_plot("pie_plot"),   class_="card"),
+        ui.tags.div(ui.output_plot("bar_plot"),   class_="card"),
+        width=6,  # each takes half
+      ),
+
+      # ─── Row 2: Hist & Oncoprint ───
+      ui.layout_column_wrap(
+        ui.tags.div(ui.output_plot("hist_plot"),    class_="card"),
+        ui.tags.div(ui.output_plot("oncoprint"),    class_="card"),
+        width=6,
+      ),
+
+      # ─── Row 3: Kaplan–Meier ───
+      ui.layout_column_wrap(
+        ui.tags.div(ui.output_plot("km_plot"),      class_="card"),
+        width=6,
+      ),
+    )
+)
+
+# ───── 6) Server logic ─────
+def server(input, output, session):
+
+    # 6.1) Synthetic survival DataFrame for KM curve
+    @reactive.Calc
+    def survival_df():
+        df_pat = demo_df.copy()
+        n      = len(df_pat)
+        times  = np.random.exponential(scale=365, size=n)   # days until event/censor
+        events = np.random.binomial(1, 0.7, size=n)         # 70% event rate
+        return df_pat.assign(time=times, event=events)
+
+    # 6.2) Filtered data: pandas + Memgraph
+    @reactive.Calc
+    def filtered_data():
+        # start with full joined DataFrame
+        d = df.copy()
+
+        # client-side filters in pandas
+        gene       = input.filter_gene()
+        assess     = input.filter_assessment()
+        if gene   != "All":
+            d = d[d["gene"] == gene]
+        if assess != "All":
+            d = d[d["assessment"] == assess]
+
+        # server-side filters via Memgraph
+        clauses, params = [], {}
+        sex = input.filter_sex()
+        if sex != "All":
+            clauses.append("p.sex = $sex")
+            params["sex"] = sex
+
+        min_age, max_age = input.filter_age()
+        clauses.append("p.age >= $min_age"); params["min_age"] = min_age
+        clauses.append("p.age <= $max_age"); params["max_age"] = max_age
+
+        where = "WHERE " + " AND ".join(clauses) if clauses else ""
+        cypher = f"""
+          MATCH (p:Patient)-[:HAS_VARIANT]->(v)
+          {where}
+          RETURN DISTINCT p.mrn AS mrn
+        """
+        with mg_driver.session() as sess:
+            rows = sess.run(cypher, params).data()
+        valid_mrns = {r["mrn"] for r in rows}
+        return d[d["mrn"].isin(valid_mrns)]
+
+    # 6.3) Summary cards
+    @output
+    @render.text
+    def total_count():
+        return str(len(filtered_data()))
+
+    @output
+    @render.text
+    def unique_genes():
+        return str(filtered_data()["gene"].nunique())
+
+    @output
+    @render.text
+    def actionable_count():
+        d2 = filtered_data()
+        return str(d2[d2["assessment"].isin(["Pathogenic","Likely Pathogenic"])].shape[0])
+
+    # 6.4) Pie chart
+    @output
+    @render.plot
+    def pie_plot():
+        cnts = filtered_data()["assessment"].value_counts()
+        vals, labs = cnts.values, cnts.index.tolist()
+        cols = [PALETTE.get(l, "#888888") for l in labs]
+        fig, ax = plt.subplots(figsize=(6,6), dpi=100)
+        wedges, _, _ = ax.pie(
+            vals, labels=None, colors=cols,
+            startangle=140, autopct="%.1f%%", pctdistance=0.8,
+            wedgeprops=dict(width=0.4),
+            textprops=dict(color="white", weight="bold", fontsize=12),
+        )
+        ax.set_title("Assessment Distribution", fontsize=18, weight="bold", pad=20)
+        ax.axis("equal")
+        ax.legend(wedges, labs, title="Assessment",
+                  loc="center left", bbox_to_anchor=(1,0.5), frameon=False)
+        fig.subplots_adjust(left=0.0, right=0.75)
+        return fig
+
+    # 6.5) Bar chart
+    @output
+    @render.plot
+    def bar_plot():
+        d2   = filtered_data()
+        cnts = d2["gene"].value_counts()
+        fig, ax = plt.subplots(figsize=(6,4), dpi=100)
+        bars = cnts.plot.bar(ax=ax)
+        for bar in bars.patches:
+            ax.text(
+                bar.get_x() + bar.get_width()/2,
+                bar.get_height() + 0.3,
+                f"{int(bar.get_height())}",
+                ha="center", va="bottom", fontsize=10,
+            )
+        ax.set_xlabel("Gene", fontsize=12, weight="bold")
+        ax.set_ylabel("Count", fontsize=12, weight="bold")
+        ax.set_title("Mutation Count by Gene", fontsize=16, weight="bold", pad=12)
+        ax.spines["top"].set_visible(False)
+        ax.spines["right"].set_visible(False)
+        fig.tight_layout(pad=2)
+        return fig
+
+    # 6.6) Histogram
+    @output
+    @render.plot
+    def hist_plot():
+        arr = filtered_data()["allelefraction"].dropna()
+        fig, ax = plt.subplots(figsize=(6,4), dpi=100)
+        ax.hist(arr, bins=20, edgecolor="black")
+        m = arr.mean()
+        ax.axvline(m, linestyle="--", linewidth=2)
+        ax.text(
+            m + 0.01, ax.get_ylim()[1] * 0.9,
+            f"Mean: {m:.2f}", color="firebrick", weight="bold"
+        )
+        ax.set_xlabel("Allele Fraction", fontsize=12, weight="bold")
+        ax.set_ylabel("Frequency", fontsize=12, weight="bold")
+        ax.set_title("Allele Fraction Distribution", fontsize=16, weight="bold", pad=12)
+        ax.spines["top"].set_visible(False)
+        ax.spines["right"].set_visible(False)
+        fig.tight_layout(pad=2)
+        return fig
+
+    # 6.7) Oncoprint
+    @output
+    @render.plot
+    def oncoprint():
+        d2        = filtered_data()
+        top_genes = d2["gene"].value_counts().nlargest(8).index
+        top_samps = d2["mrn"].value_counts().nlargest(10).index
+        sub       = d2[d2["gene"].isin(top_genes) & d2["mrn"].isin(top_samps)]
+        mat       = pd.DataFrame("", index=top_genes, columns=top_samps)
+        for _, r in sub.iterrows():
+            mat.at[r["gene"], r["mrn"]] = r["assessment"]
+
+        levels     = list(PALETTE.keys())
+        mapping    = {lvl:i for i,lvl in enumerate(levels)}
+        grid       = mat.replace(mapping).replace("", -1).astype(int)
+        path_c     = mapping["Pathogenic"]
+        likely_c   = mapping["Likely Pathogenic"]
+        load       = ((grid==path_c)|(grid==likely_c)).sum(axis=1)/len(top_samps)
+        grid       = grid.loc[load.sort_values(ascending=False).index]
+        colors     = ["#EEEEEE"] + [PALETTE[l] for l in levels]
+        cmap       = ListedColormap(colors)
+
+        fig, ax = plt.subplots(figsize=(10,5), dpi=100)
+        ax.imshow(grid.values, cmap=cmap, aspect="auto", vmin=-1, vmax=len(levels)-1)
+        # … you can re–add the grid, ticks, legend styling here as before …
+        fig.tight_layout(pad=2)
+        return fig
+
+    # 6.8) Kaplan–Meier Survival Curve
+    @output
+    @render.plot
+    def km_plot():
+        surv = survival_df()
+        kmf  = KaplanMeierFitter()
+        kmf.fit(durations=surv["time"], event_observed=surv["event"])
+        fig, ax = plt.subplots(figsize=(6,4), dpi=100)
+        kmf.plot_survival_function(ax=ax)
+        ax.set_title("Kaplan–Meier Survival Curve", fontsize=16, weight="bold")
+        ax.set_xlabel("Time (days)", fontsize=12)
+        ax.set_ylabel("Survival Probability", fontsize=12)
+        fig.tight_layout(pad=2)
+        return fig
+
+# ───── 7) Launch the app ─────
+app = App(app_ui, server)
+
+if __name__ == "__main__":
+    print("🔹 Starting Shiny on http://127.0.0.1:8000")
+    app.run(host="127.0.0.1", port=8000)
